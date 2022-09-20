@@ -121,38 +121,39 @@ Your team folder must includes:
      
     👩‍💻Eunmin Kim
        -Dankook Univeristy
-       -Major in Industrial Security
+       -Majoring in Industrial Security
        -maexc834@naver.com
        -https://github.com/Min1222Ag
        
     🎅🏻Booyong Kim
 	-Sangmyung University
-	-Major in Computer Science
+	-Majoring in Computer Science
 	-hapata1120@gmail.com
 	-https://github.com/KBY538
       
     👰Seoyeong Lee
        -Daegu Catholic University
-       -Major in Computer Engineering
+       -Majoring in Computer Engineering
        -lsyoung66@naver.com
        -https://github.com/lsyoung66
        
     👩‍🚀Hanbyeol Lee
        -Chung-Ang University
-       -Major in Computer Software Engineering
+       -Majoring in Computer Software Engineering
        -yhb1834@cau.ac.kr
        -https://github.com/yhb1834
     
     👨🏻‍🦱Jeeyoung Oh
 	-Chung-ang University
-	-Major in Computer Software Engineering
+	-Majoring in Computer Software Engineering
 	-jeeyoung9907@cau.ac.kr
 	-https://github.com/ohjeeyoung
     
     👨🏻‍💼Caleb Ikalina
        -Purdue University
-       -Major in CNIT
+       -Majoring in Computer and Information Technology, Forensic Sciences
        -maxli32145@gmail.com
-    
+       -cikalina@purdue.edu
+       -https://github.com/CalebIkalina
 
 [1] Open Source WiFi, Linux Appliance, Dragino. Accessed on: December 02, 2021. [Online]. Available: [Dragino](https://dragino.com/)
