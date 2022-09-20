@@ -145,7 +145,7 @@ Your team folder must includes:
     
     👨🏻‍🦱Jeeyoung Oh
 	-Chung-ang University
-	-Major in Major in Computer Software Engineering
+	-Major in Computer Software Engineering
 	-jeeyoung9907@cau.ac.kr
 	-https://github.com/ohjeeyoung
     
