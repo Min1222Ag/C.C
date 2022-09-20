@@ -19,17 +19,13 @@ Your team folder must includes:
 
 ### Example:
 
-# ⚡2021 Purdue AgIoT Project by TEAM_THOMAS⚡
+# 2022 Purdue AgIoT Project by TEAM_C.C
 <hr>
 
 📑 *Project Title*
         
     Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
     Using Cost-Effective Algorithm and Serverless
-
-📅 *Project Period*
-
-    10-10-2021(SUN) ~ 12-20-2021(MON)
 
 🧖🏻‍♀️ *Problem Statement*
     
@@ -123,44 +119,40 @@ Your team folder must includes:
 
 👨‍👩‍👧‍👧 *Collaborator*
      
-    👩‍💻Yujung Gil
-       -Dongguk Univeristy
-       -Major in Computer Science Engineering
-       -kuj9628@naver.com
-       -https://github.com/fairyroad
+    👩‍💻Eunmin Kim
+       -Dankook Univeristy
+       -Major in Industrial Security
+       -maexc834@naver.com
+       -https://github.com/Min1222Ag
        
-    🎅🏻Minjeong Kim
-       -Dongguk University
-       -Major in Computer Science Engineering
-       -kimmin9624@dgu.ac.kr
-       -https://github.com/kimminje0ng
+    🎅🏻Booyong Kim
+	-Sangmyung University
+	-Major in Computer Science
+	-hapata1120@gmail.com
+	-https://github.com/KBY538
       
-    👰Jiho Park
-       -Dongguk University
-       -Major in Computer Science Engineering
-       -2017112091@dgu.ac.kr
-       -https://github.com/zihos
+    👰Seoyeong Lee
+       -Daegu Catholic University
+       -Major in Computer Engineering
+       -lsyoung66@naver.com
+       -https://github.com/lsyoung66
        
-    👩‍🚀Bryan Supinski
-       -Purdue University
-       -Major in CNIT
-       -bryansupinski@gmail.com
-       -https://github.com/dplok1
+    👩‍🚀Hanbyeol Lee
+       -Chung-Ang University
+       -Major in Computer Software Engineering
+       -yhb1834@cau.ac.kr
+       -https://github.com/yhb1834
     
-    👨🏻‍🦱Damien Pham
-       -Purdue University
-       -Major in CNIT
-       -minhduypham0210@gmail.com
-       -https://github.com/damien7749
+    👨🏻‍🦱Jeeyoung Oh
+	-Chung-ang University
+	-Major in Major in Computer Software Engineering
+	-jeeyoung9907@cau.ac.kr
+	-https://github.com/ohjeeyoung
     
-    👨🏻‍💼Max Li
+    👨🏻‍💼Caleb Ikalina
        -Purdue University
        -Major in CNIT
        -maxli32145@gmail.com
     
-    🧔🏻Parker Alexander
-       -Purdue University
-       -Major in CNIT
-       -carmelo15andonly@gmail.com 
 
 [1] Open Source WiFi, Linux Appliance, Dragino. Accessed on: December 02, 2021. [Online]. Available: [Dragino](https://dragino.com/)
