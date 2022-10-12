@@ -120,10 +120,10 @@ Your team folder must includes:
   *Collaborator*
      
        Eunmin Kim
-      -Dankook Univeristy
-      -Majoring in Industrial Security
-      -maexc834@naver.com
-      -https://github.com/Min1222Ag
+       -Dankook Univeristy
+       -Majoring in Industrial Security
+       -maexc834@naver.com
+       -https://github.com/Min1222Ag
        
        Booyong Kim
        -Sangmyung University
