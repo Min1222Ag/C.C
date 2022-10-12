@@ -119,7 +119,7 @@ Your team folder must includes:
 
   *Collaborator*
      
-      Eunmin Kim
+       Eunmin Kim
       -Dankook Univeristy
       -Majoring in Industrial Security
       -maexc834@naver.com
