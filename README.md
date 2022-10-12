@@ -125,11 +125,11 @@ Your team folder must includes:
      -maexc834@naver.com
      -https://github.com/Min1222Ag
        
-       Booyong Kim
-       -Sangmyung University
-       -Majoring in Computer Science
-       -hapata1120@gmail.com
-       -https://github.com/KBY538
+      Booyong Kim
+      -Sangmyung University
+      -Majoring in Computer Science
+      -hapata1120@gmail.com
+      -https://github.com/KBY538
       
       Seoyeong Lee
        -Daegu Catholic University
