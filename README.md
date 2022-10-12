@@ -102,11 +102,11 @@ Your team folder must includes:
 
     ✔️macOS Big Sur version 11.4  
     
-    ✔️Arduino IDE version 1.8.13 
+    ✔️ Raspberry Pi version 1.8.13 
     
     ✔️Python version 3.7.3 
     
-    ✔️Arduio Uno 
+    ✔Raspberry Pi 4 Model B+
     
     ✔️LoRa Module : Dragino[1]
     
@@ -119,31 +119,31 @@ Your team folder must includes:
 
   *Collaborator*
      
-    + Eunmin Kim
+     + Eunmin Kim
        -Dankook Univeristy
        -Majoring in Industrial Security
        -maexc834@naver.com
        -https://github.com/Min1222Ag
        
-    + Booyong Kim
+     + Booyong Kim
 	-Sangmyung University
 	-Majoring in Computer Science
 	-hapata1120@gmail.com
 	-https://github.com/KBY538
       
-    + Seoyeong Lee
+     + Seoyeong Lee
        -Daegu Catholic University
        -Majoring in Computer Engineering
        -lsyoung66@naver.com
        -https://github.com/lsyoung66
        
-    + Hanbyeol Lee
+     + Hanbyeol Lee
        -Chung-Ang University
        -Majoring in Computer Software Engineering
        -yhb1834@cau.ac.kr
        -https://github.com/yhb1834
     
-    + Jeeyoung Oh
+     + Jeeyoung Oh
 	-Chung-ang University
 	-Majoring in Computer Software Engineering
 	-jeeyoung9907@cau.ac.kr
