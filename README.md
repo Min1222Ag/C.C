@@ -14,7 +14,7 @@ Your README.md file must include:
 
 ### Example:
 
-# 2022 Purdue Beach Cleaning Robot by TEAM C.C
+# 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 <hr>
 
  **Project Title**
