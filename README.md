@@ -2,8 +2,6 @@
 
 Your README.md file must include:
 
-(1) Group members name including all Purdue students: e.g., Minji Lee  
-(2) Group members univ info: e.g., Purdue University  
 (3) Project title  
 (4) Research problem statement(s)  
 (5) Research novelty (Significance)  
@@ -12,6 +10,7 @@ Your README.md file must include:
 
 
 # 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
+
 <hr>
 
  **Project Title**
