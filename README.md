@@ -11,12 +11,10 @@ Your README.md file must include:
 
 # 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 
- + **Project Title**
++ **Project Title**
         
-    Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
-    Using Cost-Effective Algorithm and Serverless
 
- **Problem Statement**
++ **Problem Statement**
     
     The United States has more than 1200 tornadoes per year and almost the highest number of tornadoes in the world. 
     
@@ -31,7 +29,7 @@ Your README.md file must include:
     Therefore, a system that can respond flexibly during a disaster until power is restored is needed. 
 
 
- **Novelty**
++ **Novelty**
 
     1. Develop the existing simple algorithm's concept!
        => 
@@ -39,7 +37,8 @@ Your README.md file must include:
     2. Use LoRa, LoRaWAN with Serverless(FaaS)!
        => 
 
- **System Overview**
+
++ **System Overview**
  <p align="center">
    <img src="" alt=""/>
 </p>
@@ -56,7 +55,7 @@ Your README.md file must include:
     
     6. The irrigation command arrives at the Arduino which operates the irrigation system.
 
- **Environment Setting**
++ **Environment Setting**
     
     ✔️Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
     
@@ -67,7 +66,7 @@ Your README.md file must include:
     ✔️ROS 2 foxy
   
 
-  **Collaborator**
++ **Collaborator**
      
        Eunmin Kim
        - Dankook Univeristy
