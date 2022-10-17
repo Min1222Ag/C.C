@@ -10,24 +10,19 @@ Your README.md file must include:
 (6) Overview or diagram visual(s)  
 (7) Environment settings (Must be very detailed with several steps.) 
 
-Your team folder must includes:
 
-(1) Final pptx slides file  
-(2) Paper (PDF format)  
-(3) Code descriptions (Must be very detailed. Points will be awarded for elegance, coding style, and a demonstrated understanding of the practical issues. All code should be well-documented, with comments, and the structure of the code should be straightforward.)  
-(4) Weekly report to show every week update. If your team name is "BaconBeacon", the file name is K-SW 2022 Fall mmddyyyy BaconBeacon.pdf
 
 ### Example:
 
-# 2022 Purdue AgIoT Project by TEAM_C.C
+# 2022 Purdue Beach Cleaning Robot by TEAM C.C
 <hr>
 
-📑 *Project Title*
+ **Project Title**
         
     Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
     Using Cost-Effective Algorithm and Serverless
 
-🧖🏻‍♀️ *Problem Statement*
+ **Problem Statement**
     
     The United States has more than 1200 tornadoes per year and almost the highest number of tornadoes in the world. 
     
@@ -41,31 +36,18 @@ Your team folder must includes:
     
     Therefore, a system that can respond flexibly during a disaster until power is restored is needed. 
 
-📖 *Considerations*
 
-    🥕Software : Develop an algorithm that can use less power or use it more efficiently.
-    
-    🥕Hardware : Change the system configuration so that the system itself can reduce power consumption.
-
-💡 *Novelty*
+ **Novelty**
 
     1. Develop the existing simple algorithm's concept!
-       => We researched about the existing smart farm system that irrigatie automatically using Fuzzy and Genetic Algorithms.
-      But these were too complicated for us and they only focused on normal situations with stable power.
-      So we researed about simple algorithm that uses only the soil moisture value as a variable.
-      We developed this algorithm by adding the remaining amount of power and the distance away from the irrigation source as a variables.
+       => 
       
     2. Use LoRa, LoRaWAN with Serverless(FaaS)!
-       => Most smart farms have implemented wireless network using WiFi, Zigbee, and LoRaWAN to get sensor values.
-      Wi-Fi was not suitable for our project because it has more delay and more power consumption than LoRa.
-      And Zigbee, a low-power communication technology, it's not suitable for outdoor farms too, because of its limited to short communication coverage.
-      So, we decided to use LoRa and LoRaWAN.There were many related research about smart farm using LoRaWAN.
-      But we want to have more novelty in power saving. So, we used serverless and FaaS which is good way to reduce idle power consumption in our system,
-      that needs to reduce the time inverval between sending data to the server.
+       => 
 
-🏛 *System Overview*
+ **System Overview**
  <p align="center">
-   <img src="https://user-images.githubusercontent.com/74306759/144271084-069a0741-ccf7-49ea-bb41-d434c3f91bc3.png" alt="Image Error"/>
+   <img src="" alt=""/>
 </p>
     
     1. Tomatoes were planted in 4 areas, each with a soil moisture sensor and irrigation tube installed.
@@ -80,44 +62,18 @@ Your team folder must includes:
     
     6. The irrigation command arrives at the Arduino which operates the irrigation system.
 
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/74306759/144274291-64dba80d-39dc-46a7-9f58-3fd98311f5b6.png" width="600" alt="Image Error"/>
-</p>
-
-    🥕Data Acquisition: In this part, soil moisture sensors acquire soil moisture values in tomato fields. The sensor is connected to the Arduino by a wire. 
-    The soil moisture value is delivered as an integer type and 4 values are delivered as an array.
-    Data on the remaining amount of battery to operate the automatic irrigation system and the acquired crop data are collected on an Arduino connected to the sensor.
-    The sensor data collected by the Arduino is then transferred to the gateway through LoRa communication.
+ **Environment Setting**
     
-    🥕Central Control: This part is the main part of the project. The collected data from the Data Acquisition Unit arrives at the cloud from the gateway.
-    It stores the crop data in the database at the time that the data arrives and applies the devised algorithm.
-    The result of this algorithm, which is an irrigation command, is transmitted to the Arduino.
-    By using Node-RED in the cloud, the farmer can monitor the data through the Node-RED User Interface (UI) remotely.
+    ✔️Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
     
-    🥕Irrigation: This part receives and executes the irrigation command sent from the cloud.
-    In this part, the motor connected to the water pipe for irrigation is connected to the relay.
-    The relay connected to the Arduino receives the "turn the motor on and off" command sent from the LoRa module to execute automatic irrigation.
- 
-🖥️ *Environment Setting*
-
-    ✔️macOS Big Sur version 11.4  
+    ✔️Python version 3.8.10 
     
-    ✔️ Raspberry Pi version 1.8.13 
+    ✔Raspberry Pi 4 Model B+ (8GB)
     
-    ✔️Python version 3.7.3 
-    
-    ✔Raspberry Pi 4 Model B+
-    
-    ✔️LoRa Module : Dragino[1]
-    
-    ✔️Soil Moisture Sensor version 1.2
+    ✔️ROS 2 foxy
   
-📤 *Installation*
 
-    $ git clone https://github.com/MINJILEE-PURDUE/KSW_2021_Fall_Program.git
-    $ cd thomas
-
-  *Collaborator*
+  **Collaborator**
      
        Eunmin Kim
        - Dankook Univeristy
@@ -139,13 +95,13 @@ Your team folder must includes:
        
        Hanbyeol Lee
        - Chung-Ang University
-       - Majoring in Computer Software Engineering
+       - Majoring in Computer Science and Engineering
        - yhb1834@cau.ac.kr
        - https://github.com/yhb1834
     
        Jeeyoung Oh
        - Chung-ang University
-       - Majoring in Computer Software Engineering
+       - Majoring in Computer Science and Engineering
        - jeeyoung9907@cau.ac.kr
        - https://github.com/ohjeeyoung
     
@@ -156,4 +112,3 @@ Your team folder must includes:
        - cikalina@purdue.edu
        - https://github.com/CalebIkalina
 
-[1] Open Source WiFi, Linux Appliance, Dragino. Accessed on: December 02, 2021. [Online]. Available: [Dragino](https://dragino.com/)
