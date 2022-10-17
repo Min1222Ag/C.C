@@ -11,9 +11,6 @@ Your README.md file must include:
 (7) Environment settings (Must be very detailed with several steps.) 
 
 
-
-### Example:
-
 # 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 <hr>
 
