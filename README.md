@@ -35,7 +35,7 @@ Using Cost-Effective Algorithm and Serverless
 
 + **System Overview**
  <p align="center">
-   <img src="" alt=""/>
+   <img src="ABCbot.drawio (1).svg" alt="Robot Architecture"/>
 </p>
     
     1. Tomatoes were planted in 4 areas, each with a soil moisture sensor and irrigation tube installed.
