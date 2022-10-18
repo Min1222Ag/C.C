@@ -18,18 +18,11 @@ Using Cost-Effective Algorithm and Serverless
 
 + **Problem Statement**
     
-    The United States has more than 1200 tornadoes per year and almost the highest number of tornadoes in the world. 
+    In 2016, the United States was responsible for 42 million metric tons of plastic waste, which made it the largest contributor in the world. The U.S is also ranked 3rd in the world when it comes to depositing pollution onto its own shorelines. There is an estimated 95,000 miles of shoreline in the United States as well as an estimated 90,000 beaches across the country. To say pollution and waste are an issue for the beaches, is an understatement.
     
-    Especially, these tornadoes incidences mostly occur in the plains region of the US.
-    The tornado occurence area coincides with a large amount of cropland. When such a natural disaster occurs
-    the power is cut off, causing a large-scale blackout, and this is not just a problem in cities. 
+    Litter on the beaches affect not only water, but also the wildlife, local residents, and even the economic state of the area. Trash can make living conditions for any living organism, unsuitable. This happens when a turtle mistakes a plastic bag as a jellyfish, causing the turtle to consume the trash because jellyfish are a part of a turtle's diet. When pollution infects a beach, it makes it look unpleasant, which in turn would turn off tourists from wanting to visit the beach while also potentially making local residents want to move from the area. These two instances combined can have a devastating impact on the economy as tourism is a significant portion of the U.S's economy. 
     
-    Recently, as smart farms are created by combining agriculture with IoT, most of the farm work is becoming automated.
-    In this situation, if the electricity is cut off, the operation of automation technology of the smart farm will be damaged,
-    and the crops will dry while waiting for someone to come and water them.
-    
-    Therefore, a system that can respond flexibly during a disaster until power is restored is needed. 
-
+    There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of trash on its own is a good start.
 
 + **Novelty**
 
