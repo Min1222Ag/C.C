@@ -49,7 +49,6 @@ Your README.md file must include:
 #### 🌊 System Overview
 <p align="center">
    <img src="ABCbot.drawio (1).svg" alt="Robot Architecture"/>
-   <img src="control flow2.drawio.png" alt="Flow Diagram"/>
 </p>
 
     1. One raspberry pi 4B is used for the driving unit equipping GPS, magnetometer sensor, DC motors and relay, and proximity sensors.
@@ -59,7 +58,19 @@ Your README.md file must include:
     3. Two raspberry pi 4Bs communicate with each other through ROS2 Foxy.
     
     4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
+    
+<p align="center">    
+    <img src="control flow2.drawio.png" alt="Flow Diagram"/>
+</p>
 
+    1. .
+    
+    2. .
+    
+    3. .
+    
+    4. .
+    
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
