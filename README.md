@@ -59,6 +59,8 @@ Your README.md file must include:
     
     4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
     
+    
+#### 🌊 Flow chart
 <p align="center">    
     <img src="control flow2.drawio.png" alt="Flow Diagram" height="650"/>
 </p>
