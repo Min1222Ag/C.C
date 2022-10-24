@@ -9,18 +9,18 @@ Your README.md file must include:
 (7) Environment settings (Must be very detailed with several steps.) 
 
 
-# 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
+## 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 
-🟦 Project Title
+
+#### 🟦 Project Title
 
     Developmental Process and Application of an Eco-Friendly, Autonomous Beach-Cleaning Robot
 
-🟦 Problem Statement
+#### 🟦 Problem Statement
     
-    Trash that beach-goers throw away and trash that has been washed up by natural disasters contribute to beach pollution [1]. Beach pollution is harmful to the wildlife that lives on the beach, the residents, tourists, and especially the beach itself. According to the research, implementing all feasible interventions that a human could contribute, approximately 710 million metric tons of plastic waste will occur and affect all ecosystems [2]. In addition, pieces of glass along the beach
-could directly hurt people and wildlife [3]. Trash also causes the reduction of tourists and makes around 85% of residents lose up to about 8.5 million dollars since picking up 15 pieces of trash per square meter is the equivalent of roughly 8.5 million dollars [4]. There are multiple different types of beach-cleaning machines that have been developed and implemented due to the limitation of the human ability to clean up beaches. Looking around at robots that are already on the market, many beach-cleaning machines are automatic robots, however, they are not completely automatic in the sense that it requires a human operator. Even though several studies have been conducted on automatic beach-cleaning robots, existing ones have a limited range of only twenty square meters utilizing a scanning range finder, or they are remotely controlled via Bluetooth or autonomously driven following trash detected through a camera.
+    Trash that beach-goers throw away and trash that has been washed up by natural disasters contribute to beach pollution [1]. Beach pollution is harmful to the wildlife that lives on the beach, the residents, tourists, and especially the beach itself. According to the research, implementing all feasible interventions that a human could contribute, approximately 710 million metric tons of plastic waste will occur and affect all ecosystems [2]. In addition, pieces of glass along the beach could directly hurt people and wildlife [3]. Trash also causes the reduction of tourists and makes around 85% of residents lose up to about 8.5 million dollars since picking up 15 pieces of trash per square meter is the equivalent of roughly 8.5 million dollars [4]. There are multiple different types of beach-cleaning machines that have been developed and implemented due to the limitation of the human ability to clean up beaches. Looking around at robots that are already on the market, many beach-cleaning machines are automatic robots, however, they are not completely automatic in the sense that it requires a human operator. Even though several studies have been conducted on automatic beach-cleaning robots, existing ones have a limited range of only twenty square meters utilizing a scanning range finder, or they are remotely controlled via Bluetooth or autonomously driven following trash detected through a camera.
 
-🟦 Novelty
+#### 🟦 Novelty
 
     🔵 The first Autonomous driving Beach Cleaning Robot with designated GPS points!
        => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
@@ -32,35 +32,31 @@ could directly hurt people and wildlife [3]. Trash also causes the reduction of 
        => ABCbot takes power from solar panels and windmills.
 
 
-🟦 System Overview
+#### 🟦 System Overview
 <p align="center">
    <img src="ABCbot.drawio (1).svg" alt="Robot Architecture"/>
 </p>
 
-    1. Tomatoes were planted in 4 areas, each with a soil moisture sensor and irrigation tube installed.
+    1. One raspberry pi 4B is used for the driving unit equipping GPS, magnetometer sensor, DC motors and relay, and proximity sensors.
     
-    2. The crop data is transmitted to the gateway through LoRa communication.
+    2. Another raspberry pi 4B is utilized as a detection unit arming PiCam and LiDAR.
     
-    3. The gateway sends the crop data to the Cloud through LoRaWAN communication.
+    3. Two raspberry pi 4Bs communicate with each other through ROS2 Foxy.
     
-    4. When the crop data arrives at the Cloud, store it in the database and apply the devised algorithm.
-    
-    5. The Cloud sends the irrigation command to the gateway.
-    
-    6. The irrigation command arrives at the Arduino which operates the irrigation system.
+    4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
 
-🟦 Environment Setting
+#### 🟦 Environment Setting
     
-    ✔️Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
+    🔵 Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
     
-    ✔️Python version 3.8.10 
+    🔵 Python version 3.8.10 
     
-    ✔️Raspberry Pi 4 Model B+ (8GB)
+    🔵 Raspberry Pi 4 Model B+ (8GB)
     
-    ✔️ROS 2 foxy
+    🔵 ROS 2 foxy
   
 
-🟦 Collaborator
+#### 🟦 Collaborator
      
        Eunmin Kim
        - Dankook Univeristy
