@@ -13,7 +13,7 @@ Your README.md file must include:
 
 + **Project Title**
 
-Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
+    Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
 Using Cost-Effective Algorithm and Serverless        
 
 + **Problem Statement**
@@ -26,11 +26,14 @@ Using Cost-Effective Algorithm and Serverless
 
 + **Novelty**
 
-    1. Develop the existing simple algorithm's concept!
-       => 
+    1. The first Autonomous driving Beach Cleaning Robot with designated GPS points!
+       => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
       
-    2. Use LoRa, LoRaWAN with Serverless(FaaS)!
-       => 
+    2. Optimized robot for examine the distance in real time!
+       => By combining RPLiDAR, camera, and proximity sensors to examine the distance from the ABCbot in real time, it detects obstacles in front of the robot and uses Google Coral Edge Board to accelerate computing.
+
+    3. An Eco-friendly robot!
+       => ABCbot takes power from solar panels and windmills.
 
 
 + **System Overview**
@@ -56,7 +59,7 @@ Using Cost-Effective Algorithm and Serverless
     
     ✔️Python version 3.8.10 
     
-    ✔Raspberry Pi 4 Model B+ (8GB)
+    ✔️Raspberry Pi 4 Model B+ (8GB)
     
     ✔️ROS 2 foxy
   
