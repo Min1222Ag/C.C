@@ -24,9 +24,6 @@ Your README.md file must include:
 
     There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of trash on its own is a good start.
 
-
-    There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of trash on its own is a good start.
-
 #### 🟦 Novelty
 
     🔵 The first Autonomous driving Beach Cleaning Robot with designated GPS points!
