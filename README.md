@@ -12,11 +12,11 @@ Your README.md file must include:
 ## 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 
 
-#### 🟦 Project Title
+#### 🔵 Project Title
 
     Developmental Process and Application of an Eco-Friendly, Autonomous Beach-Cleaning Robot
 
-#### 🟦 Problem Statement
+#### 🔵 Problem Statement
     
     In 2016, the United States was responsible for 42 million metric tons of plastic waste, which made it the largest contributor in the world. The U.S is also ranked 3rd in the world when it comes to depositing pollution onto its own shorelines. There is an estimated 95,000 miles of shoreline in the United States as well as an estimated 90,000 beaches across the country. To say pollution and waste are an issue for the beaches, is an understatement.
 
@@ -24,19 +24,19 @@ Your README.md file must include:
 
     There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of trash on its own is a good start.
 
-#### 🟦 Novelty
+#### 🔵 Novelty
 
-    🔵 The first Autonomous driving Beach Cleaning Robot with designated GPS points!
+    - The first Autonomous driving Beach Cleaning Robot with designated GPS points!
        => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
       
-    🔵 Optimized robot for examine the distance in real time!
+    - Optimized robot for examine the distance in real time!
        => By combining RPLiDAR, camera, and proximity sensors to examine the distance from the ABCbot in real time, it detects obstacles in front of the robot and uses Google Coral Edge Board to accelerate computing.
 
-    🔵 An Eco-friendly robot!
+    - An Eco-friendly robot!
        => ABCbot takes power from solar panels and windmills.
 
 
-#### 🟦 System Overview
+#### 🔵 System Overview
 <p align="center">
    <img src="ABCbot.drawio (1).svg" alt="Robot Architecture"/>
 </p>
@@ -49,18 +49,18 @@ Your README.md file must include:
     
     4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
 
-#### 🟦 Environment Setting
+#### 🔵 Environment Setting
     
-    🔵 Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
+    - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
     
-    🔵 Python version 3.8.10 
+    - Python version 3.8.10 
     
-    🔵 Raspberry Pi 4 Model B+ (8GB)
+    - Raspberry Pi 4 Model B+ (8GB)
     
-    🔵 ROS 2 foxy
+    - ROS 2 foxy
   
 
-#### 🟦 Collaborator
+#### 🔵 Collaborator
      
        Eunmin Kim
        - Dankook Univeristy
