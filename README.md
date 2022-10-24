@@ -49,7 +49,6 @@ Your README.md file must include:
 #### 🌊 System Overview
 <p align="center">
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="500"/>
-   <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture"/>
 </p>
 
     1. One raspberry pi 4B is used for the driving unit equipping GPS, magnetometer sensor, DC motors and relay, and proximity sensors.
@@ -61,7 +60,7 @@ Your README.md file must include:
     4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
     
 <p align="center">    
-    <img src="control flow2.drawio.png" alt="Flow Diagram" height="500"/>
+    <img src="control flow2.drawio.png" alt="Flow Diagram" height="650"/>
 </p>
 
     1. .
