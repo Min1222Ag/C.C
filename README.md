@@ -69,7 +69,7 @@ Your README.md file must include:
     
     3. Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
     
-    4. There are two raspberry pi, one for driving control(RPi1) and the other for obstacle detection(RPi2).
+    4. There are two raspberry pi, one for driving control(RPi 1) and the other for obstacle detection(RPi 2).
     
     5-1. RPi 1 drives the robot following GPS coordinates while the proximity sensors detect nothing.
     
