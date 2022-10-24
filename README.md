@@ -26,7 +26,8 @@ Your README.md file must include:
       Litter on the beaches affect not only water, but also the wildlife, local residents, and even the economic state of the area.  
     Trash can make living conditions for any living organism, unsuitable.  
     This happens when a turtle mistakes a plastic bag as a jellyfish, causing the turtle to consume the trash because jellyfish are a part of a turtle's diet.  
-    When pollution infects a beach, it makes it look unpleasant, which in turn would turn off tourists from wanting to visit the beach while also potentially making local residents want to move from the area.  
+    When pollution infects a beach, it makes it look unpleasant, which in turn would turn off tourists from wanting to visit the beach while also potentially making  
+    local residents want to move from the area.  
     These two instances combined can have a devastating impact on the economy as tourism is a significant portion of the U.S's economy. 
 
       There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of trash on its own is a good start.
