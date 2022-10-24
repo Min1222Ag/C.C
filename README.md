@@ -22,7 +22,7 @@ could directly hurt people and wildlife [3]. Trash also causes the reduction of 
 
 + **Novelty**
 
-    1. The first Autonomous driving Beach Cleaning Robot with designated GPS points!
+    🫧 The first Autonomous driving Beach Cleaning Robot with designated GPS points!
        => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
       
     2. Optimized robot for examine the distance in real time!
