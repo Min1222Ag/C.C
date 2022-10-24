@@ -47,7 +47,7 @@ Your README.md file must include:
 
 
 #### 🌊 System Overview
-<p align="center">
+<p align="center" height="200px">
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture"/>
 </p>
 
