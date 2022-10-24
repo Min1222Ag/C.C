@@ -13,8 +13,7 @@ Your README.md file must include:
 
 + **Project Title**
 
-    Post Emergency Power Management for IoT based Precision Agriculture Irrigation System
-Using Cost-Effective Algorithm and Serverless        
+    Developmental Process and Application of an Eco-Friendly, Autonomous Beach-Cleaning Robot
 
 + **Problem Statement**
     
