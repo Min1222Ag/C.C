@@ -62,7 +62,7 @@ Your README.md file must include:
     
 #### 🌊 Flow Chart
 <p align="center">    
-    <img src="control flow2.drawio.png" alt="Flow Diagram" height="650"/>
+    <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
 </p>
 
     1. The power of ABCbot is turned on when the power button is pushed.
