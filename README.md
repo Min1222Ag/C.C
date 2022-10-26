@@ -79,13 +79,9 @@ Your README.md file must include:
     
     5-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
     
-    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with proximity sensors as default at the first.
+    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with proximity sensors, LiDAR, and PiCam.
     
-    6-2. As proximity sensors detect an obstacle, sequentially the LiDAR and PiCam operate.
-    
-    6-3. If one of them detects an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
-    
-    6-4. After transmitting signal, RPi 2 ends LiDAR and PiCam operation.
+    6-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
     
 #### 🌊 Environment Setting
