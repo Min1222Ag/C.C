@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/distance_sensor/distance_sensor.egg-info
+writing ../../build/distance_sensor/distance_sensor.egg-info/PKG-INFO
+writing dependency_links to ../../build/distance_sensor/distance_sensor.egg-info/dependency_links.txt
+writing entry points to ../../build/distance_sensor/distance_sensor.egg-info/entry_points.txt
+writing requirements to ../../build/distance_sensor/distance_sensor.egg-info/requires.txt
+writing top-level names to ../../build/distance_sensor/distance_sensor.egg-info/top_level.txt
+writing manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'
+reading manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'
+writing manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/pi/ros2_ws/build/distance_sensor/build
+creating /home/pi/ros2_ws/build/distance_sensor/build/lib
+creating /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor
+copying distance_sensor/a.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor
+copying distance_sensor/distance_sensor.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor
+copying distance_sensor/__init__.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor
+running install
+running install_lib
+creating /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor
+copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/a.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor
+copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/distance_sensor.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor
+copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/__init__.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor
+byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/a.py to a.cpython-38.pyc
+Sorry: IndentationError: unexpected indent (a.py, line 11)
+byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/distance_sensor.py to distance_sensor.cpython-38.pyc
+byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index
+creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index
+creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index/packages
+copying resource/distance_sensor -> /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index/packages
+copying package.xml -> /home/pi/ros2_ws/install/distance_sensor/share/distance_sensor
+running install_egg_info
+Copying ../../build/distance_sensor/distance_sensor.egg-info to /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/pi/ros2_ws/build/distance_sensor/install.log'

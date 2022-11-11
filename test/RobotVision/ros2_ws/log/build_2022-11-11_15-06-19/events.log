@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.001693] (distance_sensor) JobQueued: {'identifier': 'distance_sensor', 'dependencies': OrderedDict()}
+[0.003196] (distance_sensor) JobStarted: {'identifier': 'distance_sensor'}
+[0.099013] (-) TimerEvent: {}
+[0.200027] (-) TimerEvent: {}
+[0.301224] (-) TimerEvent: {}
+[0.402238] (-) TimerEvent: {}
+[0.503002] (-) TimerEvent: {}
+[0.604159] (-) TimerEvent: {}
+[0.705145] (-) TimerEvent: {}
+[0.805923] (-) TimerEvent: {}
+[0.906546] (-) TimerEvent: {}
+[1.007185] (-) TimerEvent: {}
+[1.107947] (-) TimerEvent: {}
+[1.209177] (-) TimerEvent: {}
+[1.310202] (-) TimerEvent: {}
+[1.411138] (-) TimerEvent: {}
+[1.512206] (-) TimerEvent: {}
+[1.613337] (-) TimerEvent: {}
+[2.436994] (-) TimerEvent: {}
+[2.538070] (-) TimerEvent: {}
+[2.638936] (-) TimerEvent: {}
+[2.739598] (-) TimerEvent: {}
+[2.840226] (-) TimerEvent: {}
+[2.941111] (-) TimerEvent: {}
+[3.041730] (-) TimerEvent: {}
+[3.142368] (-) TimerEvent: {}
+[3.243016] (-) TimerEvent: {}
+[3.343667] (-) TimerEvent: {}
+[3.444486] (-) TimerEvent: {}
+[3.546633] (-) TimerEvent: {}
+[3.647420] (-) TimerEvent: {}
+[3.748127] (-) TimerEvent: {}
+[3.849234] (-) TimerEvent: {}
+[3.950168] (-) TimerEvent: {}
+[4.051047] (-) TimerEvent: {}
+[4.151976] (-) TimerEvent: {}
+[4.253159] (-) TimerEvent: {}
+[4.354196] (-) TimerEvent: {}
+[4.455138] (-) TimerEvent: {}
+[4.555963] (-) TimerEvent: {}
+[4.656775] (-) TimerEvent: {}
+[4.757884] (-) TimerEvent: {}
+[4.858901] (-) TimerEvent: {}
+[4.959996] (-) TimerEvent: {}
+[5.061001] (-) TimerEvent: {}
+[5.162091] (-) TimerEvent: {}
+[5.263100] (-) TimerEvent: {}
+[5.363827] (-) TimerEvent: {}
+[5.464813] (-) TimerEvent: {}
+[5.565506] (-) TimerEvent: {}
+[5.666380] (-) TimerEvent: {}
+[5.767417] (-) TimerEvent: {}
+[5.868545] (-) TimerEvent: {}
+[5.969676] (-) TimerEvent: {}
+[6.070951] (-) TimerEvent: {}
+[6.172045] (-) TimerEvent: {}
+[6.273189] (-) TimerEvent: {}
+[6.374375] (-) TimerEvent: {}
+[6.475465] (-) TimerEvent: {}
+[6.576151] (-) TimerEvent: {}
+[6.676923] (-) TimerEvent: {}
+[6.782741] (-) TimerEvent: {}
+[6.883792] (-) TimerEvent: {}
+[6.984781] (-) TimerEvent: {}
+[7.085629] (-) TimerEvent: {}
+[7.186566] (-) TimerEvent: {}
+[7.287499] (-) TimerEvent: {}
+[7.388312] (-) TimerEvent: {}
+[7.489115] (-) TimerEvent: {}
+[7.589992] (-) TimerEvent: {}
+[7.690896] (-) TimerEvent: {}
+[7.791878] (-) TimerEvent: {}
+[7.892570] (-) TimerEvent: {}
+[7.993564] (-) TimerEvent: {}
+[8.094507] (-) TimerEvent: {}
+[8.195497] (-) TimerEvent: {}
+[8.296455] (-) TimerEvent: {}
+[8.397444] (-) TimerEvent: {}
+[8.498311] (-) TimerEvent: {}
+[8.599039] (-) TimerEvent: {}
+[8.699742] (-) TimerEvent: {}
+[8.800674] (-) TimerEvent: {}
+[8.901759] (-) TimerEvent: {}
+[9.002659] (-) TimerEvent: {}
+[9.103699] (-) TimerEvent: {}
+[9.204712] (-) TimerEvent: {}
+[9.305624] (-) TimerEvent: {}
+[9.406691] (-) TimerEvent: {}
+[9.507660] (-) TimerEvent: {}
+[9.608401] (-) TimerEvent: {}
+[9.709471] (-) TimerEvent: {}
+[9.810509] (-) TimerEvent: {}
+[9.911783] (-) TimerEvent: {}
+[10.012948] (-) TimerEvent: {}
+[10.114035] (-) TimerEvent: {}
+[10.215147] (-) TimerEvent: {}
+[10.316232] (-) TimerEvent: {}
+[10.417275] (-) TimerEvent: {}
+[10.518313] (-) TimerEvent: {}
+[10.619027] (-) TimerEvent: {}
+[10.719777] (-) TimerEvent: {}
+[10.820875] (-) TimerEvent: {}
+[10.921989] (-) TimerEvent: {}
+[11.023032] (-) TimerEvent: {}
+[11.123829] (-) TimerEvent: {}
+[11.224985] (-) TimerEvent: {}
+[11.326216] (-) TimerEvent: {}
+[11.427327] (-) TimerEvent: {}
+[11.528222] (-) TimerEvent: {}
+[11.629001] (-) TimerEvent: {}
+[11.730868] (-) TimerEvent: {}
+[12.532195] (-) TimerEvent: {}
+[12.632895] (-) TimerEvent: {}
+[12.733591] (-) TimerEvent: {}
+[12.834505] (-) TimerEvent: {}
+[12.899625] (distance_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/distance_sensor', 'build', '--build-base', '/home/pi/ros2_ws/build/distance_sensor/build', 'install', '--prefix', '/home/pi/ros2_ws/install/distance_sensor', '--record', '/home/pi/ros2_ws/build/distance_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/ros2_ws/src/distance_sensor', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.2.145 64025 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/ros2_ws/src/distance_sensor/distance_sensor', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/pi/ros2_ws/build/distance_sensor', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.145 64025 192.168.2.167 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[12.934759] (-) TimerEvent: {}
+[13.035744] (-) TimerEvent: {}
+[13.136668] (-) TimerEvent: {}
+[13.237499] (-) TimerEvent: {}
+[13.338446] (-) TimerEvent: {}
+[13.439177] (-) TimerEvent: {}
+[13.539881] (-) TimerEvent: {}
+[13.640595] (-) TimerEvent: {}
+[13.741258] (-) TimerEvent: {}
+[13.841877] (-) TimerEvent: {}
+[13.942551] (-) TimerEvent: {}
+[14.037429] (distance_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[14.040286] (distance_sensor) StdoutLine: {'line': b'creating ../../build/distance_sensor/distance_sensor.egg-info\n'}
+[14.041030] (distance_sensor) StdoutLine: {'line': b'writing ../../build/distance_sensor/distance_sensor.egg-info/PKG-INFO\n'}
+[14.042224] (distance_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/distance_sensor/distance_sensor.egg-info/dependency_links.txt\n'}
+[14.042796] (-) TimerEvent: {}
+[14.043264] (distance_sensor) StdoutLine: {'line': b'writing entry points to ../../build/distance_sensor/distance_sensor.egg-info/entry_points.txt\n'}
+[14.043936] (distance_sensor) StdoutLine: {'line': b'writing requirements to ../../build/distance_sensor/distance_sensor.egg-info/requires.txt\n'}
+[14.044343] (distance_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/distance_sensor/distance_sensor.egg-info/top_level.txt\n'}
+[14.143103] (-) TimerEvent: {}
+[14.144708] (distance_sensor) StdoutLine: {'line': b"writing manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'\n"}
+[14.243313] (-) TimerEvent: {}
+[14.274093] (distance_sensor) StdoutLine: {'line': b"reading manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'\n"}
+[14.277199] (distance_sensor) StdoutLine: {'line': b"writing manifest file '../../build/distance_sensor/distance_sensor.egg-info/SOURCES.txt'\n"}
+[14.320046] (distance_sensor) StdoutLine: {'line': b'running build\n'}
+[14.321460] (distance_sensor) StdoutLine: {'line': b'running build_py\n'}
+[14.322708] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/distance_sensor/build\n'}
+[14.323572] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/distance_sensor/build/lib\n'}
+[14.324306] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor\n'}
+[14.325058] (distance_sensor) StdoutLine: {'line': b'copying distance_sensor/a.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor\n'}
+[14.325935] (distance_sensor) StdoutLine: {'line': b'copying distance_sensor/distance_sensor.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor\n'}
+[14.326562] (distance_sensor) StdoutLine: {'line': b'copying distance_sensor/__init__.py -> /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor\n'}
+[14.327336] (distance_sensor) StdoutLine: {'line': b'running install\n'}
+[14.331480] (distance_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[14.336008] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor\n'}
+[14.336634] (distance_sensor) StdoutLine: {'line': b'copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/a.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor\n'}
+[14.337202] (distance_sensor) StdoutLine: {'line': b'copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/distance_sensor.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor\n'}
+[14.337815] (distance_sensor) StdoutLine: {'line': b'copying /home/pi/ros2_ws/build/distance_sensor/build/lib/distance_sensor/__init__.py -> /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor\n'}
+[14.339896] (distance_sensor) StdoutLine: {'line': b'byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/a.py to a.cpython-38.pyc\n'}
+[14.343459] (-) TimerEvent: {}
+[14.344134] (distance_sensor) StderrLine: {'line': b'Sorry: IndentationError: unexpected indent (a.py, line 11)\n'}
+[14.344890] (distance_sensor) StdoutLine: {'line': b'byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/distance_sensor.py to distance_sensor.cpython-38.pyc\n'}
+[14.345929] (distance_sensor) StdoutLine: {'line': b'byte-compiling /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor/__init__.py to __init__.cpython-38.pyc\n'}
+[14.346785] (distance_sensor) StdoutLine: {'line': b'running install_data\n'}
+[14.348971] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index\n'}
+[14.349724] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index\n'}
+[14.350143] (distance_sensor) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index/packages\n'}
+[14.350644] (distance_sensor) StdoutLine: {'line': b'copying resource/distance_sensor -> /home/pi/ros2_ws/install/distance_sensor/share/ament_index/resource_index/packages\n'}
+[14.351076] (distance_sensor) StdoutLine: {'line': b'copying package.xml -> /home/pi/ros2_ws/install/distance_sensor/share/distance_sensor\n'}
+[14.351469] (distance_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.357045] (distance_sensor) StdoutLine: {'line': b'Copying ../../build/distance_sensor/distance_sensor.egg-info to /home/pi/ros2_ws/install/distance_sensor/lib/python3.8/site-packages/distance_sensor-0.0.0-py3.8.egg-info\n'}
+[14.361561] (distance_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[14.424820] (distance_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/pi/ros2_ws/build/distance_sensor/install.log'\n"}
+[14.443760] (-) TimerEvent: {}
+[14.528426] (distance_sensor) CommandEnded: {'returncode': 0}
+[14.543964] (-) TimerEvent: {}
+[14.644638] (-) TimerEvent: {}
+[14.745695] (-) TimerEvent: {}
+[14.846786] (-) TimerEvent: {}
+[14.947630] (-) TimerEvent: {}
+[15.048474] (-) TimerEvent: {}
+[15.102334] (distance_sensor) JobEnded: {'identifier': 'distance_sensor', 'rc': 0}
+[15.106116] (-) EventReactorShutdown: {}
