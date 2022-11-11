@@ -1,0 +1,195 @@
+[0.000000] (-) TimerEvent: {}
+[0.000936] (rplidar_ros2) JobQueued: {'identifier': 'rplidar_ros2', 'dependencies': OrderedDict()}
+[0.001811] (rplidar_ros2) JobStarted: {'identifier': 'rplidar_ros2'}
+[0.064911] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'cmake'}
+[0.065881] (rplidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/rplidar_ros2/src/rplidar_ros2', '-DCMAKE_INSTALL_PREFIX=/home/pi/rplidar_ros2/install/rplidar_ros2'], 'cwd': '/home/pi/rplidar_ros2/build/rplidar_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1784'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/rplidar_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1694'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/pi/rplidar_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:37852'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1838,unix/ubuntu:/tmp/.ICE-unix/1838'), ('INVOCATION_ID', '02e1256ccd7a453da22c5efa673e00a2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0aca52a0_b90d_4907_b4dc_81f3f3d8d34f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.63'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/rplidar_ros2/build/rplidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099184] (-) TimerEvent: {}
+[0.200128] (-) TimerEvent: {}
+[0.300925] (-) TimerEvent: {}
+[0.322198] (rplidar_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.401134] (-) TimerEvent: {}
+[0.502081] (-) TimerEvent: {}
+[0.542832] (rplidar_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.559277] (rplidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.602266] (-) TimerEvent: {}
+[0.703661] (-) TimerEvent: {}
+[0.805868] (-) TimerEvent: {}
+[0.906920] (-) TimerEvent: {}
+[1.009748] (-) TimerEvent: {}
+[1.078790] (rplidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.085258] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.110188] (-) TimerEvent: {}
+[1.214202] (-) TimerEvent: {}
+[1.315689] (-) TimerEvent: {}
+[1.416950] (-) TimerEvent: {}
+[1.518317] (-) TimerEvent: {}
+[1.619425] (-) TimerEvent: {}
+[1.720925] (-) TimerEvent: {}
+[1.768759] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.811154] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.812346] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.820718] (rplidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.821415] (-) TimerEvent: {}
+[1.922471] (-) TimerEvent: {}
+[2.024832] (-) TimerEvent: {}
+[2.125770] (-) TimerEvent: {}
+[2.226533] (-) TimerEvent: {}
+[2.327774] (-) TimerEvent: {}
+[2.428924] (-) TimerEvent: {}
+[2.530255] (-) TimerEvent: {}
+[2.631409] (-) TimerEvent: {}
+[2.732689] (-) TimerEvent: {}
+[2.833698] (-) TimerEvent: {}
+[2.934623] (-) TimerEvent: {}
+[3.035672] (-) TimerEvent: {}
+[3.136534] (-) TimerEvent: {}
+[3.237317] (-) TimerEvent: {}
+[3.338448] (-) TimerEvent: {}
+[3.439658] (-) TimerEvent: {}
+[3.540840] (-) TimerEvent: {}
+[3.642024] (-) TimerEvent: {}
+[3.743173] (-) TimerEvent: {}
+[3.844037] (-) TimerEvent: {}
+[3.945193] (-) TimerEvent: {}
+[4.046347] (-) TimerEvent: {}
+[4.147419] (-) TimerEvent: {}
+[4.248580] (-) TimerEvent: {}
+[4.349693] (-) TimerEvent: {}
+[4.450513] (-) TimerEvent: {}
+[4.551723] (-) TimerEvent: {}
+[4.652881] (-) TimerEvent: {}
+[4.753982] (-) TimerEvent: {}
+[4.854960] (-) TimerEvent: {}
+[4.956035] (-) TimerEvent: {}
+[5.056864] (-) TimerEvent: {}
+[5.157842] (-) TimerEvent: {}
+[5.258962] (-) TimerEvent: {}
+[5.360060] (-) TimerEvent: {}
+[5.461165] (-) TimerEvent: {}
+[5.562240] (-) TimerEvent: {}
+[5.663322] (-) TimerEvent: {}
+[5.764520] (-) TimerEvent: {}
+[5.865699] (-) TimerEvent: {}
+[5.967087] (-) TimerEvent: {}
+[6.068437] (-) TimerEvent: {}
+[6.171656] (-) TimerEvent: {}
+[6.273796] (-) TimerEvent: {}
+[6.377253] (-) TimerEvent: {}
+[6.478556] (-) TimerEvent: {}
+[6.579779] (-) TimerEvent: {}
+[6.680833] (-) TimerEvent: {}
+[6.782086] (-) TimerEvent: {}
+[10.293058] (-) TimerEvent: {}
+[11.483250] (-) TimerEvent: {}
+[11.502610] (rplidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[11.506896] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.583438] (-) TimerEvent: {}
+[11.684271] (-) TimerEvent: {}
+[11.785060] (-) TimerEvent: {}
+[11.845009] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.882066] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.883748] (rplidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.885163] (-) TimerEvent: {}
+[11.901853] (rplidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[11.985346] (-) TimerEvent: {}
+[12.022533] (rplidar_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[12.023555] (rplidar_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.085525] (-) TimerEvent: {}
+[12.186262] (-) TimerEvent: {}
+[12.287445] (-) TimerEvent: {}
+[12.388510] (-) TimerEvent: {}
+[12.489629] (-) TimerEvent: {}
+[12.590703] (-) TimerEvent: {}
+[12.691905] (-) TimerEvent: {}
+[12.792725] (-) TimerEvent: {}
+[12.893531] (-) TimerEvent: {}
+[12.994738] (-) TimerEvent: {}
+[13.095718] (-) TimerEvent: {}
+[13.196747] (-) TimerEvent: {}
+[13.297885] (-) TimerEvent: {}
+[13.398817] (-) TimerEvent: {}
+[13.499928] (-) TimerEvent: {}
+[13.600838] (-) TimerEvent: {}
+[13.701872] (-) TimerEvent: {}
+[13.803028] (-) TimerEvent: {}
+[13.904156] (-) TimerEvent: {}
+[14.005341] (-) TimerEvent: {}
+[14.106526] (-) TimerEvent: {}
+[14.207618] (-) TimerEvent: {}
+[14.308326] (-) TimerEvent: {}
+[14.409014] (-) TimerEvent: {}
+[14.509666] (-) TimerEvent: {}
+[14.610361] (-) TimerEvent: {}
+[14.710986] (-) TimerEvent: {}
+[14.811678] (-) TimerEvent: {}
+[14.912452] (-) TimerEvent: {}
+[15.013556] (-) TimerEvent: {}
+[15.114264] (-) TimerEvent: {}
+[15.114851] (rplidar_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[15.214429] (-) TimerEvent: {}
+[15.315163] (-) TimerEvent: {}
+[16.664943] (-) TimerEvent: {}
+[16.731549] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[16.736969] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[16.737642] (rplidar_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/pi/rplidar_ros2/src/rplidar_ros2/include>\n'}
+[16.738107] (rplidar_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[16.742381] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[16.742905] (rplidar_ros2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[16.745674] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.750856] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[16.751382] (rplidar_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[16.753067] (rplidar_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.764178] (rplidar_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.765065] (-) TimerEvent: {}
+[16.777709] (rplidar_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[16.781510] (rplidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/rplidar_ros2/build/rplidar_ros2\n'}
+[16.794537] (rplidar_ros2) CommandEnded: {'returncode': 0}
+[16.796559] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'build'}
+[16.798973] (rplidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/rplidar_ros2/build/rplidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/pi/rplidar_ros2/build/rplidar_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1784'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/rplidar_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1694'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/pi/rplidar_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:37852'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1838,unix/ubuntu:/tmp/.ICE-unix/1838'), ('INVOCATION_ID', '02e1256ccd7a453da22c5efa673e00a2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0aca52a0_b90d_4907_b4dc_81f3f3d8d34f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.63'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/rplidar_ros2/build/rplidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[16.865368] (-) TimerEvent: {}
+[16.965547] (rplidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_1\x1b[0m\n'}
+[16.966148] (-) TimerEvent: {}
+[17.013205] (rplidar_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_1.dir/src/rplidar_1.cpp.o\x1b[0m\n'}
+[17.066393] (-) TimerEvent: {}
+[17.167183] (-) TimerEvent: {}
+[17.268025] (-) TimerEvent: {}
+[17.369249] (-) TimerEvent: {}
+[17.470419] (-) TimerEvent: {}
+[17.571449] (-) TimerEvent: {}
+[17.672601] (-) TimerEvent: {}
+[17.773757] (-) TimerEvent: {}
+[17.874942] (-) TimerEvent: {}
+[17.976203] (-) TimerEvent: {}
+[18.077345] (-) TimerEvent: {}
+[18.153608] (rplidar_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rplidar_1\x1b[0m\n'}
+[18.177585] (-) TimerEvent: {}
+[18.278439] (-) TimerEvent: {}
+[18.331170] (rplidar_ros2) StdoutLine: {'line': b'[100%] Built target rplidar_1\n'}
+[18.369708] (rplidar_ros2) CommandEnded: {'returncode': 0}
+[18.378854] (-) TimerEvent: {}
+[18.480820] (-) TimerEvent: {}
+[18.493027] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'install'}
+[18.534928] (rplidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/rplidar_ros2/build/rplidar_ros2'], 'cwd': '/home/pi/rplidar_ros2/build/rplidar_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1784'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/rplidar_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1694'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/pi/rplidar_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:37852'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1838,unix/ubuntu:/tmp/.ICE-unix/1838'), ('INVOCATION_ID', '02e1256ccd7a453da22c5efa673e00a2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0aca52a0_b90d_4907_b4dc_81f3f3d8d34f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.63'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/rplidar_ros2/build/rplidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.573858] (rplidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.574623] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/lib/rplidar_ros2/rplidar_1\n'}
+[18.576265] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/ament_index/resource_index/package_run_dependencies/rplidar_ros2\n'}
+[18.577573] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/ament_index/resource_index/parent_prefix_path/rplidar_ros2\n'}
+[18.578798] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.sh\n'}
+[18.579870] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.dsv\n'}
+[18.580884] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.sh\n'}
+[18.581239] (-) TimerEvent: {}
+[18.581813] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.dsv\n'}
+[18.582804] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.bash\n'}
+[18.583715] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.sh\n'}
+[18.584711] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.zsh\n'}
+[18.585632] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.dsv\n'}
+[18.586522] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/package.dsv\n'}
+[18.587694] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/ament_index/resource_index/packages/rplidar_ros2\n'}
+[18.588861] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config.cmake\n'}
+[18.589597] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config-version.cmake\n'}
+[18.590548] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/pi/rplidar_ros2/install/rplidar_ros2/share/rplidar_ros2/package.xml\n'}
+[18.596092] (rplidar_ros2) CommandEnded: {'returncode': 0}
+[18.681553] (-) TimerEvent: {}
+[18.787723] (-) TimerEvent: {}
+[18.835203] (rplidar_ros2) JobEnded: {'identifier': 'rplidar_ros2', 'rc': 0}
+[18.837668] (-) EventReactorShutdown: {}
