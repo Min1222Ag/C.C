@@ -5,8 +5,8 @@ import rclpy
 from rclpy.node import Node
 
 from time import sleep
-from geometry_msgs.msg import Twist
-from sensor_msgs.msg import LaserScan, String
+from sensor_msgs.msg import LaserScan
+from interfaces.msg import Stop
 
 class lidarDetect(Node):
 	def __init__(self):
@@ -18,7 +18,9 @@ class lidarDetect(Node):
 			100)
 		self.subscription
 		
-		self.publisher_stop = self.create_publisher(String, 'Stop', 10)
+		self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
+		timer_period = 0.1  # seconds
+		self.timer = self.create_timer(timer_period, self.decision_driving)
 		
 		self.Lidar_Angle = 60
 		self.Limit_Distance = 1
@@ -53,8 +55,8 @@ class lidarDetect(Node):
 			print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
 			
 	def decision_driving(self):
-		msg = String()
-		msg.data = '%s' % self.Stop
+		msg = Stop()
+		msg.stop = self.Stop
 		while not rclpy.shutdown():
 			if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
 				self.Stop = True
