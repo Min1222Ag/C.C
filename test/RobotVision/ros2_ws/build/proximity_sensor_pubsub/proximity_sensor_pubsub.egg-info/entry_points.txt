@@ -1,0 +1,3 @@
+[console_scripts]
+proximity_detect_node = proximity_sensor_pubsub.proximity_detect_node:main
+
