@@ -11,6 +11,8 @@ from interfaces.msg import Stop
 class lidarDetect(Node):
 	def __init__(self):
 		super().__init__('rplidar_detector_node')
+		
+		# Subscription info
 		self.subscription = self.create_subscription(
 			LaserScan,
 			'/scan',
@@ -18,30 +20,35 @@ class lidarDetect(Node):
 			100)
 		self.subscription
 		
+		# Publisher info
 		self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
 		timer_period = 0.1  # seconds
 		self.timer = self.create_timer(timer_period, self.decision_driving)
 		
+		# Lidar data
 		self.Lidar_Angle = 60
 		self.Limit_Distance = 1
 		
+		# Motor control
 		self.Stop = False
 		self.Left_Forward = True
 		self.Left_Speed = 0.5
 		self.Right_Forward = True
 		self.Right_Speed = 0.5
 		
+		# Sum of obstacles per point
 		self.Avoid_Left = 0
 		self.Avoid_Front = 0
 		self.Avoid_Right = 0
 		
-		
+	#/scan subscribe to detect 	
 	def lidarScan(self, msg):
 		ranges = np.array(msg.ranges)
 		self.Avoid_Left = 0
 		self.Avoid_Front = 0
 		self.Avoid_Right = 0
 		
+		# Divide three part of the front
 		for i in range(len(ranges)):
 			if 10 < i < self.Lidar_Angle:
 				if ranges[i] < self.Limit_Distance: 
@@ -53,7 +60,8 @@ class lidarDetect(Node):
 				if ranges[i] < self.Limit_Distance: 
 					self.Avoid_Front += 1
 			print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
-			
+		
+	# publish Stop, Left_Speed, Right_Speed		
 	def decision_driving(self):
 		msg = Stop()
 		msg.stop = self.Stop
