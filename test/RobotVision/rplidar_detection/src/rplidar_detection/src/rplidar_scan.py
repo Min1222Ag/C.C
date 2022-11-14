@@ -27,9 +27,9 @@ class lidarDetect(Node):
 		
 		self.Stop = False
 		self.Left_Forward = True
-		self.Left_Speed = 0.1
+		self.Left_Speed = 0.5
 		self.Right_Forward = True
-		self.Right_Speed = 0.1
+		self.Right_Speed = 0.5
 		
 		self.Avoid_Left = 0
 		self.Avoid_Front = 0
@@ -57,10 +57,55 @@ class lidarDetect(Node):
 	def decision_driving(self):
 		msg = Stop()
 		msg.stop = self.Stop
+		
+		lspeed_msg = LSpeed()
+		lspeed_msg.lspeed = self.Left_Speed
+		
+		rspeed_msg = RSpeed()
+		rspeed_msg.rspeed = self.Right_Speed
+		
 		while not rclpy.shutdown():
 			if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
 				self.Stop = True
 				self.publisher_stop.publish(msg)
+				sleep(0.3)
+			elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
+				self.Left_Speed = 0.1
+				self.Right_Speed = 0.6
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)
+			elif self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
+				self.Left_Speed = 0.6
+				Self.Right_Speed = 0.1
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)
+			elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
+				self.Left_Speed = 0.1
+				Self.Right_Speed = 0.1
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)
+				
+			elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right <= 10:
+				self.Left_Speed = 0.4
+				Self.Right_Speed = 0.1
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)
+			elif self.Avoid_Left <= 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
+				self.Left_Speed = 0.4
+				Self.Right_Speed = 0.1
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)
+			elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
+				self.Left_Speed = 0.1
+				Self.Right_Speed = 0.4
+				#self.publisher_lspeed.publish(lspeed_msg)
+				#self.publisher rspeed.pubish(rspeed_msg)
+				sleep(0.5)	
 				
 
 
