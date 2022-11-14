@@ -59,7 +59,7 @@ class proximityDetect(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = proximityDetect()
+    proximity_detect_node = proximityDetect()
     rclpy.spin(node)
     rclpy.shutdown()
 

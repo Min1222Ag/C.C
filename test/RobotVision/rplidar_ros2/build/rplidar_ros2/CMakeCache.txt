@@ -32,7 +32,7 @@ AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
 AMENT_CMAKE_UNINSTALL_TARGET:BOOL=ON
 
 //The path where test results are generated
-AMENT_TEST_RESULTS_DIR:PATH=/home/pi/rplidar_ros2/build/rplidar_ros2/test_results
+AMENT_TEST_RESULTS_DIR:PATH=/home/pi/C.C/test/RobotVision/rplidar_ros2/build/rplidar_ros2/test_results
 
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
@@ -124,7 +124,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/home/pi/rplidar_ros2/install/rplidar_ros2
+CMAKE_INSTALL_PREFIX:PATH=/home/pi/C.C/test/RobotVision/rplidar_ros2/install/rplidar_ros2
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -335,10 +335,10 @@ ament_uncrustify_BIN:FILEPATH=/opt/ros/foxy/bin/ament_uncrustify
 ament_xmllint_BIN:FILEPATH=/opt/ros/foxy/bin/ament_xmllint
 
 //Value Computed by CMake
-rplidar_ros2_BINARY_DIR:STATIC=/home/pi/rplidar_ros2/build/rplidar_ros2
+rplidar_ros2_BINARY_DIR:STATIC=/home/pi/C.C/test/RobotVision/rplidar_ros2/build/rplidar_ros2
 
 //Value Computed by CMake
-rplidar_ros2_SOURCE_DIR:STATIC=/home/pi/rplidar_ros2/src/rplidar_ros2
+rplidar_ros2_SOURCE_DIR:STATIC=/home/pi/C.C/test/RobotVision/rplidar_ros2/src/rplidar_ros2
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
@@ -353,7 +353,7 @@ CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
-CMAKE_CACHEFILE_DIR:INTERNAL=/home/pi/rplidar_ros2/build/rplidar_ros2
+CMAKE_CACHEFILE_DIR:INTERNAL=/home/pi/C.C/test/RobotVision/rplidar_ros2/build/rplidar_ros2
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
@@ -368,7 +368,7 @@ CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
+//ADVANCED property for variable: CMAKE_CXX_COMPILER1
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
@@ -428,7 +428,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/pi/rplidar_ros2/src/rplidar_ros2
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/pi/C.C/test/RobotVision/rplidar_ros2/src/rplidar_ros2
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

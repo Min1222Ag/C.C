@@ -7,7 +7,10 @@
   <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
   <license>TeamC.C</license>
 
-  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+
+  <exec_depend>sensor_msgs</exec_depend>
+  <build_depend>sensor_msgs</build_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

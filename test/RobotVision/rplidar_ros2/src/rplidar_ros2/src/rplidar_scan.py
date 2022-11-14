@@ -6,7 +6,7 @@ from rclpy.node import Node
 
 from time import sleep
 from sensor_msgs.msg import LaserScan
-from interfaces.msg import Stop
+#from interfaces.msg import Stop
 
 class lidarDetect(Node):
 	def __init__(self):
@@ -18,9 +18,9 @@ class lidarDetect(Node):
 			100)
 		self.subscription
 		
-		self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
-		timer_period = 0.1  # seconds
-		self.timer = self.create_timer(timer_period, self.decision_driving)
+#		self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
+#		timer_period = 0.1  # seconds
+#		self.timer = self.create_timer(timer_period, self.decision_driving)
 		
 		self.Lidar_Angle = 60
 		self.Limit_Distance = 1
