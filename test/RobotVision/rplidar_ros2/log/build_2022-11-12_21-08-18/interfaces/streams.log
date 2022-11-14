@@ -1,0 +1,15 @@
+[0.184s] Invoking command in '/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces -- -j4 -l4
+[0.556s] [  9%] Built target interfaces__rosidl_generator_c
+[0.558s] [ 12%] Built target interfaces__cpp
+[0.713s] [ 22%] Built target interfaces__rosidl_typesupport_introspection_c
+[0.754s] [ 32%] Built target interfaces__rosidl_typesupport_c
+[0.770s] [ 41%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[0.846s] [ 51%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[0.881s] [ 61%] Built target interfaces__rosidl_typesupport_cpp
+[1.000s] [ 70%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[1.110s] [ 70%] Built target interfaces
+[1.226s] [ 74%] Built target interfaces__py
+[1.388s] [ 80%] Built target interfaces__python
+[1.521s] [ 87%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[1.527s] [ 93%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.529s] [100%] Built target interfaces__rosidl_typesupport_c__pyext

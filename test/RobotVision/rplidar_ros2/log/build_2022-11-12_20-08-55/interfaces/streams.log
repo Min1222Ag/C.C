@@ -1,0 +1,25 @@
+[0.067s] Invoking command in '/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/rplidar_ros2/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/rplidar_ros2/install/interfaces
+[1.235s] -- The C compiler identification is GNU 9.4.0
+[2.068s] -- The CXX compiler identification is GNU 9.4.0
+[2.100s] -- Check for working C compiler: /usr/bin/cc
+[2.423s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.429s] -- Detecting C compiler ABI info
+[2.770s] -- Detecting C compiler ABI info - done
+[2.859s] -- Detecting C compile features
+[2.876s] -- Detecting C compile features - done
+[2.915s] -- Check for working CXX compiler: /usr/bin/c++
+[3.274s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.278s] -- Detecting CXX compiler ABI info
+[3.618s] -- Detecting CXX compiler ABI info - done
+[3.654s] -- Detecting CXX compile features
+[3.656s] -- Detecting CXX compile features - done
+[3.697s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.837s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.837s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.131s] CMake Error at CMakeLists.txt:24 (rosidl_generate_interfaces):
+[5.132s]   Unknown CMake command "rosidl_generate_interfaces".
+[5.132s] 
+[5.132s] 
+[5.136s] -- Configuring incomplete, errors occurred!
+[5.136s] See also "/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces/CMakeFiles/CMakeOutput.log".
+[5.149s] Invoked command in '/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/rplidar_ros2/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/rplidar_ros2/install/interfaces

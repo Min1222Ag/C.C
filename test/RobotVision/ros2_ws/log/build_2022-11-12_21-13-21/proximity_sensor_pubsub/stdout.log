@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/PKG-INFO
+writing dependency_links to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/dependency_links.txt
+writing entry points to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/entry_points.txt
+writing requirements to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/requires.txt
+writing top-level names to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/top_level.txt
+reading manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'
+writing manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'
+running build
+running build_py
+copying proximity_sensor_pubsub/proximity_node.py -> /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build/lib/proximity_sensor_pubsub
+running install
+running install_lib
+copying /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build/lib/proximity_sensor_pubsub/proximity_node.py -> /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub
+byte-compiling /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub/proximity_node.py to proximity_node.cpython-38.pyc
+running install_data
+copying package.xml -> /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/share/proximity_sensor_pubsub
+running install_egg_info
+removing '/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info
+running install_scripts
+Installing proximity_detect_node script to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/proximity_sensor
+writing list of installed files to '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log'

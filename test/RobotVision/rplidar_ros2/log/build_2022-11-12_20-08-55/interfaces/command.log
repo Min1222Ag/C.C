@@ -1,0 +1,2 @@
+Invoking command in '/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/rplidar_ros2/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/rplidar_ros2/install/interfaces
+Invoked command in '/home/pi/C.C/test/RobotVision/rplidar_ros2/build/interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/rplidar_ros2/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/rplidar_ros2/install/interfaces

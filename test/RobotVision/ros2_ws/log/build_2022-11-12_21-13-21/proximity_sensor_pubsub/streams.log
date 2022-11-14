@@ -1,0 +1,25 @@
+[2.666s] Invoking command in '/home/pi/C.C/test/RobotVision/ros2_ws/src/proximity_sensor_pubsub': PYTHONPATH=/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/proximity_sensor_pubsub build --build-base /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub --record /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log --single-version-externally-managed
+[3.617s] running egg_info
+[3.621s] writing ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/PKG-INFO
+[3.622s] writing dependency_links to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/dependency_links.txt
+[3.623s] writing entry points to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/entry_points.txt
+[3.624s] writing requirements to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/requires.txt
+[3.624s] writing top-level names to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/top_level.txt
+[3.755s] reading manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'
+[3.759s] writing manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'
+[3.759s] running build
+[3.760s] running build_py
+[3.760s] copying proximity_sensor_pubsub/proximity_node.py -> /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build/lib/proximity_sensor_pubsub
+[3.761s] running install
+[3.764s] running install_lib
+[3.769s] copying /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build/lib/proximity_sensor_pubsub/proximity_node.py -> /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub
+[3.772s] byte-compiling /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub/proximity_node.py to proximity_node.cpython-38.pyc
+[3.778s] running install_data
+[3.780s] copying package.xml -> /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/share/proximity_sensor_pubsub
+[3.781s] running install_egg_info
+[3.787s] removing '/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[3.789s] Copying ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info
+[3.794s] running install_scripts
+[3.862s] Installing proximity_detect_node script to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/proximity_sensor
+[3.863s] writing list of installed files to '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log'
+[3.966s] Invoked command in '/home/pi/C.C/test/RobotVision/ros2_ws/src/proximity_sensor_pubsub' returned '0': PYTHONPATH=/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/proximity_sensor_pubsub build --build-base /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub --record /home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log --single-version-externally-managed

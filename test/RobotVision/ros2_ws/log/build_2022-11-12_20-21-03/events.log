@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.001213] (-) JobUnselected: {'identifier': 'distance_interfaces'}
+[0.001671] (proximity_sensor_pubsub) JobQueued: {'identifier': 'proximity_sensor_pubsub', 'dependencies': OrderedDict()}
+[0.002832] (proximity_sensor_pubsub) JobStarted: {'identifier': 'proximity_sensor_pubsub'}
+[0.099241] (-) TimerEvent: {}
+[0.200075] (-) TimerEvent: {}
+[0.300798] (-) TimerEvent: {}
+[0.401477] (-) TimerEvent: {}
+[0.502226] (-) TimerEvent: {}
+[0.602840] (-) TimerEvent: {}
+[0.703536] (-) TimerEvent: {}
+[0.804159] (-) TimerEvent: {}
+[0.904797] (-) TimerEvent: {}
+[1.005443] (-) TimerEvent: {}
+[1.106041] (-) TimerEvent: {}
+[1.206874] (-) TimerEvent: {}
+[1.308030] (-) TimerEvent: {}
+[1.409190] (-) TimerEvent: {}
+[1.511007] (-) TimerEvent: {}
+[1.611817] (-) TimerEvent: {}
+[1.713179] (-) TimerEvent: {}
+[1.814778] (-) TimerEvent: {}
+[1.915429] (-) TimerEvent: {}
+[2.016033] (-) TimerEvent: {}
+[2.116638] (-) TimerEvent: {}
+[2.218072] (-) TimerEvent: {}
+[2.319560] (-) TimerEvent: {}
+[2.420344] (-) TimerEvent: {}
+[2.521033] (-) TimerEvent: {}
+[2.621865] (-) TimerEvent: {}
+[2.723605] (-) TimerEvent: {}
+[2.824368] (-) TimerEvent: {}
+[2.925264] (-) TimerEvent: {}
+[3.025971] (-) TimerEvent: {}
+[3.126770] (-) TimerEvent: {}
+[3.199733] (proximity_sensor_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/proximity_sensor_pubsub', 'build', '--build-base', '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/build', 'install', '--prefix', '/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub', '--record', '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/C.C/test/RobotVision/ros2_ws/src/proximity_sensor_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.2.89 54472 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/C.C/test/RobotVision/ros2_ws/src', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.4.16', '_colcon_cd_root': '/opt/ros/foxy/', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'PWD': '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.89 54472 192.168.2.167 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[3.227063] (-) TimerEvent: {}
+[3.328605] (-) TimerEvent: {}
+[3.429344] (-) TimerEvent: {}
+[3.530005] (-) TimerEvent: {}
+[3.630701] (-) TimerEvent: {}
+[3.731460] (-) TimerEvent: {}
+[3.832298] (-) TimerEvent: {}
+[3.933357] (-) TimerEvent: {}
+[4.034105] (-) TimerEvent: {}
+[4.134917] (-) TimerEvent: {}
+[4.235727] (-) TimerEvent: {}
+[4.336447] (-) TimerEvent: {}
+[4.437229] (-) TimerEvent: {}
+[4.438407] (proximity_sensor_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[4.442690] (proximity_sensor_pubsub) StdoutLine: {'line': b'writing ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/PKG-INFO\n'}
+[4.444137] (proximity_sensor_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/dependency_links.txt\n'}
+[4.445014] (proximity_sensor_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/entry_points.txt\n'}
+[4.445636] (proximity_sensor_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/requires.txt\n'}
+[4.446252] (proximity_sensor_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/top_level.txt\n'}
+[4.537393] (-) TimerEvent: {}
+[4.585175] (proximity_sensor_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'\n"}
+[4.589009] (proximity_sensor_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info/SOURCES.txt'\n"}
+[4.589624] (proximity_sensor_pubsub) StdoutLine: {'line': b'running build\n'}
+[4.590098] (proximity_sensor_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[4.591292] (proximity_sensor_pubsub) StdoutLine: {'line': b'running install\n'}
+[4.594269] (proximity_sensor_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[4.600677] (proximity_sensor_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[4.602917] (proximity_sensor_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/share/proximity_sensor_pubsub\n'}
+[4.603627] (proximity_sensor_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.610453] (proximity_sensor_pubsub) StdoutLine: {'line': b"removing '/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.611958] (proximity_sensor_pubsub) StdoutLine: {'line': b'Copying ../../build/proximity_sensor_pubsub/proximity_sensor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub-0.0.0-py3.8.egg-info\n'}
+[4.616712] (proximity_sensor_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[4.637570] (-) TimerEvent: {}
+[4.685462] (proximity_sensor_pubsub) StdoutLine: {'line': b'Installing proximity_detect_node script to /home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/proximity_sensor\n'}
+[4.687226] (proximity_sensor_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/pi/C.C/test/RobotVision/ros2_ws/build/proximity_sensor_pubsub/install.log'\n"}
+[4.737881] (-) TimerEvent: {}
+[4.796334] (proximity_sensor_pubsub) CommandEnded: {'returncode': 0}
+[4.839887] (-) TimerEvent: {}
+[4.873697] (proximity_sensor_pubsub) JobEnded: {'identifier': 'proximity_sensor_pubsub', 'rc': 0}
+[4.877091] (-) EventReactorShutdown: {}

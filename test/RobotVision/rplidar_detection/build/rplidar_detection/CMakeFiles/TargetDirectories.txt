@@ -1,0 +1,10 @@
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/install/local.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/install.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/list_install_components.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/rebuild_cache.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/edit_cache.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/test.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/rplidar_node.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/install/strip.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/rplidar_detection_uninstall.dir
+/home/pi/C.C/test/RobotVision/rplidar_detection/build/rplidar_detection/CMakeFiles/uninstall.dir

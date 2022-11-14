@@ -2,10 +2,10 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>proximity_sensor_pubsub</name>
-  <version>0.0.0</version>
-  <description>Using a proximity sensor it can get distance</description>
-  <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
-  <license>TeamC.C</license>
+  <version>1.0.0</version>
+  <description>A Proximity Sensor Publishes the Distance</description>
+  <maintainer email="teamc.c2022@gmail.com">teamc.c</maintainer>
+  <license>TEAM C.C</license>
 
   <depend>rclpy</depend>
 

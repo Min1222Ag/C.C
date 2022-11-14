@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from rclpy.node import Node
 
 from sensor_msgs.msg import Range
@@ -7,8 +9,8 @@ import time
 
 class proximityDetect(Node):
     def __init__(self):
-        super().__init__('proximity_detect_node') # node name
-        self.distance_publisher = self.create_publisher(Range, 'proximity', 100) # message type : , topic name: proximity
+        super().__init__('proximity_node') # node name
+        self.distance_publisher = self.create_publisher(Range, 'Proximity', 100) # message type : , topic name: proximity
         timer_period = 0.5  # seconds
         self.proximity_timer = self.create_timer(timer_period, self.publish_distance)
 
@@ -17,7 +19,7 @@ class proximityDetect(Node):
         msg=Range()
         msg.data=self.distacne
         self.distance_publisher.publish(msg)
-        self.get_logger().info('Publishing: "%f"' %msg.data)
+        self.get_logger().info('Publishing (distance) : "%f"' %msg.data)
 
     # set up the proximity sensor
     def proximity_sensor(self):
@@ -51,7 +53,7 @@ class proximityDetect(Node):
 
             self.pulse_duration = self.pulse_end_time - self.pulse_start_time
             self.distance = round(self.pulse_duration * 17150, 2)
-            print("Distance:", distance, "cm")
+            print("Distance:", self.distance, "cm")
 
         finally:
             GPIO.cleanup()
@@ -59,8 +61,8 @@ class proximityDetect(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    proximity_detect_node = proximityDetect()
-    rclpy.spin(node)
+    proximity_node = proximityDetect()
+    rclpy.spin(proximity_node)
     rclpy.shutdown()
 
 if __name__=='__main__':
