@@ -64,8 +64,8 @@ bool interfaces__msg__stop__convert_from_py(PyObject * _pymsg, void * _ros_messa
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->lspeed = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->lspeed = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // rspeed
@@ -73,8 +73,8 @@ bool interfaces__msg__stop__convert_from_py(PyObject * _pymsg, void * _ros_messa
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->rspeed = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->rspeed = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -112,7 +112,7 @@ PyObject * interfaces__msg__stop__convert_to_py(void * raw_ros_message)
   }
   {  // lspeed
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->lspeed);
+    field = PyFloat_FromDouble(ros_message->lspeed);
     {
       int rc = PyObject_SetAttrString(_pymessage, "lspeed", field);
       Py_DECREF(field);
@@ -123,7 +123,7 @@ PyObject * interfaces__msg__stop__convert_to_py(void * raw_ros_message)
   }
   {  // rspeed
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->rspeed);
+    field = PyFloat_FromDouble(ros_message->rspeed);
     {
       int rc = PyObject_SetAttrString(_pymessage, "rspeed", field);
       Py_DECREF(field);

@@ -1,3 +1,3 @@
 bool stop
-int64 lspeed
-int64 rspeed
+float64 lspeed
+float64 rspeed

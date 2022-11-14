@@ -21,8 +21,8 @@ extern "C"
 typedef struct interfaces__msg__Stop
 {
   bool stop;
-  int64_t lspeed;
-  int64_t rspeed;
+  double lspeed;
+  double rspeed;
 } interfaces__msg__Stop;
 
 // Struct for a sequence of interfaces__msg__Stop.

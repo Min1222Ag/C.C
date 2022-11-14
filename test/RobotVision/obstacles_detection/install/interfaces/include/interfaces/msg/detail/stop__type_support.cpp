@@ -55,7 +55,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Stop_message_
   },
   {
     "lspeed",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -70,7 +70,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Stop_message_
   },
   {
     "rspeed",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

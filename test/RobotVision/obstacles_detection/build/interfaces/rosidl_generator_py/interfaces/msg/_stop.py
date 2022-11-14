@@ -60,14 +60,14 @@ class Stop(metaclass=Metaclass_Stop):
 
     _fields_and_field_types = {
         'stop': 'boolean',
-        'lspeed': 'int64',
-        'rspeed': 'int64',
+        'lspeed': 'double',
+        'rspeed': 'double',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -75,8 +75,8 @@ class Stop(metaclass=Metaclass_Stop):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.stop = kwargs.get('stop', bool())
-        self.lspeed = kwargs.get('lspeed', int())
-        self.rspeed = kwargs.get('rspeed', int())
+        self.lspeed = kwargs.get('lspeed', float())
+        self.rspeed = kwargs.get('rspeed', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -142,10 +142,8 @@ class Stop(metaclass=Metaclass_Stop):
     def lspeed(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'lspeed' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'lspeed' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'lspeed' field must be of type 'float'"
         self._lspeed = value
 
     @property
@@ -157,8 +155,6 @@ class Stop(metaclass=Metaclass_Stop):
     def rspeed(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'rspeed' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'rspeed' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'rspeed' field must be of type 'float'"
         self._rspeed = value

@@ -1,0 +1,20 @@
+[0.434s] Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/obstacles_detection/build/interfaces -- -j4 -l4
+[0.581s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.734s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.744s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.047s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.055s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.069s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.073s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[3.073s]   rosidl_generate_interfaces() the passed file 'msg/Num.msg' doesn't exist
+[3.074s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[3.074s]   '/home/pi/C.C/test/RobotVision/obstacles_detection/src/interfaces'
+[3.075s] Call Stack (most recent call first):
+[3.075s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[3.075s] 
+[3.076s] 
+[3.082s] -- Configuring incomplete, errors occurred!
+[3.082s] See also "/home/pi/C.C/test/RobotVision/obstacles_detection/build/interfaces/CMakeFiles/CMakeOutput.log".
+[3.101s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[3.117s] Invoked command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/obstacles_detection/build/interfaces -- -j4 -l4
