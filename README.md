@@ -122,7 +122,7 @@ Your README.md file must include:
        - https://github.com/yhb1834
     
        Jeeyoung Oh
-       - Chung-ang University
+       - Chung-Ang University
        - Majoring in Computer Science and Engineering
        - jeeyoung9907@cau.ac.kr
        - https://github.com/ohjeeyoung
