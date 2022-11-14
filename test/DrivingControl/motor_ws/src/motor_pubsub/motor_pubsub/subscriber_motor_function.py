@@ -15,7 +15,7 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from interfaces_msgs.msg import Stop
 
 
 class MotorSubscriber(Node):
@@ -23,14 +23,14 @@ class MotorSubscriber(Node):
     def __init__(self):
         super().__init__('motor_subscriber')
         self.subscription = self.create_subscription(
-            String,
-            'motor_on',
+            Stop,
+            'Stop',
             self.listener_callback,
             100)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().info('I heard: "%d"' % msg.data)
 
 
 def main(args=None):
