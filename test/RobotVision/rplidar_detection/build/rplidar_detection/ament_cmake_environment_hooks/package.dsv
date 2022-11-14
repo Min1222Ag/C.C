@@ -1,4 +1,0 @@
-source;share/rplidar_detection/local_setup.bash
-source;share/rplidar_detection/local_setup.dsv
-source;share/rplidar_detection/local_setup.sh
-source;share/rplidar_detection/local_setup.zsh

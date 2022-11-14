@@ -1,6 +1,0 @@
-Invoking command in '/home/pi/rplidar_ros2/build/rplidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/rplidar_ros2/src/rplidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/pi/rplidar_ros2/install/rplidar_ros2
-Invoked command in '/home/pi/rplidar_ros2/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/rplidar_ros2/src/rplidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/pi/rplidar_ros2/install/rplidar_ros2
-Invoking command in '/home/pi/rplidar_ros2/build/rplidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/rplidar_ros2/build/rplidar_ros2 -- -j4 -l4
-Invoked command in '/home/pi/rplidar_ros2/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/rplidar_ros2/build/rplidar_ros2 -- -j4 -l4
-Invoking command in '/home/pi/rplidar_ros2/build/rplidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/rplidar_ros2/build/rplidar_ros2
-Invoked command in '/home/pi/rplidar_ros2/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/rplidar_ros2/build/rplidar_ros2

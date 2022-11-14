@@ -1,4 +1,0 @@
-CMake Error: The current CMakeCache.txt directory /home/pi/C.C/test/RobotVision/rplidar_ros2/build/rplidar_ros2/CMakeCache.txt is different than the directory /home/pi/rplidar_ros2/build/rplidar_ros2 where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-CMake Error: The source directory "/home/pi/rplidar_ros2/src/rplidar_ros2" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
-make: *** [Makefile:266: cmake_check_build_system] Error 1

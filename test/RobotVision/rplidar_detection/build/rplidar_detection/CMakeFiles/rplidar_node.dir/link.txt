@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o  -o rplidar_node 

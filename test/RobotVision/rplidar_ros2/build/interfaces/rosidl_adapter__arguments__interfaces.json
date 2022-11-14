@@ -1,6 +1,0 @@
-{
-  "package_name": "interfaces",
-  "non_idl_tuples": [
-    "/home/pi/C.C/test/RobotVision/rplidar_ros2/src/interfaces:msg/Stop.msg"
-  ]
-}

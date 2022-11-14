@@ -1,0 +1,37 @@
+[3.950s] Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub': PYTHONPATH=/home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/install.log --single-version-externally-managed
+[5.177s] running egg_info
+[5.181s] creating ../../build/motor_pubsub/motor_pubsub.egg-info
+[5.182s] writing ../../build/motor_pubsub/motor_pubsub.egg-info/PKG-INFO
+[5.183s] writing dependency_links to ../../build/motor_pubsub/motor_pubsub.egg-info/dependency_links.txt
+[5.184s] writing entry points to ../../build/motor_pubsub/motor_pubsub.egg-info/entry_points.txt
+[5.184s] writing requirements to ../../build/motor_pubsub/motor_pubsub.egg-info/requires.txt
+[5.185s] writing top-level names to ../../build/motor_pubsub/motor_pubsub.egg-info/top_level.txt
+[5.190s] writing manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[5.345s] reading manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[5.349s] writing manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[5.350s] running build
+[5.351s] running build_py
+[5.352s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build
+[5.352s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib
+[5.354s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib/motor_pubsub
+[5.354s] copying motor_pubsub/motor_node.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib/motor_pubsub
+[5.355s] copying motor_pubsub/__init__.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib/motor_pubsub
+[5.355s] running install
+[5.358s] running install_lib
+[5.366s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[5.367s] copying /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib/motor_pubsub/motor_node.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[5.368s] copying /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build/lib/motor_pubsub/__init__.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[5.369s] byte-compiling /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/motor_node.py to motor_node.cpython-38.pyc
+[5.372s] byte-compiling /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/__init__.py to __init__.cpython-38.pyc
+[5.373s] running install_data
+[5.376s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/share/ament_index
+[5.378s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/share/ament_index/resource_index
+[5.379s] creating /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/share/ament_index/resource_index/packages
+[5.380s] copying resource/motor_pubsub -> /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/share/ament_index/resource_index/packages
+[5.380s] copying package.xml -> /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/share/motor_pubsub
+[5.381s] running install_egg_info
+[5.386s] Copying ../../build/motor_pubsub/motor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub-0.0.0-py3.8.egg-info
+[5.394s] running install_scripts
+[5.484s] Installing motor_node script to /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/motor_pubsub
+[5.485s] writing list of installed files to '/home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/install.log'
+[5.622s] Invoked command in '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub' returned '0': PYTHONPATH=/home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/obstacles_detection/build/motor_pubsub/install.log --single-version-externally-managed
