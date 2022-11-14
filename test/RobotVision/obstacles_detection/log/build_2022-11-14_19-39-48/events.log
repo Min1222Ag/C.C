@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.000812] (obstacles_detection) JobQueued: {'identifier': 'obstacles_detection', 'dependencies': OrderedDict()}
+[0.003804] (obstacles_detection) JobStarted: {'identifier': 'obstacles_detection'}
+[0.094173] (-) TimerEvent: {}
+[0.105415] (obstacles_detection) JobProgress: {'identifier': 'obstacles_detection', 'progress': 'cmake'}
+[0.106498] (obstacles_detection) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/C.C/test/RobotVision/obstacles_detection/src/obstacles_detection', '-DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection'], 'cwd': '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1800'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1710'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:38562'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1854,unix/ubuntu:/tmp/.ICE-unix/1854'), ('INVOCATION_ID', 'bb1b71284323414e9b689e6969f004c0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f527c835_ac94_45aa_9c0a_3559ebc03982'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.195016] (-) TimerEvent: {}
+[0.298466] (-) TimerEvent: {}
+[0.401938] (-) TimerEvent: {}
+[0.503946] (-) TimerEvent: {}
+[0.549902] (obstacles_detection) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.604135] (-) TimerEvent: {}
+[0.705257] (-) TimerEvent: {}
+[0.806246] (-) TimerEvent: {}
+[0.913949] (-) TimerEvent: {}
+[0.927663] (obstacles_detection) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.967842] (obstacles_detection) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.015079] (-) TimerEvent: {}
+[1.116162] (-) TimerEvent: {}
+[1.217445] (-) TimerEvent: {}
+[1.318769] (-) TimerEvent: {}
+[1.411091] (obstacles_detection) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.419094] (-) TimerEvent: {}
+[1.421237] (obstacles_detection) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.519286] (-) TimerEvent: {}
+[1.621083] (-) TimerEvent: {}
+[1.723370] (-) TimerEvent: {}
+[1.824197] (-) TimerEvent: {}
+[1.886874] (obstacles_detection) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.924489] (-) TimerEvent: {}
+[1.946004] (obstacles_detection) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.948882] (obstacles_detection) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.965833] (obstacles_detection) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.024732] (-) TimerEvent: {}
+[2.125825] (-) TimerEvent: {}
+[2.226883] (-) TimerEvent: {}
+[2.330511] (-) TimerEvent: {}
+[2.432635] (-) TimerEvent: {}
+[2.456659] (obstacles_detection) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.467225] (obstacles_detection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.533232] (-) TimerEvent: {}
+[2.636686] (-) TimerEvent: {}
+[2.737983] (-) TimerEvent: {}
+[2.839254] (-) TimerEvent: {}
+[2.947648] (-) TimerEvent: {}
+[2.987004] (obstacles_detection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.039535] (obstacles_detection) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.041101] (obstacles_detection) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.048084] (-) TimerEvent: {}
+[3.070730] (obstacles_detection) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.148777] (-) TimerEvent: {}
+[3.250081] (-) TimerEvent: {}
+[3.267843] (obstacles_detection) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.269346] (obstacles_detection) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.350204] (-) TimerEvent: {}
+[3.451068] (-) TimerEvent: {}
+[3.552573] (-) TimerEvent: {}
+[3.653413] (-) TimerEvent: {}
+[3.754507] (-) TimerEvent: {}
+[3.855894] (-) TimerEvent: {}
+[3.957036] (-) TimerEvent: {}
+[4.058111] (-) TimerEvent: {}
+[4.160249] (-) TimerEvent: {}
+[4.262199] (-) TimerEvent: {}
+[4.365300] (-) TimerEvent: {}
+[4.466308] (-) TimerEvent: {}
+[4.567495] (-) TimerEvent: {}
+[4.668303] (-) TimerEvent: {}
+[4.770644] (-) TimerEvent: {}
+[4.871515] (-) TimerEvent: {}
+[4.972636] (-) TimerEvent: {}
+[5.074032] (-) TimerEvent: {}
+[5.136413] (obstacles_detection) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.174105] (-) TimerEvent: {}
+[5.276410] (-) TimerEvent: {}
+[5.378553] (-) TimerEvent: {}
+[5.481460] (-) TimerEvent: {}
+[5.583035] (-) TimerEvent: {}
+[5.683893] (-) TimerEvent: {}
+[5.712810] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.721971] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.722822] (obstacles_detection) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/pi/C.C/test/RobotVision/obstacles_detection/src/obstacles_detection/include>\n'}
+[5.723541] (obstacles_detection) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.733384] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.734484] (obstacles_detection) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.739446] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.750066] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.750892] (obstacles_detection) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.753670] (obstacles_detection) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.769407] (obstacles_detection) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.787580] (-) TimerEvent: {}
+[5.799997] (obstacles_detection) StdoutLine: {'line': b'-- Generating done\n'}
+[5.804923] (obstacles_detection) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection\n'}
+[5.843249] (obstacles_detection) CommandEnded: {'returncode': 0}
+[5.860477] (obstacles_detection) JobProgress: {'identifier': 'obstacles_detection', 'progress': 'build'}
+[5.864915] (obstacles_detection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection', '--', '-j4', '-l4'], 'cwd': '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1800'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1710'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:38562'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1854,unix/ubuntu:/tmp/.ICE-unix/1854'), ('INVOCATION_ID', 'bb1b71284323414e9b689e6969f004c0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f527c835_ac94_45aa_9c0a_3559ebc03982'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.887913] (-) TimerEvent: {}
+[5.990212] (-) TimerEvent: {}
+[6.092368] (-) TimerEvent: {}
+[6.099457] (obstacles_detection) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target obstacle_node\x1b[0m\n'}
+[6.164749] (obstacles_detection) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle_node.cpp.o\x1b[0m\n'}
+[6.192810] (-) TimerEvent: {}
+[6.295719] (-) TimerEvent: {}
+[6.358456] (obstacles_detection) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_node\x1b[0m\n'}
+[6.396360] (-) TimerEvent: {}
+[6.498588] (-) TimerEvent: {}
+[6.600187] (-) TimerEvent: {}
+[6.630844] (obstacles_detection) StdoutLine: {'line': b'[100%] Built target obstacle_node\n'}
+[6.694966] (obstacles_detection) CommandEnded: {'returncode': 0}
+[6.700790] (-) TimerEvent: {}
+[6.802919] (-) TimerEvent: {}
+[6.888700] (obstacles_detection) JobProgress: {'identifier': 'obstacles_detection', 'progress': 'install'}
+[6.903249] (-) TimerEvent: {}
+[6.962303] (obstacles_detection) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection'], 'cwd': '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1800'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1710'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:38562'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1854,unix/ubuntu:/tmp/.ICE-unix/1854'), ('INVOCATION_ID', 'bb1b71284323414e9b689e6969f004c0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f527c835_ac94_45aa_9c0a_3559ebc03982'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.003504] (-) TimerEvent: {}
+[7.028050] (obstacles_detection) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.030588] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/lib/obstacles_detection/obstacle_node\n'}
+[7.035536] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/package_run_dependencies/obstacles_detection\n'}
+[7.037199] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/parent_prefix_path/obstacles_detection\n'}
+[7.039039] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/ament_prefix_path.sh\n'}
+[7.041563] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/ament_prefix_path.dsv\n'}
+[7.046046] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/path.sh\n'}
+[7.048177] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/path.dsv\n'}
+[7.049107] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.bash\n'}
+[7.050477] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.sh\n'}
+[7.051622] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.zsh\n'}
+[7.053069] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.dsv\n'}
+[7.055162] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/package.dsv\n'}
+[7.057197] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/packages/obstacles_detection\n'}
+[7.059902] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/cmake/obstacles_detectionConfig.cmake\n'}
+[7.061636] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/cmake/obstacles_detectionConfig-version.cmake\n'}
+[7.066414] (obstacles_detection) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/package.xml\n'}
+[7.074629] (obstacles_detection) CommandEnded: {'returncode': 0}
+[7.104685] (-) TimerEvent: {}
+[7.206580] (-) TimerEvent: {}
+[7.307681] (-) TimerEvent: {}
+[7.413617] (-) TimerEvent: {}
+[7.436286] (obstacles_detection) JobEnded: {'identifier': 'obstacles_detection', 'rc': 0}
+[7.439309] (-) EventReactorShutdown: {}
