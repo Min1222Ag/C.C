@@ -15,35 +15,35 @@
 import rclpy
 from rclpy.node import Node
 
-from interfaces_msgs.msg import Stop
+from interfaces.msg import Stop
 
 
-class MotorSubscriber(Node):
+class motorSubscriber(Node):
 
     def __init__(self):
         super().__init__('motor_subscriber')
         self.subscription = self.create_subscription(
             Stop,
             'Stop',
-            self.listener_callback,
+            self.get_signal,
             100)
         self.subscription  # prevent unused variable warning
 
-    def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%d"' % msg.data)
+    def get_signal(self, msg):
+        self.get_logger().info('I heard: "%d"' % msg.stop)
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_subscriber = MinimalSubscriber()
+    motor_subscriber = motorSubscriber()
 
-    rclpy.spin(minimal_subscriber)
+    rclpy.spin(motor_subscriber)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    minimal_subscriber.destroy_node()
+    motor_subscriber.destroy_node()
     rclpy.shutdown()
 
 
