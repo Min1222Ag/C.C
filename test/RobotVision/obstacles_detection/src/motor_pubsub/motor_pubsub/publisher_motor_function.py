@@ -15,36 +15,37 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+# used for message type 
+from std_msgs.msg import Bool
 
-
-class MotorPublisher(Node):
+# motorPublisher : publish the messages about motor > 'motor_on' or 'motor_off' [Boolean]
+class motorPublisher(Node):
 
     def __init__(self):
-        super().__init__('motor_publisher')
-        self.publisher_ = self.create_publisher(String, 'motor_on', 100)
+        super().__init__('motor_publisher') # node name : motor_publisher
+        self.publisher_ = self.create_publisher(Bool, 'motor_on', 100) # message type : Bool , topic name : motor_on , queue size: 100
         timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+        self.timer = self.create_timer(timer_period, self.motor_publish) # call self.motor_publish()
+    
 
-    def timer_callback(self):
-        msg = String()
-        msg.data = 'Hello World: %d' % self.i
+    def motor_publish(self):
+        msg = Bool()
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
+        self.get_logger().info('Publishing: "%d"' % msg.data)
+        
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    motor_publisher = MotorPublisher()
+    motor_publisher = motorPublisher()
 
     rclpy.spin(motor_publisher)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
+    
     motor_publisher.destroy_node()
     rclpy.shutdown()
 
