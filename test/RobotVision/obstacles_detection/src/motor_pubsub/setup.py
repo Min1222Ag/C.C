@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_node = motor_pubsub.motor_node:main'
+            'motor_node = motor_pubsub.motor_node:main',
+            'talker = motor_pubsub.motor_publisher:main',
+            'listener = motor_pubsub.motor_subscriber:main',
         ],
     },
 )
