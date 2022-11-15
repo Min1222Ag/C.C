@@ -24,10 +24,10 @@ class motorSubscriber(Node):
     def __init__(self):
         super().__init__('motor_subscriber'). # motor name : motor_subscriber
         self.subscription = self.create_subscription(
-            Stop,
-            'Stop',
+            Stop,       # message type : Stop
+            'Stop',     # topic name : Stop
             self.get_signal,
-            100)
+            100)      # queue size : 100
         self.subscription  # prevent unused variable warning
 
     # get signal from a LiDAR and proximity sensor
