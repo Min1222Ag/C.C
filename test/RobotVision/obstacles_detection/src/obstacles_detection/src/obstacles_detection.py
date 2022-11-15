@@ -8,6 +8,9 @@ from time import sleep
 from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
 
+import RPi.GPIO as GPIO
+import time
+
 class lidarDetect(Node):
 	def __init__(self):
 		super().__init__('obstacles_detector_node')
@@ -63,21 +66,35 @@ class lidarDetect(Node):
 			elif (340 <= i <= 360) or (0<= i <=20):
 				if ranges[i] < self.Limit_Distance: 
 					self.Avoid_Front += 1
-			print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
+			#print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
 		
 	# publish Stop, Left_Speed, Right_Speed		
 	def decision_driving(self):
 		msg = Stop()
-		msg.stop = self.Stop
 		
+		msg.stop = self.Stop
 		msg.lspeed = self.Left_Speed
 		msg.rspeed = self.Right_Speed
-		
+		self.proximity_sensor()
+		print(self.distance)
 		while not rclpy.shutdown():
 			if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
-				self.proximity_sensor
+				self.proximity_sensor()
 				if self.distance < 100:
 					self.Stop = True
+					self.Left_Speed = 0.0
+					self.Right_Speed = 0.0
+					msg.stop = self.Stop
+					msg.lspeed = self.Left_Speed
+					msg.rspeed = self.Right_Speed
+					self.publisher_stop.publish(msg)
+					sleep(0.3)
+				else:
+					self.Stop = False
+					self.Left_Speed = 0.1
+					self.Right_Speed = 0.1
+					msg.lspeed = self.Left_Speed
+					msg.rspeed = self.Right_Speed
 					self.publisher_stop.publish(msg)
 					sleep(0.3)
 			elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
