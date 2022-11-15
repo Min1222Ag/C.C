@@ -5,7 +5,7 @@
   <version>1.0.0</version>
   <description>Motor Pub/Sub</description>
   <maintainer email="teamc.c2022@gmail.com">teamc.c</maintainer>
-  <license>TEAM C.C</license>
+  <license>Apache 2.0</license>
 
   <depend>rclpy</depend>
   <exec_depend>interfaces</exec_depend>
