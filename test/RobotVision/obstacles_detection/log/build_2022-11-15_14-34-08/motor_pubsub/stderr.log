@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/RobotVision/obstacles_detection/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/publisher_motor_function.py", line 18
+    from std_msgs.msg import builtins.bool
+                                     ^
+SyntaxError: invalid syntax
+

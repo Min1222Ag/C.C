@@ -1,0 +1,22 @@
+[1.418s] Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection -- -j4 -l4
+[1.633s] [100%] Built target obstacle_node
+[1.679s] Invoked command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection -- -j4 -l4
+[1.821s] Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection
+[1.855s] -- Install configuration: ""
+[1.856s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/lib/obstacles_detection/obstacle_node
+[1.858s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/package_run_dependencies/obstacles_detection
+[1.859s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/parent_prefix_path/obstacles_detection
+[1.860s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/ament_prefix_path.sh
+[1.861s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/ament_prefix_path.dsv
+[1.862s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/path.sh
+[1.863s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/environment/path.dsv
+[1.864s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.bash
+[1.865s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.sh
+[1.866s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.zsh
+[1.867s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/local_setup.dsv
+[1.867s] -- Installing: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/package.dsv
+[1.868s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/ament_index/resource_index/packages/obstacles_detection
+[1.869s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/cmake/obstacles_detectionConfig.cmake
+[1.870s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/cmake/obstacles_detectionConfig-version.cmake
+[1.871s] -- Up-to-date: /home/pi/C.C/test/RobotVision/obstacles_detection/install/obstacles_detection/share/obstacles_detection/package.xml
+[1.876s] Invoked command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection
