@@ -15,13 +15,14 @@
 import rclpy
 from rclpy.node import Node
 
+# use custom messages '/Stop' 
 from interfaces.msg import Stop
 
-
+# motorSubscriber : subscribe '/Stop' topic from 'obstacles_detection' file
 class motorSubscriber(Node):
 
     def __init__(self):
-        super().__init__('motor_subscriber')
+        super().__init__('motor_subscriber'). # motor name : motor_subscriber
         self.subscription = self.create_subscription(
             Stop,
             'Stop',
@@ -29,6 +30,7 @@ class motorSubscriber(Node):
             100)
         self.subscription  # prevent unused variable warning
 
+    # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
         self.get_logger().info('I heard: "%d"' % msg.stop)
 
