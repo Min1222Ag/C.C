@@ -16,7 +16,7 @@ setup(
     maintainer='teamc.c2022',
     maintainer_email='teamc.c2022@gmail.com',
     description='Motor Pub/Sub',
-    license='TEAM C.C',
+    license='Apache 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
