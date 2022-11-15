@@ -24,8 +24,8 @@ class lidarDetect(Node):
 		self.subscription
 		
 		# Publisher info
-		self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
-		timer_period = 0.1  # seconds
+		self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
+		timer_period = 0.05  # seconds
 		self.timer = self.create_timer(timer_period, self.decision_driving)
 		
 		# Lidar data
@@ -66,18 +66,17 @@ class lidarDetect(Node):
 			elif (340 <= i <= 360) or (0<= i <=20):
 				if ranges[i] < self.Limit_Distance: 
 					self.Avoid_Front += 1
-			#print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
+			print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
 		
 	# publish Stop, Left_Speed, Right_Speed		
 	def decision_driving(self):
 		msg = Stop()
-		
 		msg.stop = self.Stop
 		msg.lspeed = self.Left_Speed
 		msg.rspeed = self.Right_Speed
-		self.proximity_sensor()
-		print(self.distance)
-		while not rclpy.shutdown():
+		self.publisher_stop.publish(msg)
+		
+		while True:#not rclpy.shutdown():
 			if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
 				self.proximity_sensor()
 				if self.distance < 100:
@@ -102,46 +101,49 @@ class lidarDetect(Node):
 				self.Left_Speed = 0.1
 				self.Right_Speed = 0.6
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
 			elif self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
 				self.Left_Speed = 0.6
-				Self.Right_Speed = 0.1
+				self.Right_Speed = 0.1
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
 			elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
 				self.Left_Speed = 0.1
-				Self.Right_Speed = 0.1
+				self.Right_Speed = 0.1
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
 				
 			elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right <= 10:
 				self.Left_Speed = 0.4
-				Self.Right_Speed = 0.1
+				self.Right_Speed = 0.1
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
 			elif self.Avoid_Left <= 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
 				self.Left_Speed = 0.4
-				Self.Right_Speed = 0.1
+				self.Right_Speed = 0.1
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
 			elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
 				self.Left_Speed = 0.1
-				Self.Right_Speed = 0.4
+				self.Right_Speed = 0.4
 				msg.lspeed = self.Left_Speed
-				msg.rpseed = self.Right_Speed
+				msg.rspeed = self.Right_Speed
 				self.publisher_stop.publish(msg)
 				sleep(0.5)
-				
+			else:
+				self.publisher_stop.publish(msg)
+				sleep(0.5)
+			print(msg)
 	# set up the proximity sensor
 	def proximity_sensor(self):
 		try:
@@ -154,11 +156,14 @@ class lidarDetect(Node):
 			GPIO.setup(PIN_ECHO, GPIO.IN)
 			
 			GPIO.output(PIN_TRIGGER, GPIO.LOW)
-			time.sleep(2)
+			time.sleep(0.01)
 			GPIO.output(PIN_TRIGGER, GPIO.HIGH)
 			time.sleep(0.0001)
 			
 			GPIO.output(PIN_TRIGGER, GPIO.LOW)
+			
+			pulse_start_time = time.time()
+			pulse_end_time = time.time()
 			
 			while GPIO.input(PIN_ECHO) == 0:
 				pulse_start_time = time.time()
@@ -168,7 +173,6 @@ class lidarDetect(Node):
 			pulse_duration = pulse_end_time - pulse_start_time
 			self.distance = round(pulse_duration * 17150, 2)
 			print("Distance:", self.distance, "cm")
-			
 		finally:
 			GPIO.cleanup()		
 
@@ -185,7 +189,7 @@ def main(args=None):
 	stop_publisher.destroy_node()
 	
 	
-	rclpy.shutdown()
+	#rclpy.shutdown()
     
 
 if __name__ == '__main__':
