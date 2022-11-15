@@ -32,6 +32,7 @@ class motorSubscriber(Node):
 
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
+		print(msg)
         self.get_logger().info('I heard: "%d"' % msg.stop)
 
 
