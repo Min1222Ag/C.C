@@ -3,9 +3,13 @@
 <package format="3">
   <name>motor_pubsub</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="yhb1834@hanmail.net">pi</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Motor Pub/Sub</description>
+  <maintainer email="teamc.c2022@gmail.com">teamc.c</maintainer>
+  <license>TEAM C.C</license>
+
+  <depend>rclpy</depend>
+  <exec_depend>interfaces</exec_depend>
+  <build_depend>interfaces</build_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

@@ -4,7 +4,7 @@ package_name = 'motor_pubsub'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='1.0.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'talker = motor_pubsub.publisher_motor_function:main',
+            'listener = motor_pubsub.subscriber_motor_function:main',
 
         ],
     },
