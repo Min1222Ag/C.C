@@ -1,8 +1,14 @@
 import RPi.GPIO as GPIO
 import time
+from time import sleep
+from threading import Thread
+from motorControl.Proximity import Proximity
 
-
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
+
+
+trig_pin = 26
 
 PIN_TRIGGER_A = 6
 PIN_TRIGGER_B = 13
@@ -32,28 +38,31 @@ echos = [PIN_ECHO_A,
         PIN_ECHO_X
         ]
 
+proxs = []
+for i, (echo, trigger) in enumerate(zip(echos, triggers)):
+    p = Proximity(26, echo, str(i))
+    proxs.append(p)
 
-for trig, echo in zip(triggers, echos):
-    print(trig, echo)
-    GPIO.setup(trig, GPIO.OUT)
-    GPIO.setup(echo, GPIO.IN)
-    GPIO.output(trig, GPIO.LOW)
+finished_prox = len(proxs)
+first = True
+while True:
+
+    for prox in proxs:
+        if prox.wait_next:
+            finished_prox += 1
+
+    if finished_prox != len(proxs):
+        finished_prox = 0
+        continue
+
+    print("triggered")
+    finished_prox = 0
     
-time.sleep(2)
-
-#calculating distance
-for trig, echo in zip(triggers, echos):
-    GPIO.output(trig, GPIO.HIGH)
-    time.sleep(0.00001)
-    GPIO.output(trig, GPIO.LOW)
-
-    while GPIO.input(echo) == 0:
-        pulse_start_time = time.time()
-    while GPIO.input(echo) == 1:
-        pulse_end_time = time.time()
-
-    pulse_duration = pulse_end_time - pulse_start_time
-    distance = round(pulse_duration * 17150, 2)
-    print("Distance {}cm".format(distance))
+    for prox in proxs:
+        prox.wait_next = False
+    
+    GPIO.output(26, GPIO.HIGH)
+    sleep(0.001)
+    GPIO.output(26, GPIO.LOW)
 
 GPIO.cleanup()

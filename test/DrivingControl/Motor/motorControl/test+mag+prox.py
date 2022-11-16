@@ -1,5 +1,6 @@
 from collections import deque
 from threading import Thread
+from time import sleep
 
 import adafruit_bno055
 import board
@@ -21,17 +22,24 @@ angle_actions = deque(['ahead']*5 + ['stop']*170 + ['back']*10 + ['stop']*170 + 
 initial_angle = angle_scope(sensor.euler[0])
 angle_actions.rotate(initial_angle)
 
+
+
 proximities = [Proximity(6, 10, 'A'),
             Proximity(13, 9, 'B'),
             Proximity(19, 11, 'C'),
             Proximity(26, 5, 'D'),
             Proximity(27, 22, 'X')]
 
-threads = []
-for proximity in proximities:
-    thread = Thread(target=proximity.keep_measuring)
-    threads.append(thread)
-    thread.start()
+def proximities_run(proximities):
+# constantly measure distance interval
+    while(True):
+        sleep(0.5)
+        for proximity in proximities:
+            distance = proximity.measure()
+            print("{}: {}cm".format(proximity.label, distance))
+
+thread = Thread(target=proximities_run, args=[proximities])
+thread.start()
 
 while(True):
     try:
