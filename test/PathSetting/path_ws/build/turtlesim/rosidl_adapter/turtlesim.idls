@@ -1,0 +1,8 @@
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
+/home/pi/C.C/test/PathSetting/path_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl
