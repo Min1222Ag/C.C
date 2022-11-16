@@ -8,6 +8,10 @@ from time import sleep
 from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
 
+#from sensor_msgs.msg import Image
+#from bboxes_ex_msgs.msg import BoundingBoxes, BoundingBox
+#from cv_bridge import CvBridge
+
 import RPi.GPIO as GPIO
 import time
 
@@ -128,8 +132,8 @@ class lidarDetect(Node):
 			self.publisher_stop.publish(msg)
 			sleep(0.5)
 		elif self.Avoid_Left <= 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
-			self.Left_Speed = 0.4
-			self.Right_Speed = 0.1
+			self.Left_Speed = 0.1
+			self.Right_Speed = 0.4
 			msg.lspeed = self.Left_Speed
 			msg.rspeed = self.Right_Speed
 			self.publisher_stop.publish(msg)
@@ -196,7 +200,7 @@ def main(args=None):
 	stop_publisher.destroy_node()
 	
 	
-	#rclpy.shutdown()
+	rclpy.shutdown()
     
 
 if __name__ == '__main__':
