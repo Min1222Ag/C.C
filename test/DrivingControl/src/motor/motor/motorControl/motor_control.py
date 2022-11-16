@@ -1,5 +1,5 @@
 from time import sleep as sleep 
-from Motor import Motor
+from motor import motor
 
 class motorControl:
     '''

@@ -47,7 +47,7 @@ class motorSubscriber(Node):
         print("ss")
         print(msg)
         ###########################################################
-        if msg.stop = 0: # Execute motor_control.py > motorControl Class > def stop
+        if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
             stop_function.stop() # Class motorControl > def stop()            
 
         msg.lspeed

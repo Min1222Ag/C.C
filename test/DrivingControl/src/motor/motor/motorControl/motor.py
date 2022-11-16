@@ -3,7 +3,7 @@ from time import sleep as sleep
 
 GPIO.setwarnings(False)
 
-class Motor:
+class motor:
     '''
     Control one DC Motor for 3 status; 1) forward spinning; 2) backward spinning; 3) stop
     '''
