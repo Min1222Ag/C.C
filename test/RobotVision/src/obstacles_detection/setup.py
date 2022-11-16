@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = obstacles_detection.obstacles_detect_node:main'
+            'talker = obstacles_detection.obstacles_detect_node:main',
+            'yolov7 talker = obstacles_detection.yolov7:main',
         ],
     },
 )

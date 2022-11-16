@@ -1,0 +1,26 @@
+[2.398s] Invoking command in '/home/pi/C.C/test/DrivingControl/src/motor': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/DrivingControl/build/motor/build install --prefix /home/pi/C.C/test/DrivingControl/install/motor --record /home/pi/C.C/test/DrivingControl/build/motor/install.log --single-version-externally-managed
+[3.216s] running egg_info
+[3.218s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[3.219s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[3.220s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[3.221s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[3.221s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[3.346s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.349s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.349s] running build
+[3.350s] running build_py
+[3.351s] copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/DrivingControl/build/motor/build/lib/motor
+[3.352s] running install
+[3.355s] running install_lib
+[3.359s] copying /home/pi/C.C/test/DrivingControl/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor
+[3.361s] byte-compiling /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[3.366s] running install_data
+[3.368s] copying package.xml -> /home/pi/C.C/test/DrivingControl/install/motor/share/motor
+[3.369s] running install_egg_info
+[3.374s] removing '/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[3.375s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[3.380s] running install_scripts
+[3.440s] Installing listener script to /home/pi/C.C/test/DrivingControl/install/motor/lib/motor
+[3.440s] Installing talker script to /home/pi/C.C/test/DrivingControl/install/motor/lib/motor
+[3.442s] writing list of installed files to '/home/pi/C.C/test/DrivingControl/build/motor/install.log'
+[3.536s] Invoked command in '/home/pi/C.C/test/DrivingControl/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/DrivingControl/build/motor/build install --prefix /home/pi/C.C/test/DrivingControl/install/motor --record /home/pi/C.C/test/DrivingControl/build/motor/install.log --single-version-externally-managed

@@ -1,0 +1,3 @@
+[console_scripts]
+path_node = path_package.path_node:main
+
