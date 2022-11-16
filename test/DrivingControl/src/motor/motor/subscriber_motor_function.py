@@ -23,7 +23,7 @@ from interfaces.msg import Stop
 import motor_control
 import obstacles_detection
 
-stop_function = motorControl.motorControl() # motor_control.py > Class motorControl 
+stop_function = motor_control.motorControl() # motor_control.py > Class motorControl 
 motor_speed = obstacles_detection.lidarDetect() # ovstacles_detection.py > Class lidarDetect
 # motor_speed.decision_callback() # never mind
 
