@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/motor/motor.egg-info/PKG-INFO
+../../build/motor/motor.egg-info/SOURCES.txt
+../../build/motor/motor.egg-info/dependency_links.txt
+../../build/motor/motor.egg-info/entry_points.txt
+../../build/motor/motor.egg-info/requires.txt
+../../build/motor/motor.egg-info/top_level.txt
+../../build/motor/motor.egg-info/zip-safe
+motor/__init__.py
+motor/publisher_motor_function.py
+motor/subscriber_motor_function.py
+resource/motor
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
