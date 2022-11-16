@@ -12,7 +12,6 @@ obstacles_detection/__init__.py
 obstacles_detection/obstacles_detect_node.py
 obstacles_detection/picam_yolov5.py
 obstacles_detection/yolov7.py
-obstacles_detection/yolov7_detect.py
 resource/obstacles_detection
 test/test_copyright.py
 test/test_flake8.py
