@@ -1,0 +1,29 @@
+[2.429s] Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub': PYTHONPATH=/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/install.log --single-version-externally-managed
+[3.262s] running egg_info
+[3.264s] writing build/motor_pubsub/motor_pubsub.egg-info/PKG-INFO
+[3.265s] writing dependency_links to build/motor_pubsub/motor_pubsub.egg-info/dependency_links.txt
+[3.266s] writing entry points to build/motor_pubsub/motor_pubsub.egg-info/entry_points.txt
+[3.267s] writing requirements to build/motor_pubsub/motor_pubsub.egg-info/requires.txt
+[3.267s] writing top-level names to build/motor_pubsub/motor_pubsub.egg-info/top_level.txt
+[3.392s] reading manifest file 'build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[3.396s] writing manifest file 'build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[3.397s] running build
+[3.397s] running build_py
+[3.397s] copying motor_pubsub/publisher_motor_function.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build/lib/motor_pubsub
+[3.398s] copying motor_pubsub/subscriber_motor_function.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build/lib/motor_pubsub
+[3.400s] running install
+[3.402s] running install_lib
+[3.406s] copying /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build/lib/motor_pubsub/publisher_motor_function.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[3.407s] copying /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build/lib/motor_pubsub/subscriber_motor_function.py -> /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[3.410s] byte-compiling /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/publisher_motor_function.py to publisher_motor_function.cpython-38.pyc
+[3.415s] byte-compiling /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[3.417s] running install_data
+[3.419s] copying package.xml -> /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/share/motor_pubsub
+[3.420s] running install_egg_info
+[3.425s] removing '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub-1.0.0-py3.8.egg-info' (and everything under it)
+[3.427s] Copying build/motor_pubsub/motor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub-1.0.0-py3.8.egg-info
+[3.431s] running install_scripts
+[3.491s] Installing listener script to /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/motor_pubsub
+[3.492s] Installing talker script to /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/motor_pubsub
+[3.493s] writing list of installed files to '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/install.log'
+[3.586s] Invoked command in '/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub' returned '0': PYTHONPATH=/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/build/motor_pubsub/install.log --single-version-externally-managed

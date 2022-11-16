@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/RobotVision/obstacles_detection/src/motor_pubsub/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/subscriber_motor_function.py", line 50
+    if msg.stop = 0: # Execute motorControl.py > MotorControl Class > def stop
+                ^
+SyntaxError: invalid syntax
+
