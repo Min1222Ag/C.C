@@ -1,0 +1,3 @@
+[console_scripts]
+talker = obstacles_detection.obstacles_detect_node:main
+

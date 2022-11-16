@@ -1,0 +1,23 @@
+[0.090s] Invoking command in '/home/pi/C.C/test/RobotVision/build/interfaces': CMAKE_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection:/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/interfaces
+[0.169s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.322s] CMake Error at CMakeLists.txt:24 (find_package):
+[1.322s]   By not providing "Findrosidl_defualt_generators.cmake" in CMAKE_MODULE_PATH
+[1.323s]   this project has asked CMake to find a package configuration file provided
+[1.323s]   by "rosidl_defualt_generators", but CMake did not find one.
+[1.323s] 
+[1.323s]   Could not find a package configuration file provided by
+[1.324s]   "rosidl_defualt_generators" with any of the following names:
+[1.324s] 
+[1.325s]     rosidl_defualt_generatorsConfig.cmake
+[1.325s]     rosidl_defualt_generators-config.cmake
+[1.325s] 
+[1.326s]   Add the installation prefix of "rosidl_defualt_generators" to
+[1.326s]   CMAKE_PREFIX_PATH or set "rosidl_defualt_generators_DIR" to a directory
+[1.326s]   containing one of the above files.  If "rosidl_defualt_generators" provides
+[1.327s]   a separate development package or SDK, be sure it has been installed.
+[1.328s] 
+[1.328s] 
+[1.328s] -- Configuring incomplete, errors occurred!
+[1.329s] See also "/home/pi/C.C/test/RobotVision/build/interfaces/CMakeFiles/CMakeOutput.log".
+[1.334s] Invoked command in '/home/pi/C.C/test/RobotVision/build/interfaces' returned '1': CMAKE_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection:/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/interfaces

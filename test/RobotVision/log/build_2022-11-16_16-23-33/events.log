@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000941] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.001235] (obstacles_detection) JobQueued: {'identifier': 'obstacles_detection', 'dependencies': OrderedDict([('interfaces', '/home/pi/C.C/test/RobotVision/install/interfaces')])}
+[0.001925] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.083358] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.084265] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/C.C/test/RobotVision/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/interfaces'], 'cwd': '/home/pi/C.C/test/RobotVision/build/interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1820'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/C.C/test/RobotVision/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/pi/C.C/test/RobotVision/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:40142'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1868,unix/ubuntu:/tmp/.ICE-unix/1868'), ('INVOCATION_ID', 'ba025c8d521a4e0a95db3498fbdac5f9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/57795170_eae2_4602_8053_b5e07eca0008'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/pi/C.C/test/RobotVision/install/obstacles_detection:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pi/C.C/test/RobotVision/install/obstacles_detection:/opt/ros/foxy')]), 'shell': False}
+[0.099458] (-) TimerEvent: {}
+[0.200938] (-) TimerEvent: {}
+[0.302113] (-) TimerEvent: {}
+[0.403158] (-) TimerEvent: {}
+[0.503903] (-) TimerEvent: {}
+[0.604711] (-) TimerEvent: {}
+[0.705699] (-) TimerEvent: {}
+[0.806729] (-) TimerEvent: {}
+[0.907843] (-) TimerEvent: {}
+[1.008847] (-) TimerEvent: {}
+[1.109785] (-) TimerEvent: {}
+[1.210668] (-) TimerEvent: {}
+[1.285164] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.310829] (-) TimerEvent: {}
+[1.411594] (-) TimerEvent: {}
+[1.512367] (-) TimerEvent: {}
+[1.613210] (-) TimerEvent: {}
+[1.714344] (-) TimerEvent: {}
+[1.815338] (-) TimerEvent: {}
+[1.916467] (-) TimerEvent: {}
+[2.017512] (-) TimerEvent: {}
+[2.118299] (-) TimerEvent: {}
+[2.144582] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.179752] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.218481] (-) TimerEvent: {}
+[2.319362] (-) TimerEvent: {}
+[2.420148] (-) TimerEvent: {}
+[2.499595] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.505069] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.520322] (-) TimerEvent: {}
+[2.621179] (-) TimerEvent: {}
+[2.721959] (-) TimerEvent: {}
+[2.819224] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.822166] (-) TimerEvent: {}
+[2.856024] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.857968] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.875532] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.922388] (-) TimerEvent: {}
+[3.023175] (-) TimerEvent: {}
+[3.123987] (-) TimerEvent: {}
+[3.212365] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.217001] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.224242] (-) TimerEvent: {}
+[3.325211] (-) TimerEvent: {}
+[3.426121] (-) TimerEvent: {}
+[3.527016] (-) TimerEvent: {}
+[3.567593] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.602378] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.603937] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.627184] (-) TimerEvent: {}
+[3.640140] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.727352] (-) TimerEvent: {}
+[3.796141] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.796845] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.827544] (-) TimerEvent: {}
+[3.928472] (-) TimerEvent: {}
+[4.029252] (-) TimerEvent: {}
+[4.129936] (-) TimerEvent: {}
+[4.230631] (-) TimerEvent: {}
+[4.331325] (-) TimerEvent: {}
+[4.451972] (-) TimerEvent: {}
+[4.552635] (-) TimerEvent: {}
+[4.653474] (-) TimerEvent: {}
+[4.754557] (-) TimerEvent: {}
+[4.855350] (-) TimerEvent: {}
+[4.956012] (-) TimerEvent: {}
+[5.047653] (interfaces) StderrLine: {'line': b'CMake Error at CMakeLists.txt:24 (find_package):\n'}
+[5.048357] (interfaces) StderrLine: {'line': b'  By not providing "Findrosidl_defualt_generators.cmake" in CMAKE_MODULE_PATH\n'}
+[5.048661] (interfaces) StderrLine: {'line': b'  this project has asked CMake to find a package configuration file provided\n'}
+[5.049001] (interfaces) StderrLine: {'line': b'  by "rosidl_defualt_generators", but CMake did not find one.\n'}
+[5.049264] (interfaces) StderrLine: {'line': b'\n'}
+[5.049519] (interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[5.049770] (interfaces) StderrLine: {'line': b'  "rosidl_defualt_generators" with any of the following names:\n'}
+[5.050017] (interfaces) StderrLine: {'line': b'\n'}
+[5.050264] (interfaces) StderrLine: {'line': b'    rosidl_defualt_generatorsConfig.cmake\n'}
+[5.050514] (interfaces) StderrLine: {'line': b'    rosidl_defualt_generators-config.cmake\n'}
+[5.050762] (interfaces) StderrLine: {'line': b'\n'}
+[5.051008] (interfaces) StderrLine: {'line': b'  Add the installation prefix of "rosidl_defualt_generators" to\n'}
+[5.051250] (interfaces) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "rosidl_defualt_generators_DIR" to a directory\n'}
+[5.051498] (interfaces) StderrLine: {'line': b'  containing one of the above files.  If "rosidl_defualt_generators" provides\n'}
+[5.051766] (interfaces) StderrLine: {'line': b'  a separate development package or SDK, be sure it has been installed.\n'}
+[5.052305] (interfaces) StderrLine: {'line': b'\n'}
+[5.052726] (interfaces) StderrLine: {'line': b'\n'}
+[5.053067] (interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.053403] (interfaces) StdoutLine: {'line': b'See also "/home/pi/C.C/test/RobotVision/build/interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[5.056305] (-) TimerEvent: {}
+[5.064369] (interfaces) CommandEnded: {'returncode': 1}
+[5.156467] (-) TimerEvent: {}
+[5.168449] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 1}
+[5.171584] (obstacles_detection) JobSkipped: {'identifier': 'obstacles_detection'}
+[5.171713] (-) EventReactorShutdown: {}

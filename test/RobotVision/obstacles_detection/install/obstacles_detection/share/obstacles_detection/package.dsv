@@ -1,8 +1,0 @@
-source;share/obstacles_detection/hook/cmake_prefix_path.ps1
-source;share/obstacles_detection/hook/cmake_prefix_path.dsv
-source;share/obstacles_detection/hook/cmake_prefix_path.sh
-source;share/obstacles_detection/local_setup.bash
-source;share/obstacles_detection/local_setup.dsv
-source;share/obstacles_detection/local_setup.ps1
-source;share/obstacles_detection/local_setup.sh
-source;share/obstacles_detection/local_setup.zsh

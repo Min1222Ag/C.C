@@ -1,5 +1,0 @@
-  File "/home/pi/C.C/test/RobotVision/ros2_ws/install/proximity_sensor_pubsub/lib/python3.8/site-packages/proximity_sensor_pubsub/proximity_node.py", line 8
-    !/usr/bin/env python3
-    ^
-SyntaxError: invalid syntax
-

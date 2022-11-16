@@ -1,0 +1,37 @@
+[2.849s] Invoking command in '/home/pi/C.C/test/RobotVision/src/obstacles_detection': PYTHONPATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/RobotVision/build/obstacles_detection/build install --prefix /home/pi/C.C/test/RobotVision/install/obstacles_detection --record /home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log --single-version-externally-managed
+[3.872s] running egg_info
+[3.875s] creating ../../build/obstacles_detection/obstacles_detection.egg-info
+[3.876s] writing ../../build/obstacles_detection/obstacles_detection.egg-info/PKG-INFO
+[3.877s] writing dependency_links to ../../build/obstacles_detection/obstacles_detection.egg-info/dependency_links.txt
+[3.878s] writing entry points to ../../build/obstacles_detection/obstacles_detection.egg-info/entry_points.txt
+[3.878s] writing requirements to ../../build/obstacles_detection/obstacles_detection.egg-info/requires.txt
+[3.878s] writing top-level names to ../../build/obstacles_detection/obstacles_detection.egg-info/top_level.txt
+[3.883s] writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[4.018s] reading manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[4.022s] writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[4.022s] running build
+[4.023s] running build_py
+[4.023s] creating /home/pi/C.C/test/RobotVision/build/obstacles_detection/build
+[4.024s] creating /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib
+[4.024s] creating /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection
+[4.025s] copying obstacles_detection/obstacles_detect_node.py -> /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection
+[4.025s] copying obstacles_detection/__init__.py -> /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection
+[4.026s] running install
+[4.028s] running install_lib
+[4.033s] creating /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection
+[4.033s] copying /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection/obstacles_detect_node.py -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection
+[4.034s] copying /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection/__init__.py -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection
+[4.036s] byte-compiling /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/obstacles_detect_node.py to obstacles_detect_node.cpython-38.pyc
+[4.044s] byte-compiling /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/__init__.py to __init__.cpython-38.pyc
+[4.045s] running install_data
+[4.048s] creating /home/pi/C.C/test/RobotVision/install/obstacles_detection/share/ament_index
+[4.048s] creating /home/pi/C.C/test/RobotVision/install/obstacles_detection/share/ament_index/resource_index
+[4.049s] creating /home/pi/C.C/test/RobotVision/install/obstacles_detection/share/ament_index/resource_index/packages
+[4.049s] copying resource/obstacles_detection -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/share/ament_index/resource_index/packages
+[4.050s] copying package.xml -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/share/obstacles_detection
+[4.050s] running install_egg_info
+[4.057s] Copying ../../build/obstacles_detection/obstacles_detection.egg-info to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info
+[4.061s] running install_scripts
+[4.139s] Installing talker script to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/obstacles_detection
+[4.142s] writing list of installed files to '/home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log'
+[4.249s] Invoked command in '/home/pi/C.C/test/RobotVision/src/obstacles_detection' returned '0': PYTHONPATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/RobotVision/build/obstacles_detection/build install --prefix /home/pi/C.C/test/RobotVision/install/obstacles_detection --record /home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log --single-version-externally-managed

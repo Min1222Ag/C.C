@@ -1,4 +1,0 @@
-[console_scripts]
-listener = motor_pubsub.subscriber_motor_function:main
-talker = motor_pubsub.publisher_motor_function:main
-

@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000959] (-) JobUnselected: {'identifier': 'distance_interfaces'}
-[0.001247] (-) JobUnselected: {'identifier': 'proximity_sensor'}
-[0.002317] (-) EventReactorShutdown: {}

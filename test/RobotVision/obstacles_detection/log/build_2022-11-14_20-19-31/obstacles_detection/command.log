@@ -1,1 +1,0 @@
-Invoking command in '/home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/obstacles_detection/build/obstacles_detection -- -j4 -l4
