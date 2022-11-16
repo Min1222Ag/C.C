@@ -1,6 +1,0 @@
-Invoking command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/DrivingControl/motor_ws/src/motor_ws -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/DrivingControl/motor_ws/install/motor_ws
-Invoked command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/DrivingControl/motor_ws/src/motor_ws -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/DrivingControl/motor_ws/install/motor_ws
-Invoking command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws -- -j4 -l4
-Invoked command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws -- -j4 -l4
-Invoking command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws
-Invoked command in '/home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/DrivingControl/motor_ws/build/motor_ws
