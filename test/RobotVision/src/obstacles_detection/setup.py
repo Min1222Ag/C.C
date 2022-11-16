@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'talker = obstacles_detection.obstacles_detect_node:main',
-            'yolov7 talker = obstacles_detection.yolov7:main',
+            'yolov7 = obstacles_detection.yolov7:main',
         ],
     },
 )
