@@ -1,0 +1,21 @@
+[2.696s] Invoking command in '/home/pi/C.C/test/RobotVision/src/obstacles_detection': AMENT_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/interfaces LD_LIBRARY_PATH=/home/pi/C.C/test/RobotVision/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/RobotVision/build/obstacles_detection/build install --prefix /home/pi/C.C/test/RobotVision/install/obstacles_detection --record /home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log --single-version-externally-managed
+[3.509s] running egg_info
+[3.511s] writing ../../build/obstacles_detection/obstacles_detection.egg-info/PKG-INFO
+[3.512s] writing dependency_links to ../../build/obstacles_detection/obstacles_detection.egg-info/dependency_links.txt
+[3.512s] writing entry points to ../../build/obstacles_detection/obstacles_detection.egg-info/entry_points.txt
+[3.513s] writing requirements to ../../build/obstacles_detection/obstacles_detection.egg-info/requires.txt
+[3.513s] writing top-level names to ../../build/obstacles_detection/obstacles_detection.egg-info/top_level.txt
+[3.655s] reading manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[3.658s] writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[3.659s] running build
+[3.659s] running build_py
+[3.660s] running install
+[3.663s] running install_lib
+[3.668s] running install_data
+[3.671s] running install_egg_info
+[3.677s] removing '/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info' (and everything under it)
+[3.678s] Copying ../../build/obstacles_detection/obstacles_detection.egg-info to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info
+[3.683s] running install_scripts
+[3.742s] Installing talker script to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/obstacles_detection
+[3.744s] writing list of installed files to '/home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log'
+[3.843s] Invoked command in '/home/pi/C.C/test/RobotVision/src/obstacles_detection' returned '0': AMENT_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/RobotVision/install/interfaces LD_LIBRARY_PATH=/home/pi/C.C/test/RobotVision/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/RobotVision/build/obstacles_detection/build install --prefix /home/pi/C.C/test/RobotVision/install/obstacles_detection --record /home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log --single-version-externally-managed

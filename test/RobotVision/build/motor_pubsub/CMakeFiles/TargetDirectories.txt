@@ -1,0 +1,10 @@
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/install/local.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/install.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/list_install_components.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/rebuild_cache.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/install/strip.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/motor_node.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/edit_cache.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/test.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/motor_pubsub_uninstall.dir
+/home/pi/C.C/test/RobotVision/build/motor_pubsub/CMakeFiles/uninstall.dir

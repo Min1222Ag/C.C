@@ -1,0 +1,6 @@
+Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/motor_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/motor_pubsub
+Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/motor_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/motor_pubsub
+Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/build/motor_pubsub -- -j4 -l4
+Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/build/motor_pubsub -- -j4 -l4
+Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/build/motor_pubsub
+Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/build/motor_pubsub

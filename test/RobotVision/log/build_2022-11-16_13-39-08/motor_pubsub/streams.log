@@ -1,0 +1,58 @@
+[0.082s] Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/motor_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/motor_pubsub
+[1.139s] -- The C compiler identification is GNU 9.4.0
+[1.900s] -- The CXX compiler identification is GNU 9.4.0
+[1.918s] -- Check for working C compiler: /usr/bin/cc
+[2.196s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.203s] -- Detecting C compiler ABI info
+[2.481s] -- Detecting C compiler ABI info - done
+[2.548s] -- Detecting C compile features
+[2.551s] -- Detecting C compile features - done
+[2.563s] -- Check for working CXX compiler: /usr/bin/c++
+[2.870s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.874s] -- Detecting CXX compiler ABI info
+[3.203s] -- Detecting CXX compiler ABI info - done
+[3.243s] -- Detecting CXX compile features
+[3.244s] -- Detecting CXX compile features - done
+[3.266s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.395s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.395s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.400s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.849s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.856s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.857s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/pi/C.C/test/RobotVision/src/motor_pubsub/include>
+[4.857s] -- Configured cppcheck exclude dirs and/or files: 
+[4.863s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.864s] -- Configured cpplint exclude dirs and/or files: 
+[4.869s] -- Added test 'lint_cmake' to check CMake code style
+[4.876s] -- Added test 'uncrustify' to check C / C++ code style
+[4.876s] -- Configured uncrustify additional arguments: 
+[4.879s] -- Added test 'xmllint' to check XML markup files
+[4.892s] -- Configuring done
+[4.907s] -- Generating done
+[4.912s] -- Build files have been written to: /home/pi/C.C/test/RobotVision/build/motor_pubsub
+[4.926s] Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pi/C.C/test/RobotVision/src/motor_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/C.C/test/RobotVision/install/motor_pubsub
+[4.934s] Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/build/motor_pubsub -- -j4 -l4
+[5.081s] [35m[1mScanning dependencies of target motor_node[0m
+[5.125s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_node.dir/src/motor_node.cpp.o[0m
+[5.303s] [100%] [32m[1mLinking CXX executable motor_node[0m
+[5.526s] [100%] Built target motor_node
+[5.609s] Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/RobotVision/build/motor_pubsub -- -j4 -l4
+[5.837s] Invoking command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/build/motor_pubsub
+[5.886s] -- Install configuration: ""
+[5.888s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/motor_pubsub/motor_node
+[5.892s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/ament_index/resource_index/package_run_dependencies/motor_pubsub
+[5.895s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/ament_index/resource_index/parent_prefix_path/motor_pubsub
+[5.898s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/environment/ament_prefix_path.sh
+[5.900s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/environment/ament_prefix_path.dsv
+[5.904s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/environment/path.sh
+[5.905s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/environment/path.dsv
+[5.909s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/local_setup.bash
+[5.910s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/local_setup.sh
+[5.913s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/local_setup.zsh
+[5.915s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/local_setup.dsv
+[5.918s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/package.dsv
+[5.921s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/ament_index/resource_index/packages/motor_pubsub
+[5.924s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/cmake/motor_pubsubConfig.cmake
+[5.926s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/cmake/motor_pubsubConfig-version.cmake
+[5.929s] -- Installing: /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub/package.xml
+[5.941s] Invoked command in '/home/pi/C.C/test/RobotVision/build/motor_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/RobotVision/build/motor_pubsub

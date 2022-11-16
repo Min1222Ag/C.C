@@ -1,0 +1,30 @@
+[3.373s] Invoking command in '/home/pi/C.C/test/RobotVision/src/motor_pubsub': PYTHONPATH=/home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/build/motor_pubsub/install.log --single-version-externally-managed
+[4.315s] running egg_info
+[4.317s] creating ../../build/motor_pubsub/motor_pubsub.egg-info
+[4.318s] writing ../../build/motor_pubsub/motor_pubsub.egg-info/PKG-INFO
+[4.319s] writing dependency_links to ../../build/motor_pubsub/motor_pubsub.egg-info/dependency_links.txt
+[4.320s] writing entry points to ../../build/motor_pubsub/motor_pubsub.egg-info/entry_points.txt
+[4.321s] writing requirements to ../../build/motor_pubsub/motor_pubsub.egg-info/requires.txt
+[4.321s] writing top-level names to ../../build/motor_pubsub/motor_pubsub.egg-info/top_level.txt
+[4.341s] writing manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[4.472s] reading manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[4.475s] writing manifest file '../../build/motor_pubsub/motor_pubsub.egg-info/SOURCES.txt'
+[4.476s] running build
+[4.477s] running build_py
+[4.477s] creating /home/pi/C.C/test/RobotVision/build/motor_pubsub/build
+[4.478s] creating /home/pi/C.C/test/RobotVision/build/motor_pubsub/build/lib
+[4.478s] creating /home/pi/C.C/test/RobotVision/build/motor_pubsub/build/lib/motor_pubsub
+[4.479s] copying motor_pubsub/__init__.py -> /home/pi/C.C/test/RobotVision/build/motor_pubsub/build/lib/motor_pubsub
+[4.479s] running install
+[4.481s] running install_lib
+[4.486s] creating /home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[4.487s] copying /home/pi/C.C/test/RobotVision/build/motor_pubsub/build/lib/motor_pubsub/__init__.py -> /home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub
+[4.489s] byte-compiling /home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub/__init__.py to __init__.cpython-38.pyc
+[4.494s] running install_data
+[4.496s] copying resource/motor_pubsub -> /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/ament_index/resource_index/packages
+[4.497s] copying package.xml -> /home/pi/C.C/test/RobotVision/install/motor_pubsub/share/motor_pubsub
+[4.497s] running install_egg_info
+[4.504s] Copying ../../build/motor_pubsub/motor_pubsub.egg-info to /home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages/motor_pubsub-0.0.0-py3.8.egg-info
+[4.509s] running install_scripts
+[4.575s] writing list of installed files to '/home/pi/C.C/test/RobotVision/build/motor_pubsub/install.log'
+[4.690s] Invoked command in '/home/pi/C.C/test/RobotVision/src/motor_pubsub' returned '0': PYTHONPATH=/home/pi/C.C/test/RobotVision/install/motor_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_pubsub build --build-base /home/pi/C.C/test/RobotVision/build/motor_pubsub/build install --prefix /home/pi/C.C/test/RobotVision/install/motor_pubsub --record /home/pi/C.C/test/RobotVision/build/motor_pubsub/install.log --single-version-externally-managed
