@@ -21,7 +21,7 @@ import time
 
 class lidarDetect(Node):
 	def __init__(self):
-		super().__init__('obstacles_detector_node')
+		super().__init__('obstacles_detect_node')
 		
 		# Subscription info
 		self.subscription = self.create_subscription(
@@ -195,9 +195,9 @@ class lidarDetect(Node):
 def main(args=None):
 	rclpy.init(args=args)
 	
-	rplidar_detector_node = lidarDetect()
-	rclpy.spin(rplidar_detector_node)
-	rplidar_detector_node.destroy_node()
+	obstacles_detect_node = lidarDetect()
+	rclpy.spin(obstacles_detect_node)
+	obstacles_detect_node.destroy_node()
 	
 	stop_publisher = StopPublisher()
 	rclpy.spin(stop_publisher)
