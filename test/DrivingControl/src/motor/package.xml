@@ -11,9 +11,11 @@
 
   <exec_depend>interfaces</exec_depend>
   <exec_depend>obstacles_detection</exec_depend>
+  <exec_depend>motor_control</exec_depend>
 
   <build_depend>interfaces</build_depend>
   <build_depend>obstacles_detection</build_depend>
+  <build_depend>motor_control</build_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
