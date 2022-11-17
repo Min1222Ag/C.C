@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # coding:utf-8
 import rclpy
+from rclpy.node import Node
 from sensor_msgs.msg import Image
 
-# Import OpenCV libraries and tools
 import cv2
 from cv_bridge import CvBridge
-
-from rclpy.node import Node
-
 
 class ImageSubscriber(Node):
   """
@@ -47,7 +44,7 @@ class ImageSubscriber(Node):
     cv2.imshow("camera", current_frame)
     
     cv2.waitKey(1)
-  
+    
 def main(args=None):
   
   # Initialize the rclpy library

@@ -19,13 +19,13 @@ from rclpy.node import Node
 from interfaces.msg import Stop
 
 #############################import################################
-# import motor_control.py for stopping two motors
+import motor_control.py for stopping two motors
 from .motor_control import motor_control
 import obstacles_detection
 
 stop_function = motor_control.motorControl() # motor_control.py > Class motorControl 
 motor_speed = obstacles_detection.lidarDetect() # ovstacles_detection.py > Class lidarDetect
-# motor_speed.decision_callback() # never mind
+motor_speed.decision_callback() # never mind
 
 ###################################################################
 

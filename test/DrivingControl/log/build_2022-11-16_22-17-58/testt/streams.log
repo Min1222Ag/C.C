@@ -1,0 +1,33 @@
+[2.830s] Invoking command in '/home/pi/C.C/test/DrivingControl/src/testt': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/testt build --build-base /home/pi/C.C/test/DrivingControl/build/testt/build install --prefix /home/pi/C.C/test/DrivingControl/install/testt --record /home/pi/C.C/test/DrivingControl/build/testt/install.log --single-version-externally-managed
+[3.748s] running egg_info
+[3.750s] creating ../../build/testt/testt.egg-info
+[3.751s] writing ../../build/testt/testt.egg-info/PKG-INFO
+[3.752s] writing dependency_links to ../../build/testt/testt.egg-info/dependency_links.txt
+[3.752s] writing entry points to ../../build/testt/testt.egg-info/entry_points.txt
+[3.753s] writing requirements to ../../build/testt/testt.egg-info/requires.txt
+[3.753s] writing top-level names to ../../build/testt/testt.egg-info/top_level.txt
+[3.763s] writing manifest file '../../build/testt/testt.egg-info/SOURCES.txt'
+[3.887s] reading manifest file '../../build/testt/testt.egg-info/SOURCES.txt'
+[3.890s] writing manifest file '../../build/testt/testt.egg-info/SOURCES.txt'
+[3.890s] running build
+[3.891s] running build_py
+[3.891s] creating /home/pi/C.C/test/DrivingControl/build/testt/build
+[3.892s] creating /home/pi/C.C/test/DrivingControl/build/testt/build/lib
+[3.892s] creating /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt
+[3.893s] copying testt/__init__.py -> /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt
+[3.893s] running install
+[3.895s] running install_lib
+[3.899s] creating /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt
+[3.900s] copying /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt/__init__.py -> /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt
+[3.902s] byte-compiling /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt/__init__.py to __init__.cpython-38.pyc
+[3.906s] running install_data
+[3.908s] creating /home/pi/C.C/test/DrivingControl/install/testt/share/ament_index
+[3.908s] creating /home/pi/C.C/test/DrivingControl/install/testt/share/ament_index/resource_index
+[3.909s] creating /home/pi/C.C/test/DrivingControl/install/testt/share/ament_index/resource_index/packages
+[3.909s] copying resource/testt -> /home/pi/C.C/test/DrivingControl/install/testt/share/ament_index/resource_index/packages
+[3.910s] copying package.xml -> /home/pi/C.C/test/DrivingControl/install/testt/share/testt
+[3.910s] running install_egg_info
+[3.916s] Copying ../../build/testt/testt.egg-info to /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt-0.0.0-py3.8.egg-info
+[3.920s] running install_scripts
+[3.981s] writing list of installed files to '/home/pi/C.C/test/DrivingControl/build/testt/install.log'
+[4.085s] Invoked command in '/home/pi/C.C/test/DrivingControl/src/testt' returned '0': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/testt build --build-base /home/pi/C.C/test/DrivingControl/build/testt/build install --prefix /home/pi/C.C/test/DrivingControl/install/testt --record /home/pi/C.C/test/DrivingControl/build/testt/install.log --single-version-externally-managed

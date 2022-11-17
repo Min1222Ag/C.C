@@ -10,7 +10,6 @@ setup.py
 ../../build/obstacles_detection/obstacles_detection.egg-info/zip-safe
 obstacles_detection/__init__.py
 obstacles_detection/obstacles_detect_node.py
-obstacles_detection/picam_yolov5.py
 obstacles_detection/yolov7.py
 resource/obstacles_detection
 test/test_copyright.py

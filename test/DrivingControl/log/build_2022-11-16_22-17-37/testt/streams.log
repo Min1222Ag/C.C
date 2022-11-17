@@ -1,0 +1,93 @@
+[3.424s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 67, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 105, in build
+    return await extension.build(additional_hooks=additional_hooks)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 59, in build
+    available_commands = await self._get_available_commands(
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 142, in _get_available_commands
+    output = await check_output(
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 128, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/usr/bin/python3', 'setup.py', '--help-commands'] to pass: Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    setup(
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 144, in setup
+    return distutils.core.setup(**attrs)
+  File "/usr/lib/python3.8/distutils/core.py", line 134, in setup
+    ok = dist.parse_command_line()
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 707, in parse_command_line
+    result = _Distribution.parse_command_line(self)
+  File "/usr/lib/python3.8/distutils/dist.py", line 480, in parse_command_line
+    if self.handle_display_options(option_order):
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1092, in handle_display_options
+    return _Distribution.handle_display_options(self, option_order)
+  File "/usr/lib/python3.8/distutils/dist.py", line 683, in handle_display_options
+    self.print_commands()
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 843, in print_commands
+    cmdclass = ep.resolve()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2451, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/lib/python3/dist-packages/setuptools/command/build_py.py", line 15, in <module>
+    from setuptools.lib2to3_ex import Mixin2to3
+  File "/usr/lib/python3/dist-packages/setuptools/lib2to3_ex.py", line 12, in <module>
+    from lib2to3.refactor import RefactoringTool, get_fixers_from_package
+  File "/usr/lib/python3.8/lib2to3/refactor.py", line 26, in <module>
+    from .fixer_util import find_root
+  File "/usr/lib/python3.8/lib2to3/fixer_util.py", line 7, in <module>
+    from .pygram import python_symbols as syms
+  File "/usr/lib/python3.8/lib2to3/pygram.py", line 32, in <module>
+    python_grammar = driver.load_packaged_grammar("lib2to3", _GRAMMAR_FILE)
+  File "/usr/lib/python3.8/lib2to3/pgen2/driver.py", line 158, in load_packaged_grammar
+    return load_grammar(grammar_source)
+  File "/usr/lib/python3.8/lib2to3/pgen2/driver.py", line 121, in load_grammar
+    g = pgen.generate_grammar(gt)
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 385, in generate_grammar
+    p = ParserGenerator(filename)
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 21, in __init__
+    self.dfas, self.startsymbol = self.parse()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 155, in parse
+    a, z = self.parse_rhs()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 251, in parse_rhs
+    a, z = self.parse_alt()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 271, in parse_alt
+    c, d = self.parse_item()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 280, in parse_item
+    a, z = self.parse_rhs()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 251, in parse_rhs
+    a, z = self.parse_alt()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 271, in parse_alt
+    c, d = self.parse_item()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 280, in parse_item
+    a, z = self.parse_rhs()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 261, in parse_rhs
+    a, z = self.parse_alt()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 271, in parse_alt
+    c, d = self.parse_item()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 281, in parse_item
+    self.expect(token.OP, "]")
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 318, in expect
+    self.gettoken()
+  File "/usr/lib/python3.8/lib2to3/pgen2/pgen.py", line 322, in gettoken
+    tup = next(self.generator)
+  File "/usr/lib/python3.8/lib2to3/pgen2/tokenize.py", line 450, in generate_tokens
+    spos, epos, pos = (lnum, start), (lnum, end), end
+KeyboardInterrupt
+

@@ -1,0 +1,207 @@
+[0.608s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.608s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa0111b20>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa0111b20>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa011b0d0>)
+[0.706s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.708s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/C.C/test/DrivingControl'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'ignore'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'ros'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['cmake', 'python']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'cmake'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'python'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extensions ['python_setup_py']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws) by extension 'python_setup_py'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'ignore'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'ignore_ament_install'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['colcon_pkg']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'colcon_pkg'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['colcon_meta']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'colcon_meta'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['ros']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'ros'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['cmake', 'python']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'cmake'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'python'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extensions ['python_setup_py']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ws/src) by extension 'python_setup_py'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ignore'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ignore_ament_install'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['colcon_pkg']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'colcon_pkg'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['colcon_meta']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'colcon_meta'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['ros']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ros'
+[0.782s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor' with type 'ros.ament_python' and name 'motor'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extension 'ignore_ament_install'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extensions ['colcon_pkg']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extension 'colcon_pkg'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extensions ['colcon_meta']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extension 'colcon_meta'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extensions ['ros']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(testt) by extension 'ros'
+[0.786s] DEBUG:colcon.colcon_core.package_identification:Package 'testt' with type 'ros.ament_python' and name 'testt'
+[0.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.905s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.905s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.918s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/pi/C.C/test/DrivingControl/install
+[0.927s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 226 installed packages in /opt/ros/foxy
+[0.933s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_args' from command line to 'None'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_target' from command line to 'None'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_clean_first' from command line to 'False'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_force_configure' from command line to 'False'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'ament_cmake_args' from command line to 'None'
+[1.194s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.195s] DEBUG:colcon.colcon_core.verb:Building package 'motor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/C.C/test/DrivingControl/build/motor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/C.C/test/DrivingControl/install/motor', 'merge_install': False, 'path': '/home/pi/C.C/test/DrivingControl/src/motor', 'symlink_install': False, 'test_result_base': None}
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_args' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_target' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_clean_cache' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_clean_first' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'cmake_force_configure' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'ament_cmake_args' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'catkin_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'testt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.200s] DEBUG:colcon.colcon_core.verb:Building package 'testt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/C.C/test/DrivingControl/build/testt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/C.C/test/DrivingControl/install/testt', 'merge_install': False, 'path': '/home/pi/C.C/test/DrivingControl/testt', 'symlink_install': False, 'test_result_base': None}
+[1.202s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.220s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.221s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/C.C/test/DrivingControl/src/motor' with build type 'ament_python'
+[1.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor', 'ament_prefix_path')
+[1.239s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/ament_prefix_path.ps1'
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/ament_prefix_path.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/ament_prefix_path.sh'
+[1.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.252s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.276s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/C.C/test/DrivingControl/testt' with build type 'ament_python'
+[1.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('testt', 'ament_prefix_path')
+[1.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/ament_prefix_path.ps1'
+[1.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/ament_prefix_path.dsv'
+[1.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/ament_prefix_path.sh'
+[1.297s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.306s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/C.C/test/DrivingControl/src/motor'
+[2.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.321s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/C.C/test/DrivingControl/testt'
+[3.328s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.328s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/C.C/test/DrivingControl/src/motor': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/DrivingControl/build/motor/build install --prefix /home/pi/C.C/test/DrivingControl/install/motor --record /home/pi/C.C/test/DrivingControl/build/motor/install.log --single-version-externally-managed
+[5.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/C.C/test/DrivingControl/testt': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/testt build --build-base /home/pi/C.C/test/DrivingControl/build/testt/build install --prefix /home/pi/C.C/test/DrivingControl/install/testt --record /home/pi/C.C/test/DrivingControl/build/testt/install.log --single-version-externally-managed
+[6.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/C.C/test/DrivingControl/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/DrivingControl/build/motor/build install --prefix /home/pi/C.C/test/DrivingControl/install/motor --record /home/pi/C.C/test/DrivingControl/build/motor/install.log --single-version-externally-managed
+[6.729s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor' for CMake module files
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor' for CMake config files
+[6.736s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor/lib'
+[6.736s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor/bin'
+[6.737s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor/lib/pkgconfig/motor.pc'
+[6.738s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages'
+[6.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor', 'pythonpath')
+[6.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/pythonpath.ps1'
+[6.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/pythonpath.dsv'
+[6.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/hook/pythonpath.sh'
+[6.750s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/motor/bin'
+[6.750s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor)
+[6.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/package.ps1'
+[6.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/package.dsv'
+[6.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/package.sh'
+[6.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/package.bash'
+[6.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/motor/share/motor/package.zsh'
+[6.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/C.C/test/DrivingControl/install/motor/share/colcon-core/packages/motor)
+[6.784s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt' for CMake module files
+[6.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/C.C/test/DrivingControl/testt' returned '0': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/testt build --build-base /home/pi/C.C/test/DrivingControl/build/testt/build install --prefix /home/pi/C.C/test/DrivingControl/install/testt --record /home/pi/C.C/test/DrivingControl/build/testt/install.log --single-version-externally-managed
+[6.788s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt' for CMake config files
+[6.791s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt/lib'
+[6.792s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt/bin'
+[6.792s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt/lib/pkgconfig/testt.pc'
+[6.793s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages'
+[6.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('testt', 'pythonpath')
+[6.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/pythonpath.ps1'
+[6.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/pythonpath.dsv'
+[6.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/hook/pythonpath.sh'
+[6.804s] Level 1:colcon.colcon_core.environment:checking '/home/pi/C.C/test/DrivingControl/install/testt/bin'
+[6.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testt)
+[6.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/package.ps1'
+[6.813s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/package.dsv'
+[6.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/package.sh'
+[6.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/package.bash'
+[6.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/C.C/test/DrivingControl/install/testt/share/testt/package.zsh'
+[6.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/C.C/test/DrivingControl/install/testt/share/colcon-core/packages/testt)
+[6.821s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.824s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.850s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.850s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.850s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.851s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.854s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.855s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.860s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/C.C/test/DrivingControl/install/local_setup.ps1'
+[6.864s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/C.C/test/DrivingControl/install/_local_setup_util_ps1.py'
+[6.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/C.C/test/DrivingControl/install/setup.ps1'
+[6.875s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/C.C/test/DrivingControl/install/local_setup.sh'
+[6.877s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/C.C/test/DrivingControl/install/_local_setup_util_sh.py'
+[6.879s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/C.C/test/DrivingControl/install/setup.sh'
+[6.886s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/C.C/test/DrivingControl/install/local_setup.bash'
+[6.888s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/C.C/test/DrivingControl/install/setup.bash'
+[6.893s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/C.C/test/DrivingControl/install/local_setup.zsh'
+[6.895s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/C.C/test/DrivingControl/install/setup.zsh'

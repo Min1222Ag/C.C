@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000943] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.001239] (obstacles_detection) JobQueued: {'identifier': 'obstacles_detection', 'dependencies': OrderedDict([('interfaces', '/home/pi/C.C/test/RobotVision/install/interfaces')])}
+[0.001916] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.074459] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.079740] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[0.083503] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/C.C/test/RobotVision/build/interfaces', '--', '-j4', '-l4'], 'cwd': '/home/pi/C.C/test/RobotVision/build/interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1785'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:40117'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1833,unix/ubuntu:/tmp/.ICE-unix/1833'), ('INVOCATION_ID', 'fa29a21e3e2044cba12d2af25a7c372a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23a0aedb_b846_44fd_9709_427a1aebda8d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.65'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099401] (-) TimerEvent: {}
+[0.200861] (-) TimerEvent: {}
+[0.301971] (-) TimerEvent: {}
+[0.402870] (-) TimerEvent: {}
+[0.503847] (-) TimerEvent: {}
+[0.598226] (interfaces) StdoutLine: {'line': b'[  3%] Built target interfaces__cpp\n'}
+[0.604444] (-) TimerEvent: {}
+[0.610576] (interfaces) StdoutLine: {'line': b'[ 12%] Built target interfaces__rosidl_generator_c\n'}
+[0.704702] (-) TimerEvent: {}
+[0.805583] (-) TimerEvent: {}
+[0.899917] (interfaces) StdoutLine: {'line': b'[ 32%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[0.901381] (interfaces) StdoutLine: {'line': b'[ 32%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.905804] (-) TimerEvent: {}
+[0.915631] (interfaces) StdoutLine: {'line': b'[ 41%] Built target interfaces__rosidl_typesupport_c\n'}
+[0.941377] (interfaces) StdoutLine: {'line': b'[ 51%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.006047] (-) TimerEvent: {}
+[1.007747] (interfaces) StdoutLine: {'line': b'[ 61%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[1.068058] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.106328] (-) TimerEvent: {}
+[1.155753] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces\n'}
+[1.206514] (-) TimerEvent: {}
+[1.253210] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__py\n'}
+[1.306717] (-) TimerEvent: {}
+[1.385831] (interfaces) StdoutLine: {'line': b'[ 80%] Built target interfaces__python\n'}
+[1.406993] (-) TimerEvent: {}
+[1.508539] (-) TimerEvent: {}
+[1.521501] (interfaces) StdoutLine: {'line': b'[ 90%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[1.523528] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.527481] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.571241] (interfaces) CommandEnded: {'returncode': 0}
+[1.608789] (-) TimerEvent: {}
+[1.709684] (-) TimerEvent: {}
+[1.810895] (-) TimerEvent: {}
+[1.875751] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[1.911242] (-) TimerEvent: {}
+[1.916877] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/C.C/test/RobotVision/build/interfaces'], 'cwd': '/home/pi/C.C/test/RobotVision/build/interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_AGENT_PID', '1785'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('JOURNAL_STREAM', '9:40117'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1833,unix/ubuntu:/tmp/.ICE-unix/1833'), ('INVOCATION_ID', 'fa29a21e3e2044cba12d2af25a7c372a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23a0aedb_b846_44fd_9709_427a1aebda8d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.65'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pi/C.C/test/RobotVision/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.960123] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.960910] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[1.961375] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.961778] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.962207] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.962606] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__type_support.h\n'}
+[1.963052] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__functions.h\n'}
+[1.963453] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__functions.c\n'}
+[1.963903] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__struct.h\n'}
+[1.964355] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.964717] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/stop.h\n'}
+[1.964990] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[1.965270] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[1.966186] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[1.967399] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.967891] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.968367] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.968773] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.969156] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_fastrtps_c.h\n'}
+[1.971063] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[1.972460] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.972944] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.973364] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.973735] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.974196] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/dds_fastrtps\n'}
+[1.974542] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.976287] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.977585] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.978032] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.978384] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.978749] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__type_support.c\n'}
+[1.979200] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_introspection_c.h\n'}
+[1.979593] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.981374] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[1.984432] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[1.985568] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.986035] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.986486] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/stop.hpp\n'}
+[1.986863] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.987297] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__builder.hpp\n'}
+[1.987702] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__traits.hpp\n'}
+[1.988156] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__struct.hpp\n'}
+[1.988544] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces\n'}
+[1.988946] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg\n'}
+[1.989353] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail\n'}
+[1.989701] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.989995] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/include/interfaces/msg/detail/stop__type_support.cpp\n'}
+[1.991285] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[1.994226] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[1.995423] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[1.995922] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[1.996383] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py\n'}
+[2.011339] (-) TimerEvent: {}
+[2.112163] (-) TimerEvent: {}
+[2.142248] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/msg\n'}
+[2.142913] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_stop_s.c\n'}
+[2.143323] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_stop.py\n'}
+[2.143612] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/msg/__init__.py\n'}
+[2.145555] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[2.150678] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[2.155328] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[2.158943] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/lib/libinterfaces__python.so\n'}
+[2.160325] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/msg/Stop.idl\n'}
+[2.160867] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/msg/Stop.msg\n'}
+[2.161316] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[2.161771] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[2.162257] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[2.162735] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[2.163186] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/path.sh\n'}
+[2.163642] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[2.164263] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/local_setup.bash\n'}
+[2.164745] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/local_setup.sh\n'}
+[2.165242] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[2.165691] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[2.166142] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/package.dsv\n'}
+[2.168088] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[2.172186] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport.cmake\n'}
+[2.172806] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.175045] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.175627] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.177654] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.178196] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.180317] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.182483] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.183092] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.185338] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.185952] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.186459] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.186923] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.187430] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.187947] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.188567] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.189069] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.189594] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.190039] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[2.190499] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[2.191083] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/C.C/test/RobotVision/install/interfaces/share/interfaces/package.xml\n'}
+[2.198222] (interfaces) CommandEnded: {'returncode': 0}
+[2.212306] (-) TimerEvent: {}
+[2.313278] (-) TimerEvent: {}
+[2.414172] (-) TimerEvent: {}
+[2.515245] (-) TimerEvent: {}
+[2.616097] (-) TimerEvent: {}
+[2.705162] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[2.714236] (obstacles_detection) JobStarted: {'identifier': 'obstacles_detection'}
+[2.716289] (-) TimerEvent: {}
+[2.817220] (-) TimerEvent: {}
+[2.918178] (-) TimerEvent: {}
+[3.018927] (-) TimerEvent: {}
+[3.119639] (-) TimerEvent: {}
+[3.220321] (-) TimerEvent: {}
+[3.320964] (-) TimerEvent: {}
+[3.421577] (-) TimerEvent: {}
+[3.522246] (-) TimerEvent: {}
+[3.622910] (-) TimerEvent: {}
+[3.723890] (-) TimerEvent: {}
+[3.825086] (-) TimerEvent: {}
+[3.926462] (-) TimerEvent: {}
+[4.027169] (-) TimerEvent: {}
+[4.127904] (-) TimerEvent: {}
+[4.228539] (-) TimerEvent: {}
+[4.329185] (-) TimerEvent: {}
+[4.429813] (-) TimerEvent: {}
+[4.530452] (-) TimerEvent: {}
+[4.631179] (-) TimerEvent: {}
+[4.731913] (-) TimerEvent: {}
+[4.832624] (-) TimerEvent: {}
+[4.933301] (-) TimerEvent: {}
+[5.033987] (-) TimerEvent: {}
+[5.134727] (-) TimerEvent: {}
+[5.235461] (-) TimerEvent: {}
+[5.336240] (-) TimerEvent: {}
+[5.436945] (-) TimerEvent: {}
+[5.537857] (-) TimerEvent: {}
+[5.639297] (-) TimerEvent: {}
+[5.684297] (obstacles_detection) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/obstacles_detection', 'build', '--build-base', '/home/pi/C.C/test/RobotVision/build/obstacles_detection/build', 'install', '--prefix', '/home/pi/C.C/test/RobotVision/install/obstacles_detection', '--record', '/home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/C.C/test/RobotVision/src/obstacles_detection', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_AGENT_PID': '1785', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/C.C/test/RobotVision/install/interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MANAGERPID': '1667', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', 'JOURNAL_STREAM': '9:40117', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1833,unix/ubuntu:/tmp/.ICE-unix/1833', 'INVOCATION_ID': 'fa29a21e3e2044cba12d2af25a7c372a', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23a0aedb_b846_44fd_9709_427a1aebda8d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.65', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/pi/C.C/test/RobotVision/install/interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pi/C.C/test/RobotVision/build/obstacles_detection', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/install/interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/pi/C.C/test/RobotVision/install/interfaces'}, 'shell': False}
+[5.739545] (-) TimerEvent: {}
+[5.840546] (-) TimerEvent: {}
+[5.941643] (-) TimerEvent: {}
+[6.042294] (-) TimerEvent: {}
+[6.142924] (-) TimerEvent: {}
+[6.243594] (-) TimerEvent: {}
+[6.344264] (-) TimerEvent: {}
+[6.444884] (-) TimerEvent: {}
+[6.545516] (-) TimerEvent: {}
+[6.618886] (obstacles_detection) StdoutLine: {'line': b'running egg_info\n'}
+[6.622090] (obstacles_detection) StdoutLine: {'line': b'writing ../../build/obstacles_detection/obstacles_detection.egg-info/PKG-INFO\n'}
+[6.623174] (obstacles_detection) StdoutLine: {'line': b'writing dependency_links to ../../build/obstacles_detection/obstacles_detection.egg-info/dependency_links.txt\n'}
+[6.624017] (obstacles_detection) StdoutLine: {'line': b'writing entry points to ../../build/obstacles_detection/obstacles_detection.egg-info/entry_points.txt\n'}
+[6.624697] (obstacles_detection) StdoutLine: {'line': b'writing requirements to ../../build/obstacles_detection/obstacles_detection.egg-info/requires.txt\n'}
+[6.625189] (obstacles_detection) StdoutLine: {'line': b'writing top-level names to ../../build/obstacles_detection/obstacles_detection.egg-info/top_level.txt\n'}
+[6.645684] (-) TimerEvent: {}
+[6.746522] (-) TimerEvent: {}
+[6.767671] (obstacles_detection) StdoutLine: {'line': b"reading manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'\n"}
+[6.771460] (obstacles_detection) StdoutLine: {'line': b"writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'\n"}
+[6.772103] (obstacles_detection) StdoutLine: {'line': b'running build\n'}
+[6.772566] (obstacles_detection) StdoutLine: {'line': b'running build_py\n'}
+[6.772985] (obstacles_detection) StdoutLine: {'line': b'copying obstacles_detection/obstacles_detect_node.py -> /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection\n'}
+[6.775352] (obstacles_detection) StdoutLine: {'line': b'copying obstacles_detection/yolov7.py -> /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection\n'}
+[6.777456] (obstacles_detection) StdoutLine: {'line': b'running install\n'}
+[6.780493] (obstacles_detection) StdoutLine: {'line': b'running install_lib\n'}
+[6.787478] (obstacles_detection) StdoutLine: {'line': b'copying /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection/obstacles_detect_node.py -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection\n'}
+[6.788925] (obstacles_detection) StdoutLine: {'line': b'copying /home/pi/C.C/test/RobotVision/build/obstacles_detection/build/lib/obstacles_detection/yolov7.py -> /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection\n'}
+[6.792503] (obstacles_detection) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/obstacles_detect_node.py to obstacles_detect_node.cpython-38.pyc\n'}
+[6.800589] (obstacles_detection) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/yolov7_detect.py to yolov7_detect.cpython-38.pyc\n'}
+[6.801740] (obstacles_detection) StderrLine: {'line': b'Sorry: IndentationError: unexpected unindent (yolov7_detect.py, line 46)\n'}
+[6.802449] (obstacles_detection) StdoutLine: {'line': b'running install_data\n'}
+[6.804780] (obstacles_detection) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.810510] (obstacles_detection) StdoutLine: {'line': b"removing '/home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[6.812068] (obstacles_detection) StdoutLine: {'line': b'Copying ../../build/obstacles_detection/obstacles_detection.egg-info to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info\n'}
+[6.817454] (obstacles_detection) StdoutLine: {'line': b'running install_scripts\n'}
+[6.846713] (-) TimerEvent: {}
+[6.880383] (obstacles_detection) StdoutLine: {'line': b'Installing talker script to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/obstacles_detection\n'}
+[6.882212] (obstacles_detection) StdoutLine: {'line': b'Installing yolov7 script to /home/pi/C.C/test/RobotVision/install/obstacles_detection/lib/obstacles_detection\n'}
+[6.885459] (obstacles_detection) StdoutLine: {'line': b"writing list of installed files to '/home/pi/C.C/test/RobotVision/build/obstacles_detection/install.log'\n"}
+[6.946996] (-) TimerEvent: {}
+[6.990274] (obstacles_detection) CommandEnded: {'returncode': 0}
+[7.030587] (obstacles_detection) JobEnded: {'identifier': 'obstacles_detection', 'rc': 0}
+[7.033916] (-) EventReactorShutdown: {}

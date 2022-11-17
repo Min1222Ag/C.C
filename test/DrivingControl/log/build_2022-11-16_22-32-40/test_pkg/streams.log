@@ -1,0 +1,37 @@
+[2.633s] Invoking command in '/home/pi/C.C/test/DrivingControl/src/test_pkg': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_pkg build --build-base /home/pi/C.C/test/DrivingControl/build/test_pkg/build install --prefix /home/pi/C.C/test/DrivingControl/install/test_pkg --record /home/pi/C.C/test/DrivingControl/build/test_pkg/install.log --single-version-externally-managed
+[3.558s] running egg_info
+[3.561s] creating ../../build/test_pkg/test_pkg.egg-info
+[3.566s] writing ../../build/test_pkg/test_pkg.egg-info/PKG-INFO
+[3.567s] writing dependency_links to ../../build/test_pkg/test_pkg.egg-info/dependency_links.txt
+[3.567s] writing entry points to ../../build/test_pkg/test_pkg.egg-info/entry_points.txt
+[3.570s] writing requirements to ../../build/test_pkg/test_pkg.egg-info/requires.txt
+[3.570s] writing top-level names to ../../build/test_pkg/test_pkg.egg-info/top_level.txt
+[3.575s] writing manifest file '../../build/test_pkg/test_pkg.egg-info/SOURCES.txt'
+[3.702s] reading manifest file '../../build/test_pkg/test_pkg.egg-info/SOURCES.txt'
+[3.705s] writing manifest file '../../build/test_pkg/test_pkg.egg-info/SOURCES.txt'
+[3.706s] running build
+[3.706s] running build_py
+[3.707s] creating /home/pi/C.C/test/DrivingControl/build/test_pkg/build
+[3.707s] creating /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib
+[3.708s] creating /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib/test_pkg
+[3.708s] copying test_pkg/test_node.py -> /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib/test_pkg
+[3.709s] copying test_pkg/__init__.py -> /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib/test_pkg
+[3.709s] running install
+[3.712s] running install_lib
+[3.716s] creating /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg
+[3.716s] copying /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib/test_pkg/test_node.py -> /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg
+[3.717s] copying /home/pi/C.C/test/DrivingControl/build/test_pkg/build/lib/test_pkg/__init__.py -> /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg
+[3.719s] byte-compiling /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg/test_node.py to test_node.cpython-38.pyc
+[3.724s] byte-compiling /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg/__init__.py to __init__.cpython-38.pyc
+[3.725s] running install_data
+[3.727s] creating /home/pi/C.C/test/DrivingControl/install/test_pkg/share/ament_index
+[3.727s] creating /home/pi/C.C/test/DrivingControl/install/test_pkg/share/ament_index/resource_index
+[3.728s] creating /home/pi/C.C/test/DrivingControl/install/test_pkg/share/ament_index/resource_index/packages
+[3.728s] copying resource/test_pkg -> /home/pi/C.C/test/DrivingControl/install/test_pkg/share/ament_index/resource_index/packages
+[3.729s] copying package.xml -> /home/pi/C.C/test/DrivingControl/install/test_pkg/share/test_pkg
+[3.729s] running install_egg_info
+[3.735s] Copying ../../build/test_pkg/test_pkg.egg-info to /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages/test_pkg-0.0.0-py3.8.egg-info
+[3.739s] running install_scripts
+[3.800s] Installing test_node script to /home/pi/C.C/test/DrivingControl/install/test_pkg/lib/test_pkg
+[3.802s] writing list of installed files to '/home/pi/C.C/test/DrivingControl/build/test_pkg/install.log'
+[3.900s] Invoked command in '/home/pi/C.C/test/DrivingControl/src/test_pkg' returned '0': PYTHONPATH=/home/pi/C.C/test/DrivingControl/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_pkg build --build-base /home/pi/C.C/test/DrivingControl/build/test_pkg/build install --prefix /home/pi/C.C/test/DrivingControl/install/test_pkg --record /home/pi/C.C/test/DrivingControl/build/test_pkg/install.log --single-version-externally-managed

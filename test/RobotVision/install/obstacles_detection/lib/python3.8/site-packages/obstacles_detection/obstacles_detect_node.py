@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # coding:utf-8
+import sys
+
+sys.path.append({})
+
 import numpy as np
 import rclpy
 from rclpy.node import Node
@@ -70,8 +74,8 @@ class lidarDetect(Node):
 			elif (340 <= i <= 360) or (0<= i <=20):
 				if ranges[i] < self.Limit_Distance: 
 					self.Avoid_Front += 1
-			print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
-		sleep(0.3)
+		print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
+		sleep(0.1)
 		
 	# publish Stop, Left_Speed, Right_Speed		
 	def decision_callback(self):
