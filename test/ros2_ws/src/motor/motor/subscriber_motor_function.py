@@ -34,7 +34,7 @@ class motorSubscriber(Node):
             Stop,       # message type : Stop
             '/Stop',     # topic name : Stop
             self.get_signal,
-            10000)      # queue size : 100
+            200)      # queue size : 200
         self.subscription  # prevent unused variable warning
         print("subscription completed")
 
@@ -50,7 +50,7 @@ class motorSubscriber(Node):
         #msg.rspeed
         ###########################################################
         #self.get_logger().info('I heard: "%d"' % msg.stop)
-	print(msg.stop)
+        print(msg.stop)
 
 def main(args=None):
     rclpy.init(args=args)

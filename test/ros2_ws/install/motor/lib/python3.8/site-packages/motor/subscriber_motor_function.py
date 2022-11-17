@@ -32,25 +32,25 @@ class motorSubscriber(Node):
         super().__init__('motor_subscriber') # motor name : motor_subscriber
         self.subscription = self.create_subscription(
             Stop,       # message type : Stop
-            'Stop',     # topic name : Stop
+            '/Stop',     # topic name : Stop
             self.get_signal,
-            100)      # queue size : 100
+            200)      # queue size : 200
         self.subscription  # prevent unused variable warning
-        print("kk")
+        print("subscription completed")
 
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
-        print("ss")
+        print("get_signal operated")
         print(msg)
         ###########################################################
-        if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
+        if msg.stop == True: # Execute motor_control.py > motorControl Class > def stop
             stop_function.stop() # Class motorControl > def stop()            
 
-        msg.lspeed
-        msg.rspeed
+        #msg.lspeed
+        #msg.rspeed
         ###########################################################
-        self.get_logger().info('I heard: "%d"' % msg.stop)
-
+        #self.get_logger().info('I heard: "%d"' % msg.stop)
+        print(msg.stop)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -63,14 +63,14 @@ def main(args=None):
     print("2")
 
     rclpy.spin(motor_subscriber)
-    print("3")
+    print("spin")
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
     motor_subscriber.destroy_node()
     rclpy.shutdown()
-    print("sss")
+    print("shutdown")
 
 if __name__ == '__main__':
     main()
