@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # coding:utf-8
-import sys
-
-sys.path.append({})
-
 import numpy as np
 import rclpy
 from rclpy.node import Node
@@ -11,6 +7,8 @@ from rclpy.node import Node
 from time import sleep
 from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
+
+import yolov7
 
 #from sensor_msgs.msg import Image
 #from bboxes_ex_msgs.msg import BoundingBoxes, BoundingBox
@@ -23,14 +21,22 @@ class lidarDetect(Node):
 	def __init__(self):
 		super().__init__('obstacles_detect_node')
 		
-		# Subscription info
-		self.subscription = self.create_subscription(
+		# Subscription info for LiDAR
+		self.lidar_subscription = self.create_subscription(
 			LaserScan,
 			'/scan',
 			self.lidarScan,
 			100),
-		self.subscription
-		
+		self.lidar_subscription
+
+                # Subscription info for YOLO
+                self.yolo_subscription = self.create_subscription(
+                        CV_YOLO,
+                        'CV_YOLO',
+                        yolov7.callback,
+                        100),
+                self.yolo_subscription
+
 		# Publisher info
 		self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
 		timer_period = 0.05  # seconds
@@ -89,7 +95,7 @@ class lidarDetect(Node):
 		if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
 			self.proximity_sensor()
 			if self.distance < 100:
-				self.Stop = True
+	
 				self.Left_Speed = 0.0
 				self.Right_Speed = 0.0
 				msg.stop = self.Stop
