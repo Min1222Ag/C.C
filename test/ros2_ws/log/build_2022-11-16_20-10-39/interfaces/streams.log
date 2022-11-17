@@ -1,0 +1,25 @@
+[0.119s] Invoking command in '/home/pi/C.C/test/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/ros2_ws/build/interfaces -- -j4 -l4
+[0.238s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.351s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.352s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.433s] CMake Error at CMakeLists.txt:20 (find_package):
+[1.433s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.434s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.434s]   CMake did not find one.
+[1.434s] 
+[1.435s]   Could not find a package configuration file provided by "catkin" with any
+[1.435s]   of the following names:
+[1.436s] 
+[1.437s]     catkinConfig.cmake
+[1.439s]     catkin-config.cmake
+[1.440s] 
+[1.441s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.442s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.442s]   provides a separate development package or SDK, be sure it has been
+[1.443s]   installed.
+[1.444s] 
+[1.444s] 
+[1.445s] -- Configuring incomplete, errors occurred!
+[1.446s] See also "/home/pi/C.C/test/ros2_ws/build/interfaces/CMakeFiles/CMakeOutput.log".
+[1.446s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[1.452s] Invoked command in '/home/pi/C.C/test/ros2_ws/build/interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/ros2_ws/build/interfaces -- -j4 -l4

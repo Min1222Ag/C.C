@@ -1,5 +1,0 @@
-  File "/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py", line 50
-    if msg.stop = 0: # Execute motor_control.py > motorControl Class > def stop
-                ^
-SyntaxError: invalid syntax
-

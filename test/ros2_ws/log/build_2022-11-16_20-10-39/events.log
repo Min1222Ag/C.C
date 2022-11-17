@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000900] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.001173] (motor) JobQueued: {'identifier': 'motor', 'dependencies': OrderedDict()}
+[0.001895] (obstacles_detection) JobQueued: {'identifier': 'obstacles_detection', 'dependencies': OrderedDict([('interfaces', '/home/pi/C.C/test/ros2_ws/install/interfaces')])}
+[0.002289] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.054023] (motor) JobStarted: {'identifier': 'motor'}
+[0.101431] (-) TimerEvent: {}
+[0.113144] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.116241] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[0.118901] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/C.C/test/ros2_ws/build/interfaces', '--', '-j4', '-l4'], 'cwd': '/home/pi/C.C/test/ros2_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.2.89 55917 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/C.C/test/ros2_ws/install/interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/C.C/test/ros2_ws/src/interfaces'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('ROS_IP', '192.168.2.232'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LC_TERMINAL_VERSION', '3.4.16'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/pi/C.C/test/ros2_ws/install:/home/pi/C.C/test/DrivingControl/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '32'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/interfaces:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://localhost:11111'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_TERMINAL', 'iTerm2'), ('PWD', '/home/pi/C.C/test/ros2_ws/build/interfaces'), ('SSH_CONNECTION', '192.168.2.89 55917 192.168.2.232 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/src/interfaces/:/home/pi/C.C/test/RobotVision/src/:/home/pi/C.C/test/RobotVision/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/DrivingControl/src/motor/motor/motorControl/'), ('ROS_HOSTNAME', '192.168.2.232'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/C.C/test/ros2_ws/install/interfaces:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy')]), 'shell': False}
+[0.201504] (-) TimerEvent: {}
+[0.240119] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.301598] (-) TimerEvent: {}
+[0.353499] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.354284] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.401784] (-) TimerEvent: {}
+[0.502572] (-) TimerEvent: {}
+[0.603427] (-) TimerEvent: {}
+[0.704184] (-) TimerEvent: {}
+[0.804885] (-) TimerEvent: {}
+[0.905583] (-) TimerEvent: {}
+[1.006287] (-) TimerEvent: {}
+[1.106954] (-) TimerEvent: {}
+[1.207700] (-) TimerEvent: {}
+[1.308948] (-) TimerEvent: {}
+[1.409812] (-) TimerEvent: {}
+[1.434895] (interfaces) StderrLine: {'line': b'CMake Error at CMakeLists.txt:20 (find_package):\n'}
+[1.435764] (interfaces) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.436113] (interfaces) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[1.436407] (interfaces) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.436711] (interfaces) StderrLine: {'line': b'\n'}
+[1.437089] (interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[1.437508] (interfaces) StderrLine: {'line': b'  of the following names:\n'}
+[1.438458] (interfaces) StderrLine: {'line': b'\n'}
+[1.439513] (interfaces) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[1.440541] (interfaces) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[1.441851] (interfaces) StderrLine: {'line': b'\n'}
+[1.443448] (interfaces) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[1.444153] (interfaces) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[1.444623] (interfaces) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.445120] (interfaces) StderrLine: {'line': b'  installed.\n'}
+[1.445877] (interfaces) StderrLine: {'line': b'\n'}
+[1.446552] (interfaces) StderrLine: {'line': b'\n'}
+[1.447221] (interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.447823] (interfaces) StdoutLine: {'line': b'See also "/home/pi/C.C/test/ros2_ws/build/interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.448551] (interfaces) StderrLine: {'line': b'make: *** [Makefile:748: cmake_check_build_system] Error 1\n'}
+[1.453797] (interfaces) CommandEnded: {'returncode': 2}
+[1.510040] (-) TimerEvent: {}
+[1.611025] (-) TimerEvent: {}
+[1.715011] (-) TimerEvent: {}
+[1.810834] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 2}
+[1.815152] (-) TimerEvent: {}
+[1.915717] (-) TimerEvent: {}
+[2.016364] (-) TimerEvent: {}
+[2.116979] (-) TimerEvent: {}
+[2.217686] (-) TimerEvent: {}
+[2.318310] (-) TimerEvent: {}
+[2.419096] (-) TimerEvent: {}
+[2.519728] (-) TimerEvent: {}
+[2.620339] (-) TimerEvent: {}
+[2.721059] (-) TimerEvent: {}
+[2.822051] (-) TimerEvent: {}
+[2.832554] (motor) JobEnded: {'identifier': 'motor', 'rc': 'SIGINT'}
+[2.844879] (obstacles_detection) JobSkipped: {'identifier': 'obstacles_detection'}
+[2.845158] (-) EventReactorShutdown: {}
