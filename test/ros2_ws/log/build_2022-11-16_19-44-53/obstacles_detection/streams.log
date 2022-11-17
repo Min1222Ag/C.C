@@ -1,0 +1,22 @@
+[2.918s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/obstacles_detection': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/src/interfaces/:/home/pi/C.C/test/RobotVision/src/:/home/pi/C.C/test/RobotVision/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/DrivingControl/src/motor/motor/motorControl/ /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/ros2_ws/build/obstacles_detection/build install --prefix /home/pi/C.C/test/ros2_ws/install/obstacles_detection --record /home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log --single-version-externally-managed
+[3.767s] running egg_info
+[3.769s] writing ../../build/obstacles_detection/obstacles_detection.egg-info/PKG-INFO
+[3.770s] writing dependency_links to ../../build/obstacles_detection/obstacles_detection.egg-info/dependency_links.txt
+[3.770s] writing entry points to ../../build/obstacles_detection/obstacles_detection.egg-info/entry_points.txt
+[3.771s] writing requirements to ../../build/obstacles_detection/obstacles_detection.egg-info/requires.txt
+[3.772s] writing top-level names to ../../build/obstacles_detection/obstacles_detection.egg-info/top_level.txt
+[3.898s] reading manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[3.902s] writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[3.902s] running build
+[3.903s] running build_py
+[3.904s] running install
+[3.907s] running install_lib
+[3.913s] running install_data
+[3.915s] running install_egg_info
+[3.921s] removing '/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info' (and everything under it)
+[3.923s] Copying ../../build/obstacles_detection/obstacles_detection.egg-info to /home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-0.0.0-py3.8.egg-info
+[3.927s] running install_scripts
+[3.989s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/obstacles_detection
+[3.989s] Installing yolov7 script to /home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/obstacles_detection
+[3.991s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log'
+[4.091s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/obstacles_detection' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/RobotVision/src/interfaces/:/home/pi/C.C/test/RobotVision/src/:/home/pi/C.C/test/RobotVision/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/DrivingControl/src/motor/motor/motorControl/ /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/ros2_ws/build/obstacles_detection/build install --prefix /home/pi/C.C/test/ros2_ws/install/obstacles_detection --record /home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log --single-version-externally-managed

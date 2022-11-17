@@ -387,6 +387,9 @@ ament_lint_common_DIR:PATH=/opt/ros/foxy/share/ament_lint_common/cmake
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/foxy/bin/ament_xmllint
 
+//The directory containing a CMake configuration file for catkin.
+catkin_DIR:PATH=catkin_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/foxy/lib/cmake/fastcdr
 

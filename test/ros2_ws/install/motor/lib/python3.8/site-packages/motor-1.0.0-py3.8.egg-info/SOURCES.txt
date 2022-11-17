@@ -9,6 +9,8 @@ setup.py
 ../../build/motor/motor.egg-info/top_level.txt
 ../../build/motor/motor.egg-info/zip-safe
 motor/__init__.py
+motor/dc_motor.py
+motor/motor_control.py
 motor/publisher_motor_function.py
 motor/subscriber_motor_function.py
 resource/motor
