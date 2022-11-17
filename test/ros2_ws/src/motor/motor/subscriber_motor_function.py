@@ -1,11 +1,3 @@
-# Copyright 2016 Open Source Robotics Foundation, Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -14,37 +6,24 @@
 import rclpy
 from rclpy.node import Node
 
-# use custom messages '/Stop' 
+# use custom messages '/Stop'
 from interfaces.msg import Stop
 
 #############################import################################
 # import motor_control.py for stopping two motors
-import motor_control
-import obstacles_detect_node
 
 
 ###################################################################
-
-# motorSubscriber : subscribe '/Stop' topic from 'obstacles_detection' file
 class motorSubscriber(Node):
 
     def __init__(self):
         super().__init__('motor_subscriber') # motor name : motor_subscriber
         self.subscription = self.create_subscription(
-            Stop,       # message type : Stop
-            '/Stop',     # topic name : Stop
-            self.get_signal,
-            200)      # queue size : 200
         self.subscription  # prevent unused variable warning
-        print("subscription completed")
-
-    # get signal from a LiDAR and proximity sensor
-    def get_signal(self, msg):
         print("get_signal operated")
         print(msg)
         ###########################################################
-        if msg.stop == True: # Execute motor_control.py > motorControl Class > def stop
-            stop_function.stop() # Class motorControl > def stop()            
+            stop_function.stop() # Class motorControl > def stop()
 
         #msg.lspeed
         #msg.rspeed
@@ -54,7 +33,7 @@ class motorSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    stop_function = motor_control.motorControl([1, 2, 3, 4, 5, 6]) # motor_control.py > Class motorControl 
+    stop_function = motor_control.motorControl([1, 2, 3, 4, 5, 6]) # motor_control.py > Class motorControl
     motor_speed = obstacles_detect_node.lidarDetect() # obstacles_detection.py > Class lidarDetect
     # motor_speed.decision_callback() # never mind
     print("1")
@@ -74,3 +53,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+                                            

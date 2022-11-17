@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py", line 22
+    import motor_control.py for stopping two motors
+                            ^
+SyntaxError: invalid syntax
+

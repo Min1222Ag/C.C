@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.000953] (motor) JobQueued: {'identifier': 'motor', 'dependencies': OrderedDict()}
+[0.001244] (testt) JobQueued: {'identifier': 'testt', 'dependencies': OrderedDict()}
+[0.001979] (motor) JobStarted: {'identifier': 'motor'}
+[0.057546] (testt) JobStarted: {'identifier': 'testt'}
+[0.099298] (-) TimerEvent: {}
+[0.200385] (-) TimerEvent: {}
+[0.301282] (-) TimerEvent: {}
+[0.401924] (-) TimerEvent: {}
+[0.502615] (-) TimerEvent: {}
+[0.603262] (-) TimerEvent: {}
+[0.703949] (-) TimerEvent: {}
+[0.804644] (-) TimerEvent: {}
+[0.905324] (-) TimerEvent: {}
+[1.006153] (-) TimerEvent: {}
+[1.106845] (-) TimerEvent: {}
+[1.207580] (-) TimerEvent: {}
+[1.308492] (-) TimerEvent: {}
+[1.409212] (-) TimerEvent: {}
+[1.509907] (-) TimerEvent: {}
+[1.610601] (-) TimerEvent: {}
+[1.711276] (-) TimerEvent: {}
+[1.811900] (-) TimerEvent: {}
+[1.912576] (-) TimerEvent: {}
+[2.013330] (-) TimerEvent: {}
+[2.116635] (-) TimerEvent: {}
+[2.217723] (-) TimerEvent: {}
+[2.318818] (-) TimerEvent: {}
+[2.419940] (-) TimerEvent: {}
+[2.520638] (-) TimerEvent: {}
+[2.622168] (-) TimerEvent: {}
+[2.724453] (-) TimerEvent: {}
+[2.825972] (-) TimerEvent: {}
+[2.926889] (-) TimerEvent: {}
+[3.027775] (-) TimerEvent: {}
+[3.128831] (-) TimerEvent: {}
+[3.229585] (-) TimerEvent: {}
+[3.330364] (-) TimerEvent: {}
+[3.431060] (-) TimerEvent: {}
+[3.531860] (-) TimerEvent: {}
+[3.633639] (-) TimerEvent: {}
+[3.735460] (-) TimerEvent: {}
+[3.837880] (-) TimerEvent: {}
+[3.940760] (-) TimerEvent: {}
+[3.971073] (motor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motor', 'build', '--build-base', '/home/pi/C.C/test/DrivingControl/build/motor/build', 'install', '--prefix', '/home/pi/C.C/test/DrivingControl/install/motor', '--record', '/home/pi/C.C/test/DrivingControl/build/motor/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/C.C/test/DrivingControl/src/motor', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.2.145 52758 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/C.C/test/DrivingControl/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/pi/C.C/test/DrivingControl/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/pi/C.C/test/DrivingControl/install/testt:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/pi/C.C/test/DrivingControl/build/motor', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.145 52758 192.168.2.167 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[4.007379] (testt) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/testt', 'build', '--build-base', '/home/pi/C.C/test/DrivingControl/build/testt/build', 'install', '--prefix', '/home/pi/C.C/test/DrivingControl/install/testt', '--record', '/home/pi/C.C/test/DrivingControl/build/testt/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/C.C/test/DrivingControl/testt', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.2.145 52758 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/C.C/test/DrivingControl/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/pi/C.C/test/DrivingControl/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.local/lib/python3.8/site-packages', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/pi/C.C/test/DrivingControl/install/testt:/home/pi/C.C/test/DrivingControl/install/motor:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/pi/C.C/test/DrivingControl/build/testt', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.145 52758 192.168.2.167 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages:/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[4.040963] (-) TimerEvent: {}
+[4.141831] (-) TimerEvent: {}
+[4.242691] (-) TimerEvent: {}
+[4.343430] (-) TimerEvent: {}
+[4.444111] (-) TimerEvent: {}
+[4.544814] (-) TimerEvent: {}
+[4.646369] (-) TimerEvent: {}
+[4.747746] (-) TimerEvent: {}
+[4.849147] (-) TimerEvent: {}
+[4.950080] (-) TimerEvent: {}
+[5.050895] (-) TimerEvent: {}
+[5.070135] (motor) StdoutLine: {'line': b'running egg_info\n'}
+[5.073492] (motor) StdoutLine: {'line': b'writing ../../build/motor/motor.egg-info/PKG-INFO\n'}
+[5.074803] (motor) StdoutLine: {'line': b'writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt\n'}
+[5.075760] (motor) StdoutLine: {'line': b'writing entry points to ../../build/motor/motor.egg-info/entry_points.txt\n'}
+[5.076661] (motor) StdoutLine: {'line': b'writing requirements to ../../build/motor/motor.egg-info/requires.txt\n'}
+[5.077406] (motor) StdoutLine: {'line': b'writing top-level names to ../../build/motor/motor.egg-info/top_level.txt\n'}
+[5.099210] (testt) StdoutLine: {'line': b'running egg_info\n'}
+[5.102812] (testt) StdoutLine: {'line': b'writing ../build/testt/testt.egg-info/PKG-INFO\n'}
+[5.104055] (testt) StdoutLine: {'line': b'writing dependency_links to ../build/testt/testt.egg-info/dependency_links.txt\n'}
+[5.105095] (testt) StdoutLine: {'line': b'writing entry points to ../build/testt/testt.egg-info/entry_points.txt\n'}
+[5.106251] (testt) StdoutLine: {'line': b'writing requirements to ../build/testt/testt.egg-info/requires.txt\n'}
+[5.107297] (testt) StdoutLine: {'line': b'writing top-level names to ../build/testt/testt.egg-info/top_level.txt\n'}
+[5.151062] (-) TimerEvent: {}
+[5.216926] (motor) StdoutLine: {'line': b"reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'\n"}
+[5.221408] (motor) StdoutLine: {'line': b"writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'\n"}
+[5.222148] (motor) StdoutLine: {'line': b'running build\n'}
+[5.222718] (motor) StdoutLine: {'line': b'running build_py\n'}
+[5.223473] (motor) StdoutLine: {'line': b'copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/DrivingControl/build/motor/build/lib/motor\n'}
+[5.224710] (motor) StdoutLine: {'line': b'running install\n'}
+[5.227948] (motor) StdoutLine: {'line': b'running install_lib\n'}
+[5.232654] (motor) StdoutLine: {'line': b'copying /home/pi/C.C/test/DrivingControl/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor\n'}
+[5.235638] (motor) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc\n'}
+[5.239797] (motor) StderrLine: {'line': b'  File "/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py", line 22\n'}
+[5.240621] (motor) StderrLine: {'line': b'    import motor_control.py for stopping two motors\n'}
+[5.241087] (motor) StderrLine: {'line': b'                            ^\n'}
+[5.241552] (motor) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[5.242044] (motor) StderrLine: {'line': b'\n'}
+[5.242691] (motor) StdoutLine: {'line': b'running install_data\n'}
+[5.243282] (motor) StdoutLine: {'line': b'copying package.xml -> /home/pi/C.C/test/DrivingControl/install/motor/share/motor\n'}
+[5.243794] (motor) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.245643] (testt) StdoutLine: {'line': b"reading manifest file '../build/testt/testt.egg-info/SOURCES.txt'\n"}
+[5.249607] (testt) StdoutLine: {'line': b"writing manifest file '../build/testt/testt.egg-info/SOURCES.txt'\n"}
+[5.250379] (motor) StdoutLine: {'line': b"removing '/home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.250949] (testt) StdoutLine: {'line': b'running build\n'}
+[5.251613] (-) TimerEvent: {}
+[5.252413] (testt) StdoutLine: {'line': b'running build_py\n'}
+[5.252958] (motor) StdoutLine: {'line': b'Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/DrivingControl/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info\n'}
+[5.253568] (testt) StdoutLine: {'line': b'copying testt/test_node.py -> /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt\n'}
+[5.254063] (testt) StdoutLine: {'line': b'copying testt/__init__.py -> /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt\n'}
+[5.254530] (testt) StdoutLine: {'line': b'running install\n'}
+[5.256635] (testt) StdoutLine: {'line': b'running install_lib\n'}
+[5.258094] (motor) StdoutLine: {'line': b'running install_scripts\n'}
+[5.261505] (testt) StdoutLine: {'line': b'copying /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt/test_node.py -> /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt\n'}
+[5.262368] (testt) StdoutLine: {'line': b'copying /home/pi/C.C/test/DrivingControl/build/testt/build/lib/testt/__init__.py -> /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt\n'}
+[5.264722] (testt) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt/test_node.py to test_node.cpython-38.pyc\n'}
+[5.269980] (testt) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt/__init__.py to __init__.cpython-38.pyc\n'}
+[5.272260] (testt) StdoutLine: {'line': b'running install_data\n'}
+[5.274936] (testt) StdoutLine: {'line': b'copying resource/testt -> /home/pi/C.C/test/DrivingControl/install/testt/share/ament_index/resource_index/packages\n'}
+[5.275769] (testt) StdoutLine: {'line': b'copying package.xml -> /home/pi/C.C/test/DrivingControl/install/testt/share/testt\n'}
+[5.276455] (testt) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.283008] (testt) StdoutLine: {'line': b"removing '/home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.284634] (testt) StdoutLine: {'line': b'Copying ../build/testt/testt.egg-info to /home/pi/C.C/test/DrivingControl/install/testt/lib/python3.8/site-packages/testt-0.0.0-py3.8.egg-info\n'}
+[5.290681] (testt) StdoutLine: {'line': b'running install_scripts\n'}
+[5.332599] (motor) StdoutLine: {'line': b'Installing listener script to /home/pi/C.C/test/DrivingControl/install/motor/lib/motor\n'}
+[5.333653] (motor) StdoutLine: {'line': b'Installing talker script to /home/pi/C.C/test/DrivingControl/install/motor/lib/motor\n'}
+[5.335480] (motor) StdoutLine: {'line': b"writing list of installed files to '/home/pi/C.C/test/DrivingControl/build/motor/install.log'\n"}
+[5.351858] (-) TimerEvent: {}
+[5.381474] (testt) StdoutLine: {'line': b'Installing test_node script to /home/pi/C.C/test/DrivingControl/install/testt/lib/testt\n'}
+[5.384421] (testt) StdoutLine: {'line': b"writing list of installed files to '/home/pi/C.C/test/DrivingControl/build/testt/install.log'\n"}
+[5.452276] (-) TimerEvent: {}
+[5.473619] (motor) CommandEnded: {'returncode': 0}
+[5.552470] (-) TimerEvent: {}
+[5.553909] (motor) JobEnded: {'identifier': 'motor', 'rc': 0}
+[5.566943] (testt) CommandEnded: {'returncode': 0}
+[5.602617] (testt) JobEnded: {'identifier': 'testt', 'rc': 0}
+[5.605753] (-) EventReactorShutdown: {}
