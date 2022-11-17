@@ -16,16 +16,13 @@ import rclpy
 from rclpy.node import Node
 
 # use custom messages '/Stop' 
-from interfaces.msg import Stop
+import msg
 
 #############################import################################
 # import motor_control.py for stopping two motors
-from .motor_control import motor_control
-import obstacles_detection
+import motor_control
+import obstacles_detect_node
 
-stop_function = motor_control.motorControl() # motor_control.py > Class motorControl 
-motor_speed = obstacles_detection.lidarDetect() # ovstacles_detection.py > Class lidarDetect
-# motor_speed.decision_callback() # never mind
 
 ###################################################################
 
@@ -58,6 +55,9 @@ class motorSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    stop_function = motor_control.motorControl([1, 2, 3, 4, 5, 6]) # motor_control.py > Class motorControl 
+    motor_speed = obstacles_detect_node.lidarDetect() # obstacles_detection.py > Class lidarDetect
+    # motor_speed.decision_callback() # never mind
     print("1")
 
     motor_subscriber = motorSubscriber()

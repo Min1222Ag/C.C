@@ -1,13 +1,13 @@
 from time import sleep as sleep 
-from motor import motor
+import dc_motor
 
 class motorControl:
     '''
     Driving using two DC motors
     '''
     def __init__(self, pins): # pins is a list consisting of 6 GPIO pins
-        self.right_motor = Motor([pins[0], pins[1]], pins[2], "right") # right motor
-        self.left_motor = Motor([pins[3], pins[4]], pins[5], "left") # left motor
+        self.right_motor = dc_motor.motor([pins[0], pins[1]], pins[2], "right") # right motor
+        self.left_motor = dc_motor.motor([pins[3], pins[4]], pins[5], "left") # left motor
 
     def ahead(self):
         # drive ahead
