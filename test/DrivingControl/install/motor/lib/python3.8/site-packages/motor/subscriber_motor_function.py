@@ -11,12 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import sys
+
+sys.path.append({"/home/pi/C.C/test/RobotVision/src/interfaces/"})
 
 import rclpy
 from rclpy.node import Node
 
 # use custom messages '/Stop' 
-import msg
+from interfaces.msg import Stop
 
 #############################import################################
 # import motor_control.py for stopping two motors

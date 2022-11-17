@@ -10,7 +10,7 @@ from rclpy.node import Node
 
 from time import sleep
 from sensor_msgs.msg import LaserScan
-from interfaces.msg import Stop
+import interfaces
 
 #from sensor_msgs.msg import Image
 #from bboxes_ex_msgs.msg import BoundingBoxes, BoundingBox
@@ -32,7 +32,7 @@ class lidarDetect(Node):
 		self.subscription
 		
 		# Publisher info
-		self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
+		self.publisher_stop = self.create_publisher(msg.Stop, 'Stop', 100)
 		timer_period = 0.05  # seconds
 		self.timer = self.create_timer(timer_period, self.decision_callback)
 		
@@ -44,7 +44,7 @@ class lidarDetect(Node):
 		self.distance = 0
 		
 		# Motor control
-		self.Stop = False
+		self.msg.Stop = False
 		self.Left_Forward = True
 		self.Left_Speed = 0.5
 		self.Right_Forward = True

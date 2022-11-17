@@ -9,11 +9,11 @@
 
   <depend>rclpy</depend>
 
-  <exec_depend>msg</exec_depend>
+  <exec_depend>interfaces</exec_depend>
   <exec_depend>obstacles_detect_node</exec_depend>
   <exec_depend>motor_control</exec_depend>
 
-  <build_depend>msg</build_depend>
+  <exec_depend>interfaces</exec_depend>
   <build_depend>obstacles_detect_node</build_depend>
   <build_depend>motor_control</build_depend>
 
