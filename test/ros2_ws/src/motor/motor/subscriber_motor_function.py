@@ -38,20 +38,12 @@ class motorSubscriber(Node):
         self.subscription  # prevent unused variable warning
         print("subscription")
 
-        stop_function = motor_control.motorControl() # motor_control.py > Class motorControl 
-        motor_speed = obstacles_detection.lidarDetect() # ovstacles_detection.py > Class lidarDetect
-
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
         print("get_signal operated")
         print(msg)
         ###########################################################
         if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
-            stop_function.stop() # Class motorControl > def stop()            
-
-        # msg.lspeed
-        # msg.rspeed
-        ###########################################################
         self.get_logger().info('I heard: "%d"' % msg.stop)
 
 
