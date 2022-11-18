@@ -44,9 +44,7 @@ class motorSubscriber(Node):
         print(msg)
         ###########################################################
         if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
-        # msg.lspeed
-        # msg.rspeed
-        self.get_logger().info('I heard: "%d"' % msg.stop)
+             self.get_logger().info('I heard: "%d"' % msg.stop)
 
 
 def main(args=None):

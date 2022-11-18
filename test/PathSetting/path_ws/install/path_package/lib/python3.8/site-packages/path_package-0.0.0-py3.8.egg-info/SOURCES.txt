@@ -10,6 +10,8 @@ setup.py
 ../../build/path_package/path_package.egg-info/zip-safe
 path_package/__init__.py
 path_package/path_node.py
+path_package/publisher_member_function.py
+path_package/tcp.py
 resource/path_package
 test/test_copyright.py
 test/test_flake8.py

@@ -15,6 +15,7 @@ import RPi.GPIO as GPIO
 import time
 
 class lidarDetect(Node):
+<<<<<<< HEAD
     def __init__(self):
         super().__init__('obstacles_detect_node')
          		
@@ -60,6 +61,58 @@ class lidarDetect(Node):
         self.Avoid_Left = 0
         self.Avoid_Front = 0
         self.Avoid_Right = 0
+=======
+	def __init__(self):
+		super().__init__('obstacles_detect_node')
+		
+		# Subscription info for LiDAR
+		self.lidar_subscription = self.create_subscription(
+			LaserScan,
+			'/scan',
+			self.lidarScan,
+			100),
+		self.lidar_subscription
+
+                # Subscription info for YOLO
+                self.yolo_subscription = self.create_subscription(
+                        UInt64MultiArray,
+                        'CV_YOLO',
+                        yolov7.yolo_publish,
+                        100)
+                self.yolo_subscription
+
+		# Publisher info
+		self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
+		timer_period = 0.05  # seconds
+		self.timer = self.create_timer(timer_period, self.decision_callback)
+		
+		# Lidar data
+		self.Lidar_Angle = 60
+		self.Limit_Distance = 1
+		
+		# Proximity Sensor info
+		self.distance = 0
+		
+		# Motor control
+		self.Stop = False
+		self.Left_Forward = True
+		self.Left_Speed = 0.5
+		self.Right_Forward = True
+		self.Right_Speed = 0.5
+		
+		# Sum of obstacles per point
+		self.Avoid_Left = 0
+		self.Avoid_Front = 0
+		self.Avoid_Right = 0
+	
+		
+	# /scan subscribe to detect 	
+	def lidarScan(self, msg):
+	
+		self.Avoid_Left = 0
+		self.Avoid_Front = 0
+		self.Avoid_Right = 0
+>>>>>>> 92b6ed21faec9a4daa4b72ae106523ad83652d31
 		
 		# Divide three part of the front
         for i in range(len(ranges)):
