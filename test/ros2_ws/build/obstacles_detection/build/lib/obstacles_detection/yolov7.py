@@ -64,7 +64,7 @@ def main(args=None):
   # Initialize the rclpy library
   rclpy.init(args=args)
   
-  yolo_publish = YoloPublisher()
+  yolo_publisher = YoloPublisher()
 
   rclpy.spin(yolo_publisher)
 
