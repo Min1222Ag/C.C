@@ -1,1 +1,1 @@
-interfaces:numpy:rclpy:sensor_msgs:time
+cv2:cv_bridge:interfaces:numpy:rclpy:sensor_msgs:std_msgs:time
