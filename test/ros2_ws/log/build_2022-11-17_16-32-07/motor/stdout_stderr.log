@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/motor/motor.egg-info/PKG-INFO
+writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+writing requirements to ../../build/motor/motor.egg-info/requires.txt
+writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+running build
+running build_py
+copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+running install
+running install_lib
+copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+  File "/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py", line 29
+    =======
+    ^
+SyntaxError: invalid syntax
+
+running install_data
+running install_egg_info
+removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+running install_scripts
+Installing listener script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+Installing talker script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'

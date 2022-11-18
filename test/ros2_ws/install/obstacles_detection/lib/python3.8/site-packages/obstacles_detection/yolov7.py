@@ -4,8 +4,22 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 
+from std_msgs.msg import UInt64MultiArray
+
 import cv2
 from cv_bridge import CvBridge
+
+class YoloPublisher(Node):
+
+  def __init__(self):
+    super().__init__('yolo_publisher')
+    self.publisher_ = self.create_publisher(UInt64MultiArray, 'CV_YOLO', 10)
+  
+  def yolo_publish(self):
+    msg = UInt64MultiArray()
+    self.publisher_.publish(msg)
+    self.get_logger().info('YoloPublishing video')
+
 
 class ImageSubscriber(Node):
   """
@@ -50,6 +64,11 @@ def main(args=None):
   # Initialize the rclpy library
   rclpy.init(args=args)
   
+  yolo_publish = YoloPublisher()
+
+  rclpy.spin(yolo_publisher)
+
+  
   # Create the node
   image_subscriber = ImageSubscriber()
   
@@ -60,10 +79,10 @@ def main(args=None):
   # (optional - otherwise it will be done automatically
   # when the garbage collector destroys the node object)
   image_subscriber.destroy_node()
+  yolo_publisher.destroy_node()
   
   # Shutdown the ROS client library for Python
   rclpy.shutdown()
   
 if __name__ == '__main__':
   main()
-    

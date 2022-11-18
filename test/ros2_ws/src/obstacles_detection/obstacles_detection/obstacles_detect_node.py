@@ -10,9 +10,7 @@ from interfaces.msg import Stop
 
 import yolov7
 
-#from sensor_msgs.msg import Image
-#from bboxes_ex_msgs.msg import BoundingBoxes, BoundingBox
-#from cv_bridge import CvBridge
+from std_msgs.msg import UInt64MultiArray  # for YOLO subscription message type
 
 import RPi.GPIO as GPIO
 import time
@@ -31,9 +29,9 @@ class lidarDetect(Node):
 
                 # Subscription info for YOLO
                 self.yolo_subscription = self.create_subscription(
-                        CV_YOLO,
+                        UInt64MultiArray,
                         'CV_YOLO',
-                        yolov7.callback,
+                        yolov7.yolo_publish,
                         100),
                 self.yolo_subscription
 
@@ -64,7 +62,7 @@ class lidarDetect(Node):
 		
 	# /scan subscribe to detect 	
 	def lidarScan(self, msg):
-		ranges = np.array(msg.ranges)
+	
 		self.Avoid_Left = 0
 		self.Avoid_Front = 0
 		self.Avoid_Right = 0
@@ -159,7 +157,7 @@ class lidarDetect(Node):
 			self.Stop = False
 			self.Left_Speed = 0.5
 			self.Right_Speed = 0.5
-			msg.stop = self.Stop
+
 			msg.lspeed = self.Left_Speed
 			msg.rspeed = self.Right_Speed
 			self.publisher_stop.publish(msg)
@@ -213,6 +211,6 @@ def main(args=None):
 	rclpy.shutdown()
     
 
-if __name__ == '__main__':
+if 
 	main()
-    
+  

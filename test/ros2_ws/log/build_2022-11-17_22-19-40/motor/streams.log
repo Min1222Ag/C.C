@@ -1,0 +1,22 @@
+[7.091s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[9.554s] running egg_info
+[9.565s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[9.565s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[9.572s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[9.572s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[9.573s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[9.863s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[9.869s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[9.870s] running build
+[9.871s] running build_py
+[9.873s] running install
+[9.883s] running install_lib
+[9.894s] running install_data
+[9.897s] running install_egg_info
+[9.914s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[9.929s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[9.930s] running install_scripts
+[10.090s] Installing listener script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[10.096s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[10.101s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[10.994s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
