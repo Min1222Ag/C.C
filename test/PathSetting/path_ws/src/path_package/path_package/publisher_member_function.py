@@ -19,33 +19,40 @@ from rclpy.node import Node
 from std_msgs.msg import String
 
 HOST = socket.gethostbyname(socket.gethostname())
-print(HOST)
+STORE_DIR = "/home/pi/C.C/test/PathSetting/path_info/"
 
 class locationPublisher(Node):
 
-    def __init__(self, host, port=6000, buf_size=4096):
+    def __init__(self, host, port=6000, buf_size=4096, store_dir=STORE_DIR):
         super().__init__('location_publisher')
         self.publisher_ = self.create_publisher(String, 'location', 10)
+        
+        self.i = 0
+        self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.s.bind((host, port))
+        self.s.listen()
+        conn, addr = s.accept()
+        with conn:
+            print("Connected by {}".format(addr))
+        self.conn = conn
+
+        self.store_dir = store_dir
+        self.buf_size = buf_size
+        
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.bind((host, port))
-        s.listen()
-        self.conn, self.addr = s.accept()
-        self.buf_size = buf_size
-        with self.conn:
-            print("Connected by {}".format(self.addr))
 
     def timer_callback(self):
-        with self.conn:
-            data = self.conn.recv(self.buf_size)
-            self.conn.sendall(data)
-            with open(str(self.i)+".txt", "wb") as f:
-                msg = String()
-                msg.data = 'Hello World: %d' % self.i
-                self.publisher_.publish(msg)
-                self.get_logger().info('Publishing: "%s"' % msg.data)
+        with self.conn as conn:
+            msg = String()
+            msg.data = 'Hello World: %d' % self.i
+            self.publisher_.publish(msg)
+            self.get_logger().info('Publishing: "%s"' % msg.data)
+            print(conn, type(conn))
+            print(type(conn.recv(self.buf_size)))
+            data = conn.recv(self.buf_size)
+            conn.sendall(data)
+            with open(self.store_dir+str(self.i)+".txt", "wb") as f:
                 f.write(data)
             self.i += 1
 
