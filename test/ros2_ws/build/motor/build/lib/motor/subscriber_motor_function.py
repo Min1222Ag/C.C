@@ -20,9 +20,6 @@ from interfaces.msg import Stop
 #############################import################################
 import motor_control    # for stopping two motors
 import obstacles_detection
-
-# import motor_control.py for stopping two motors
-import motor_control
 import obstacles_detect_node
 
 # motorSubscriber : subscribe '/Stop' topic from 'obstacles_detection' file
