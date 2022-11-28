@@ -30,10 +30,15 @@ class motorSubscriber(Node):
         self.subscription = self.create_subscription(
             Stop,       # message type : Stop
             'Stop',     # topic name : Stop
-            self.get_signal,
+            self.driving,
             200)      # queue size : 200
         self.subscription  # prevent unused variable warning
         print("subscription")
+
+    def driving(self):
+        print("driving")
+        # go ahead
+        
 
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
@@ -43,6 +48,7 @@ class motorSubscriber(Node):
         if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
              self.get_logger().info('I heard: "%d"' % msg.stop)
 
+    def check_full(self):
 
 def main(args=None):
     rclpy.init(args=args)
