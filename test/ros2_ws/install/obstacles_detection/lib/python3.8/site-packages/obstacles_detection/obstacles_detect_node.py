@@ -9,12 +9,13 @@ from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
 
 import yolov7
-from std_msgs.msg import UInt64MultiArray  # for YOLO subscription message type
+from std_msgs.msg import ByteMultiArray as yolo_arr  # for YOLO subscription message type
 
 import RPi.GPIO as GPIO
 import time
 
 class lidarDetect(Node):
+	
     def __init__(self):
         super().__init__('obstacles_detect_node')
          		
@@ -27,11 +28,18 @@ class lidarDetect(Node):
         self.lidar_subscription
         
         # Subscription info for YOLO  
-        self.yolo_subscription = self.create_subscription(UInt64MultiArray, 'CV_YOLO', yolov7.yolo_publish, 100)
+        self.yolo_subscription = self.create_subscription(yolo_arr, 'CV_YOLO', self.get_imgmsg, 100)
         self.yolo_subscription
+        print("Subscription")
+        
+        # Subscription callback function
+    def get_imgmsg(self,msg):
+        print("get_imgmsg opertated")
+        print(msg)
+        # self.get_logger().info('I heard: "%d"' % msg.data)
         
         # Publisher info
-        self.publisher_stop = self.create_publisher(Stop, 'Stop', 100),
+        self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
         timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.decision_callback)
         
@@ -60,7 +68,7 @@ class lidarDetect(Node):
         self.Avoid_Left = 0
         self.Avoid_Front = 0
         self.Avoid_Right = 0
-		
+
 		# Divide three part of the front
         for i in range(len(ranges)):
             if 10 < i < self.Lidar_Angle:

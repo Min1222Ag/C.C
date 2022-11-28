@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/obstacles_detect_node.py", line 36
+    self.get_imgmsg(self,msg):
+                             ^
+SyntaxError: invalid syntax
+

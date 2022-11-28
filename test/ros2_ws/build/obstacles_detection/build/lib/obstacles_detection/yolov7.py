@@ -4,46 +4,45 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 
-from std_msgs.msg import UInt64MultiArray
+from std_msgs.msg import ByteMultiArray as yolo_arr
 
 import cv2
 from cv_bridge import CvBridge
 
-class YoloPublisher(Node):
-
-  def __init__(self):
-    super().__init__('yolo_publisher')
-    self.publisher_ = self.create_publisher(UInt64MultiArray, 'CV_YOLO', 10)
-  
-  def yolo_publish(self):
-    msg = UInt64MultiArray()
-    self.publisher_.publish(msg)
-    self.get_logger().info('YoloPublishing video')
-
-
-class ImageSubscriber(Node):
+class Yolov7(Node):
   """
-  Create an ImageSubscriber class, which is a subclass of the Node class.
+  Create an Yolov7 class, which is a subclass of the Node class.
   """
   def __init__(self):
     """
     Class constructor to set up the node
     """
     # Initiate the Node class's constructor and give it a name
-    super().__init__('image_subscriber')
+    super().__init__('camera_node')
       
-    # Create the subscriber. This subscriber will receive an Image
-    # from the video_frames topic. The queue size is 10 messages.
-    self.subscription = self.create_subscription(
+    # Create the subscriber for image. This subscriber will receive an Image
+    # from the video_frames topic. The queue size is 100 messages.
+    self.image_subscription = self.create_subscription(
       Image, 
       '/image_raw', 
       self.listener_callback, 
-      10)
-    self.subscription # prevent unused variable warning
+      100)
+    self.image_subscription # prevent unused variable warning
       
     # Used to convert between ROS and OpenCV images
     self.br = CvBridge()
    
+    # Create the publisher about image messages . This publisher will pusblish an list
+    # from CV_YOLO topic. The queue size is 100 messages.
+    self.imgmsg_publisher = self.create_publisher(yolo_arr,'CV_YOLO',100)
+    timer_period = 0.5  # seconds
+    self.timer = self.create_timer(timer_period, self.yolo_publish) # call self.motor_publish()
+
+  def yolo_publish(self):
+    msg = yolo_arr()
+    self.imgmsg_publisher.publish(msg)
+    self.get_logger().info('Publishing video through YOLO')
+  
   def listener_callback(self, data):
     """
     Callback function.
@@ -58,28 +57,23 @@ class ImageSubscriber(Node):
     cv2.imshow("camera", current_frame)
     
     cv2.waitKey(1)
+
     
 def main(args=None):
   
   # Initialize the rclpy library
   rclpy.init(args=args)
   
-  yolo_publisher = YoloPublisher()
-
-  rclpy.spin(yolo_publisher)
-
-  
   # Create the node
-  image_subscriber = ImageSubscriber()
-  
+  yolov7 = Yolov7()
+
   # Spin the node so the callback function is called.
-  rclpy.spin(image_subscriber)
+  rclpy.spin(yolov7)
   
   # Destroy the node explicitly
   # (optional - otherwise it will be done automatically
   # when the garbage collector destroys the node object)
-  image_subscriber.destroy_node()
-  yolo_publisher.destroy_node()
+  yolov7.destroy_node()
   
   # Shutdown the ROS client library for Python
   rclpy.shutdown()
