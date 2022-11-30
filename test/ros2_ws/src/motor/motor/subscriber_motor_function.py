@@ -19,8 +19,11 @@ from interfaces.msg import Stop
 
 #############################import################################
 import motor_control    # for stopping two motors
+<<<<<<< HEAD
 import gps_tracking
 
+=======
+>>>>>>> 44d12b503c196c6f06c8a9dbc733ea40b157cb7a
 import obstacles_detection
 import obstacles_detect_node
 
@@ -42,7 +45,11 @@ class motorSubscriber(Node):
         self.subscription = self.create_subscription(
             Stop,       # message type : Stop
             'Stop',     # topic name : Stop
+<<<<<<< HEAD
             self.running,
+=======
+            self.driving,
+>>>>>>> 44d12b503c196c6f06c8a9dbc733ea40b157cb7a
             200)      # queue size : 200
         
         self.subscription  # prevent unused variable warning
@@ -55,6 +62,7 @@ class motorSubscriber(Node):
         self.motor_controller = motor_control.motorControl(PINS) # motor_control.py > Class motorControl
         print("subscription")
 
+<<<<<<< HEAD
     def running(self):
 
         if self.get_signal or self.check_full:
@@ -123,6 +131,12 @@ class motorSubscriber(Node):
                 self.motor_controller.ahead()
 
             return False
+=======
+    def driving(self):
+        print("driving")
+        # go ahead
+        
+>>>>>>> 44d12b503c196c6f06c8a9dbc733ea40b157cb7a
 
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
@@ -133,7 +147,10 @@ class motorSubscriber(Node):
              self.get_logger().info('I heard: "%d"' % msg.stop)
 
     def check_full(self):
+<<<<<<< HEAD
         print("trash bin is full")
+=======
+>>>>>>> 44d12b503c196c6f06c8a9dbc733ea40b157cb7a
 
 def main(args=None):
     rclpy.init(args=args)

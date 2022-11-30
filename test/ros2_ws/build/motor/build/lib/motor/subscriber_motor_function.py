@@ -19,8 +19,11 @@ from interfaces.msg import Stop
 
 #############################import################################
 import motor_control    # for stopping two motors
+<<<<<<< HEAD
 import gps_tracking
 
+=======
+>>>>>>> 44d12b503c196c6f06c8a9dbc733ea40b157cb7a
 import obstacles_detection
 import obstacles_detect_node
 
