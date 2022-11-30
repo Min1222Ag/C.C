@@ -1,0 +1,34 @@
+[3.696s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[5.019s] running egg_info
+[5.022s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[5.024s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[5.026s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[5.027s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[5.028s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[5.183s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[5.187s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[5.188s] running build
+[5.191s] running build_py
+[5.192s] copying motor/motor_control.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+[5.193s] copying motor/__init__.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+[5.194s] running install
+[5.195s] running install_lib
+[5.202s] copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/motor_control.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+[5.205s] copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/__init__.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+[5.210s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/motor_control.py to motor_control.cpython-38.pyc
+[5.219s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/motor_node.py to motor_node.cpython-38.pyc
+[5.221s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/publisher_motor_function.py to publisher_motor_function.cpython-38.pyc
+[5.229s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/dc_motor.py to dc_motor.cpython-38.pyc
+[5.234s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__init__.py to __init__.cpython-38.pyc
+[5.235s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/gps_tracking.py to gps_tracking.cpython-38.pyc
+[5.239s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[5.239s] Sorry: IndentationError: expected an indented block (subscriber_motor_function.py, line 55)
+[5.241s] running install_data
+[5.242s] copying resource/motor -> /home/pi/C.C/test/ros2_ws/install/motor/share/ament_index/resource_index/packages
+[5.244s] copying package.xml -> /home/pi/C.C/test/ros2_ws/install/motor/share/motor
+[5.245s] running install_egg_info
+[5.255s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-0.0.0-py3.8.egg-info
+[5.264s] running install_scripts
+[5.350s] Installing motor_control script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[5.352s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[5.495s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

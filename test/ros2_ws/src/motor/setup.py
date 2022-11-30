@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     maintainer='teamc.c2022',
     maintainer_email='teamc.c2022@gmail.com',
-    description='For operating motors',
-    license='TEAM C.C',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

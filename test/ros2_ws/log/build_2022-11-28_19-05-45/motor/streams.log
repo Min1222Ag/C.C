@@ -1,0 +1,23 @@
+[7.068s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[8.603s] running egg_info
+[8.605s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[8.681s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[8.797s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[8.798s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[8.800s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[8.932s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[8.935s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[8.936s] running build
+[8.936s] running build_py
+[8.937s] running install
+[8.940s] running install_lib
+[8.948s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[8.952s] Sorry: IndentationError: expected an indented block (subscriber_motor_function.py, line 55)
+[8.953s] running install_data
+[8.954s] running install_egg_info
+[8.961s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-0.0.0-py3.8.egg-info' (and everything under it)
+[8.962s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-0.0.0-py3.8.egg-info
+[8.966s] running install_scripts
+[9.030s] Installing motor_control script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[9.031s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[9.130s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

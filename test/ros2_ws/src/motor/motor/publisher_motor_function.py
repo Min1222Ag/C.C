@@ -15,7 +15,7 @@
 import rclpy
 from rclpy.node import Node
 
-# used for message type 
+# used for message type
 from std_msgs.msg import Bool
 
 # motorPublisher : publish the messages about motor > 'motor_on' or 'motor_off' [Boolean]
@@ -26,13 +26,13 @@ class motorPublisher(Node):
         self.publisher_ = self.create_publisher(Bool, 'motor_on', 100) # message type : Bool , topic name : motor_on , queue size: 100
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.motor_publish) # call self.motor_publish()
-    
+
 
     def motor_publish(self):
         msg = Bool()
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%d"' % msg.data)
-        
+
 
 
 def main(args=None):
@@ -45,7 +45,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    
+
     motor_publisher.destroy_node()
     rclpy.shutdown()
 

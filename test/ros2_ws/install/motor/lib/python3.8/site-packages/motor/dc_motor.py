@@ -34,7 +34,7 @@ class motor:
             while(GPIO.input(self.block_pin)):
                 GPIO.output(self.block_pin, GPIO.LOW) # unconnect battery
             sleep(0.01) # settle
-        
+
             GPIO.output(self.direction_pins[0], GPIO.HIGH) # battery's (+) to motor's (+)
             GPIO.output(self.direction_pins[1], GPIO.HIGH) # battery's (-) to motor's (-)
             sleep(0.01) # settle
@@ -51,7 +51,7 @@ class motor:
             while(GPIO.input(self.block_pin)):
                 GPIO.output(self.block_pin, GPIO.LOW) # unconnect battery
             sleep(0.01) # settle
-        
+
             GPIO.output(self.direction_pins[0], GPIO.LOW) # battery's (-) to motor's (+)
             GPIO.output(self.direction_pins[1], GPIO.LOW) # battery's (+) to motor's (-)
             sleep(0.01) # settle

@@ -3,8 +3,11 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-
 from std_msgs.msg import ByteMultiArray as yolo_arr
+
+import argparse
+from PIL import Image
+import time
 
 import cv2
 from cv_bridge import CvBridge
@@ -56,6 +59,47 @@ class Yolov7(Node):
     # Display image
     cv2.imshow("camera", current_frame)
     
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-m", "--model", required=True, help="")
+    ap.add_argument("-l", "--labels", required=True, help="labels.txt")
+    ap.add_argument("-c", "--confidence", type=float, default=0.7, help="")
+    args = vars(ap.parse_args())
+    labels = {}
+    
+    for row in open(args["labels"]):
+        (classID, label) = row.strip().split(maxsplit=1)
+        labels[int(classID)] = label.strip()
+        
+    model = DetectionEngine()
+    
+    while True:
+        frame = cv2.read()
+        frame = imutils.resize(frame, width=600)
+        ori = frame.copy()
+        
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        frame = Image.fromarray(frame)
+        
+        start = time.time()
+        results = model.DetectWithImage(frame, threshold=args["confidence"], kepp_aspect_ratio=True, relative_coord=False)
+        end = time.time()
+        
+        for r in results:
+            box = r.bounding_box.flatten().astype("int")
+            (startX, startY, endX, endY) = box
+            label = labels[r.label_id]
+            
+            cv2.rectangle(ori, (startX, startY), (endX, endY), (0, 255, 0), 2)
+            y = startY - 15 if startY - 15 > 15 else startY + 15
+            test = "{}: {:.2f}%".format(label, r.score * 100)
+            cv2.putText(ori, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+        
+        cv2.imshow("Frame", ori)
+        cv2.imwrite("/home/pi/video/test.jpeg", ori)
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord("q"):
+            break
+
     cv2.waitKey(1)
 
     

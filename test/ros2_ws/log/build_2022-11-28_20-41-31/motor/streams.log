@@ -1,0 +1,26 @@
+[2.578s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[3.518s] running egg_info
+[3.521s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[3.522s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[3.523s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[3.523s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[3.524s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[3.650s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.653s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.654s] running build
+[3.655s] running build_py
+[3.656s] copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+[3.658s] running install
+[3.661s] running install_lib
+[3.666s] copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+[3.669s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[3.673s] Sorry: IndentationError: expected an indented block (subscriber_motor_function.py, line 53)
+[3.674s] running install_data
+[3.676s] running install_egg_info
+[3.682s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[3.683s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[3.687s] running install_scripts
+[3.749s] Installing listener script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.750s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.751s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[3.849s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

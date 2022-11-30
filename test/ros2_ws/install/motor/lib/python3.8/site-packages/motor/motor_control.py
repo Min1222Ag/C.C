@@ -1,4 +1,4 @@
-from time import sleep as sleep 
+from time import sleep as sleep
 import dc_motor
 
 class motorControl:

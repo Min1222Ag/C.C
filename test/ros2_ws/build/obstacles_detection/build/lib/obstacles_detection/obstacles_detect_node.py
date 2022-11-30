@@ -36,6 +36,7 @@ class lidarDetect(Node):
     def get_imgmsg(self,msg):
         print("get_imgmsg opertated")
         print(msg)
+        ### 
         # self.get_logger().info('I heard: "%d"' % msg.data)
         
         # Publisher info

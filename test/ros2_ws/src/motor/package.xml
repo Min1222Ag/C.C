@@ -3,29 +3,24 @@
 <package format="3">
   <name>motor</name>
   <version>1.0.0</version>
-  <description>For Operating Motors</description>
+  <description>TODO: Package description</description>
   <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
   <license>TEAM C.C</license>
 
   <depend>rclpy</depend>
 
-<<<<<<< HEAD:test/DrivingControl/install/motor/share/motor/package.xml
   <exec_depend>interfaces</exec_depend>
   <exec_depend>obstacles_detection</exec_depend>
   <exec_depend>motor_control</exec_depend>
+  <exec_depend>msg</exec_depend>
+  <exec_depend>obstacles_detect_node</exec_depend>
+  <exec_depend>gps_tracking</exec_depend>
 
   <build_depend>interfaces</build_depend>
   <build_depend>obstacles_detection</build_depend>
-=======
-  <exec_depend>msg</exec_depend>
-  <exec_depend>obstacles_detect_node</exec_depend>
-  <exec_depend>motor_control</exec_depend>
-
-  <exec_depend>msg</exec_depend>
-  <build_depend>obstacles_detect_node</build_depend>
->>>>>>> 216c4831fe548cb936b9585f44b4b4ee513438f2:test/ros2_ws/src/motor/package.xml
   <build_depend>motor_control</build_depend>
-
+  <build_depend>gps_tracking</build_depend>
+  
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

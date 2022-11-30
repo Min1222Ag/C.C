@@ -1,0 +1,37 @@
+[4.999s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/driving': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/driving build --build-base /home/pi/C.C/test/ros2_ws/build/driving/build install --prefix /home/pi/C.C/test/ros2_ws/install/driving --record /home/pi/C.C/test/ros2_ws/build/driving/install.log --single-version-externally-managed
+[6.264s] running egg_info
+[6.268s] creating ../../build/driving/driving.egg-info
+[6.269s] writing ../../build/driving/driving.egg-info/PKG-INFO
+[6.270s] writing dependency_links to ../../build/driving/driving.egg-info/dependency_links.txt
+[6.271s] writing entry points to ../../build/driving/driving.egg-info/entry_points.txt
+[6.272s] writing requirements to ../../build/driving/driving.egg-info/requires.txt
+[6.273s] writing top-level names to ../../build/driving/driving.egg-info/top_level.txt
+[6.280s] writing manifest file '../../build/driving/driving.egg-info/SOURCES.txt'
+[6.426s] reading manifest file '../../build/driving/driving.egg-info/SOURCES.txt'
+[6.430s] writing manifest file '../../build/driving/driving.egg-info/SOURCES.txt'
+[6.432s] running build
+[6.433s] running build_py
+[6.434s] creating /home/pi/C.C/test/ros2_ws/build/driving/build
+[6.435s] creating /home/pi/C.C/test/ros2_ws/build/driving/build/lib
+[6.435s] creating /home/pi/C.C/test/ros2_ws/build/driving/build/lib/driving
+[6.436s] copying driving/motor_node.py -> /home/pi/C.C/test/ros2_ws/build/driving/build/lib/driving
+[6.438s] copying driving/__init__.py -> /home/pi/C.C/test/ros2_ws/build/driving/build/lib/driving
+[6.439s] running install
+[6.439s] running install_lib
+[6.444s] creating /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving
+[6.444s] copying /home/pi/C.C/test/ros2_ws/build/driving/build/lib/driving/motor_node.py -> /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving
+[6.445s] copying /home/pi/C.C/test/ros2_ws/build/driving/build/lib/driving/__init__.py -> /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving
+[6.447s] byte-compiling /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving/motor_node.py to motor_node.cpython-38.pyc
+[6.453s] byte-compiling /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving/__init__.py to __init__.cpython-38.pyc
+[6.454s] running install_data
+[6.457s] creating /home/pi/C.C/test/ros2_ws/install/driving/share/ament_index
+[6.459s] creating /home/pi/C.C/test/ros2_ws/install/driving/share/ament_index/resource_index
+[6.459s] creating /home/pi/C.C/test/ros2_ws/install/driving/share/ament_index/resource_index/packages
+[6.460s] copying resource/driving -> /home/pi/C.C/test/ros2_ws/install/driving/share/ament_index/resource_index/packages
+[6.461s] copying package.xml -> /home/pi/C.C/test/ros2_ws/install/driving/share/driving
+[6.461s] running install_egg_info
+[6.467s] Copying ../../build/driving/driving.egg-info to /home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages/driving-0.0.0-py3.8.egg-info
+[6.474s] running install_scripts
+[6.575s] Installing motor_node script to /home/pi/C.C/test/ros2_ws/install/driving/lib/driving
+[6.577s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/driving/install.log'
+[6.784s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/driving' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/driving build --build-base /home/pi/C.C/test/ros2_ws/build/driving/build install --prefix /home/pi/C.C/test/ros2_ws/install/driving --record /home/pi/C.C/test/ros2_ws/build/driving/install.log --single-version-externally-managed
