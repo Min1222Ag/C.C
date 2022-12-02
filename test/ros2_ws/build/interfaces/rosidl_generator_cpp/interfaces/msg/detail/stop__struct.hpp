@@ -38,8 +38,8 @@ struct Stop_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->stop = false;
-      this->lspeed = 0.0;
-      this->rspeed = 0.0;
+      this->lspeed = false;
+      this->rspeed = false;
     }
   }
 
@@ -50,8 +50,8 @@ struct Stop_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->stop = false;
-      this->lspeed = 0.0;
-      this->rspeed = 0.0;
+      this->lspeed = false;
+      this->rspeed = false;
     }
   }
 
@@ -60,10 +60,10 @@ struct Stop_
     bool;
   _stop_type stop;
   using _lspeed_type =
-    double;
+    bool;
   _lspeed_type lspeed;
   using _rspeed_type =
-    double;
+    bool;
   _rspeed_type rspeed;
 
   // setters for named parameter idiom
@@ -74,13 +74,13 @@ struct Stop_
     return *this;
   }
   Type & set__lspeed(
-    const double & _arg)
+    const bool & _arg)
   {
     this->lspeed = _arg;
     return *this;
   }
   Type & set__rspeed(
-    const double & _arg)
+    const bool & _arg)
   {
     this->rspeed = _arg;
     return *this;

@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py", line 71
+    continue
+    ^
+SyntaxError: 'continue' not properly in loop
+

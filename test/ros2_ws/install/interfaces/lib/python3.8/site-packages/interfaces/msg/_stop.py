@@ -60,14 +60,14 @@ class Stop(metaclass=Metaclass_Stop):
 
     _fields_and_field_types = {
         'stop': 'boolean',
-        'lspeed': 'double',
-        'rspeed': 'double',
+        'lspeed': 'boolean',
+        'rspeed': 'boolean',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -75,8 +75,8 @@ class Stop(metaclass=Metaclass_Stop):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.stop = kwargs.get('stop', bool())
-        self.lspeed = kwargs.get('lspeed', float())
-        self.rspeed = kwargs.get('rspeed', float())
+        self.lspeed = kwargs.get('lspeed', bool())
+        self.rspeed = kwargs.get('rspeed', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -142,8 +142,8 @@ class Stop(metaclass=Metaclass_Stop):
     def lspeed(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'lspeed' field must be of type 'float'"
+                isinstance(value, bool), \
+                "The 'lspeed' field must be of type 'bool'"
         self._lspeed = value
 
     @property
@@ -155,6 +155,6 @@ class Stop(metaclass=Metaclass_Stop):
     def rspeed(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'rspeed' field must be of type 'float'"
+                isinstance(value, bool), \
+                "The 'rspeed' field must be of type 'bool'"
         self._rspeed = value

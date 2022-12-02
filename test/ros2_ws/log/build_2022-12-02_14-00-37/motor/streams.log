@@ -1,0 +1,25 @@
+[2.541s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[3.400s] running egg_info
+[3.402s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[3.403s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[3.404s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[3.404s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[3.405s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[3.532s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.536s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.536s] running build
+[3.536s] running build_py
+[3.538s] copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+[3.539s] running install
+[3.542s] running install_lib
+[3.547s] copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+[3.550s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[3.557s] running install_data
+[3.559s] running install_egg_info
+[3.565s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[3.566s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[3.570s] running install_scripts
+[3.632s] Installing listener script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.632s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.634s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[3.735s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

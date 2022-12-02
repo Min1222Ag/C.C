@@ -27,11 +27,11 @@ import obstacles_detect_node
 import os
 import json
 
-SUBGOALS_FILE = "path_info.json"
+SUBGOALS_FILE = "/home/pi/C.C/test/ros2_ws/src/motor/motor/path_info.json"
 RENDEZVOUS = 10
 RIGHT_THRESHOLD = 10
 LEFT_THRESHOLD = 10
-PINS = [1, 2, 3, 4, 5, 6]
+PINS = [18, 23, 24, 16, 20, 21]
 DUMPSTER_LOCATION = (0, 0) # a GPS coordinate of dumpster
 
 # motorSubscriber : subscribe '/Stop' topic from 'obstacles_detection' file
@@ -43,7 +43,6 @@ class motorSubscriber(Node):
             Stop,       # message type : Stop
             'Stop',     # topic name : Stop
             self.running,
-            self.driving,
             200)      # queue size : 200
         
         self.subscription  # prevent unused variable warning
@@ -56,10 +55,20 @@ class motorSubscriber(Node):
         self.motor_controller = motor_control.motorControl(PINS) # motor_control.py > Class motorControl
         print("subscription")
 
-    def running(self):
+    def running(self, msg=None):
+        print("now in the phase {}".format(self.phase))
 
-        if self.get_signal or self.check_full:
-            self.motor_controller.stop()
+        # check signal or trashbin
+        if msg != None:
+            print("got message from detection unit")
+            turn_left, turn_right = self.get_signal(msg)
+            if not (turn_left and turn_right):
+                self.motor_controller.stop()
+            elif turn_left:
+                self.motor_controller.left()
+            elif turn_right:
+                self.motor_controller.right()
+            return
 
         # PHASE 1
         if self.phase == 1:
@@ -73,6 +82,7 @@ class motorSubscriber(Node):
 
             # check validity of the file
             if len(path_data["subgoals"]) != path_data["number"] or len(path_data["subgoals"]) == 0:
+                print(len(path_data["subgoals"]), path_data["number"])
                 return # error
 
             self.subgoals = path_data["subgoals"]
@@ -81,9 +91,9 @@ class motorSubscriber(Node):
         # PHASE 2
         if self.phase == 2:
             # set current destination location
-            dest_coord = self.subgoal["latitude"][self.curr], subgoal["longitude"][self.curr]
-
+            dest_coord = self.subgoals[self.curr]["latitude"], self.subgoals[self.curr]["longitude"]
             arriving = self.driving(dest_coord)
+            
             if arriving:
                 # if it arrived at the current destination, set the next
                 self.curr += 1
@@ -127,14 +137,12 @@ class motorSubscriber(Node):
 
     # get signal from a LiDAR and proximity sensor
     def get_signal(self, msg):
-        print("get_signal operated")
-        print(msg)
-        ###########################################################
-        if msg.stop == 0: # Execute motor_control.py > motorControl Class > def stop
-             self.get_logger().info('I heard: "%d"' % msg.stop)
+        print("msg: {}".format(msg))
+        return msg.lspeed, msg.rspeed
 
     def check_full(self):
         print("trash bin is full")
+        # will be updated
 
 def main(args=None):
     rclpy.init(args=args)

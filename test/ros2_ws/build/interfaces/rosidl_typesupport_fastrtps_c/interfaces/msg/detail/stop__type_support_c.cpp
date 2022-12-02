@@ -56,12 +56,12 @@ static bool _Stop__cdr_serialize(
 
   // Field name: lspeed
   {
-    cdr << ros_message->lspeed;
+    cdr << (ros_message->lspeed ? true : false);
   }
 
   // Field name: rspeed
   {
-    cdr << ros_message->rspeed;
+    cdr << (ros_message->rspeed ? true : false);
   }
 
   return true;
@@ -85,12 +85,16 @@ static bool _Stop__cdr_deserialize(
 
   // Field name: lspeed
   {
-    cdr >> ros_message->lspeed;
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->lspeed = tmp ? true : false;
   }
 
   // Field name: rspeed
   {
-    cdr >> ros_message->rspeed;
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->rspeed = tmp ? true : false;
   }
 
   return true;
@@ -162,15 +166,13 @@ size_t max_serialized_size_interfaces__msg__Stop(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint8_t);
   }
   // member: rspeed
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;

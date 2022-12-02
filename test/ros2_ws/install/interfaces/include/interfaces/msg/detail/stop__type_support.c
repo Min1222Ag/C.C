@@ -49,7 +49,7 @@ static rosidl_typesupport_introspection_c__MessageMember Stop__rosidl_typesuppor
   },
   {
     "lspeed",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -64,7 +64,7 @@ static rosidl_typesupport_introspection_c__MessageMember Stop__rosidl_typesuppor
   },
   {
     "rspeed",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

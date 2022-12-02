@@ -8,9 +8,9 @@ module interfaces {
     struct Stop {
       boolean stop;
 
-      double lspeed;
+      boolean lspeed;
 
-      double rspeed;
+      boolean rspeed;
     };
   };
 };

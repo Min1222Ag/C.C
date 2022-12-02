@@ -35,9 +35,9 @@ cdr_serialize(
   // Member: stop
   cdr << (ros_message.stop ? true : false);
   // Member: lspeed
-  cdr << ros_message.lspeed;
+  cdr << (ros_message.lspeed ? true : false);
   // Member: rspeed
-  cdr << ros_message.rspeed;
+  cdr << (ros_message.rspeed ? true : false);
   return true;
 }
 
@@ -55,10 +55,18 @@ cdr_deserialize(
   }
 
   // Member: lspeed
-  cdr >> ros_message.lspeed;
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.lspeed = tmp ? true : false;
+  }
 
   // Member: rspeed
-  cdr >> ros_message.rspeed;
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rspeed = tmp ? true : false;
+  }
 
   return true;
 }
@@ -124,16 +132,14 @@ max_serialized_size_Stop(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   // Member: rspeed
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;
