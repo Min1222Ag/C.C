@@ -1,0 +1,66 @@
+[0.000000] (-) TimerEvent: {}
+[0.000856] (path_package) JobQueued: {'identifier': 'path_package', 'dependencies': OrderedDict()}
+[0.001705] (path_package) JobStarted: {'identifier': 'path_package'}
+[0.099292] (-) TimerEvent: {}
+[0.200310] (-) TimerEvent: {}
+[0.300954] (-) TimerEvent: {}
+[0.401555] (-) TimerEvent: {}
+[0.502184] (-) TimerEvent: {}
+[0.602802] (-) TimerEvent: {}
+[0.703397] (-) TimerEvent: {}
+[0.804147] (-) TimerEvent: {}
+[0.904939] (-) TimerEvent: {}
+[1.006265] (-) TimerEvent: {}
+[1.111423] (-) TimerEvent: {}
+[1.212294] (-) TimerEvent: {}
+[1.312944] (-) TimerEvent: {}
+[1.413628] (-) TimerEvent: {}
+[1.514243] (-) TimerEvent: {}
+[1.614802] (-) TimerEvent: {}
+[1.715403] (-) TimerEvent: {}
+[1.816055] (-) TimerEvent: {}
+[1.916635] (-) TimerEvent: {}
+[2.017230] (-) TimerEvent: {}
+[2.117848] (-) TimerEvent: {}
+[2.218641] (-) TimerEvent: {}
+[2.319612] (-) TimerEvent: {}
+[2.420363] (-) TimerEvent: {}
+[2.491227] (path_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/path_package', 'build', '--build-base', '/home/pi/C.C/test/PathSetting/path_ws/build/path_package/build', 'install', '--prefix', '/home/pi/C.C/test/PathSetting/path_ws/install/path_package', '--record', '/home/pi/C.C/test/PathSetting/path_ws/build/path_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/C.C/test/PathSetting/path_ws/src/path_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.2.213 49240 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/C.C/test/PathSetting/path_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/C.C/test/PathSetting/path_ws/src/path_package/path_package', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'ROS_IP': '192.168.2.232', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.4.16', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/pi/C.C/test/PathSetting/path_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '12', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/home/pi/C.C/test/PathSetting/path_ws/install/turtlesim:/home/pi/C.C/test/PathSetting/path_ws/install/path_package:/opt/ros/foxy', 'SHELL': '/bin/bash', 'ROS_MASTER_URI': 'http://192.168.2.167:11512', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'PWD': '/home/pi/C.C/test/PathSetting/path_ws/build/path_package', 'SSH_CONNECTION': '192.168.2.213 49240 192.168.2.232 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages:/home/pi/C.C/test/PathSetting/path_ws/install/turtlesim/lib/python3.8/site-packages:/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/src/interfaces/:/home/pi/C.C/test/ros2_ws/src/:/home/pi/C.C/test/ros2_ws/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/ros2_ws/src/motor/motor/', 'ROS_HOSTNAME': '192.168.2.232', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/C.C/test/PathSetting/path_ws/install/turtlesim'}, 'shell': False}
+[2.520561] (-) TimerEvent: {}
+[2.621342] (-) TimerEvent: {}
+[2.721933] (-) TimerEvent: {}
+[2.822524] (-) TimerEvent: {}
+[2.923168] (-) TimerEvent: {}
+[3.023785] (-) TimerEvent: {}
+[3.124365] (-) TimerEvent: {}
+[3.225047] (-) TimerEvent: {}
+[3.325659] (-) TimerEvent: {}
+[3.337127] (path_package) StdoutLine: {'line': b'running egg_info\n'}
+[3.339335] (path_package) StdoutLine: {'line': b'writing ../../build/path_package/path_package.egg-info/PKG-INFO\n'}
+[3.340411] (path_package) StdoutLine: {'line': b'writing dependency_links to ../../build/path_package/path_package.egg-info/dependency_links.txt\n'}
+[3.341141] (path_package) StdoutLine: {'line': b'writing entry points to ../../build/path_package/path_package.egg-info/entry_points.txt\n'}
+[3.341742] (path_package) StdoutLine: {'line': b'writing requirements to ../../build/path_package/path_package.egg-info/requires.txt\n'}
+[3.342237] (path_package) StdoutLine: {'line': b'writing top-level names to ../../build/path_package/path_package.egg-info/top_level.txt\n'}
+[3.425804] (-) TimerEvent: {}
+[3.467284] (path_package) StdoutLine: {'line': b"reading manifest file '../../build/path_package/path_package.egg-info/SOURCES.txt'\n"}
+[3.470784] (path_package) StdoutLine: {'line': b"writing manifest file '../../build/path_package/path_package.egg-info/SOURCES.txt'\n"}
+[3.471362] (path_package) StdoutLine: {'line': b'running build\n'}
+[3.471835] (path_package) StdoutLine: {'line': b'running build_py\n'}
+[3.472277] (path_package) StdoutLine: {'line': b'copying path_package/publisher_member_function.py -> /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build/lib/path_package\n'}
+[3.473967] (path_package) StdoutLine: {'line': b'running install\n'}
+[3.476930] (path_package) StdoutLine: {'line': b'running install_lib\n'}
+[3.480551] (path_package) StdoutLine: {'line': b'copying /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build/lib/path_package/publisher_member_function.py -> /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package\n'}
+[3.483549] (path_package) StdoutLine: {'line': b'byte-compiling /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package/publisher_member_function.py to publisher_member_function.cpython-38.pyc\n'}
+[3.489560] (path_package) StdoutLine: {'line': b'running install_data\n'}
+[3.491714] (path_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.497225] (path_package) StdoutLine: {'line': b"removing '/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.498635] (path_package) StdoutLine: {'line': b'Copying ../../build/path_package/path_package.egg-info to /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package-0.0.0-py3.8.egg-info\n'}
+[3.502944] (path_package) StdoutLine: {'line': b'running install_scripts\n'}
+[3.525983] (-) TimerEvent: {}
+[3.563688] (path_package) StdoutLine: {'line': b'Installing path_node script to /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/path_package\n'}
+[3.564529] (path_package) StdoutLine: {'line': b'Installing path_receiver script to /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/path_package\n'}
+[3.566040] (path_package) StdoutLine: {'line': b"writing list of installed files to '/home/pi/C.C/test/PathSetting/path_ws/build/path_package/install.log'\n"}
+[3.626213] (-) TimerEvent: {}
+[3.659700] (path_package) CommandEnded: {'returncode': 0}
+[3.722349] (path_package) JobEnded: {'identifier': 'path_package', 'rc': 0}
+[3.725451] (-) EventReactorShutdown: {}
