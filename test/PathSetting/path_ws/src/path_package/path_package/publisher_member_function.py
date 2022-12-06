@@ -29,7 +29,7 @@ class locationPublisher(Node):
     def timer_callback(self):
 
         msg = String()
-        msg.data = 'Hello World: %d' % self.i
+        msg.data = '%dth connection!' % self.i
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         print("inner timer_callback")
@@ -40,10 +40,9 @@ class locationPublisher(Node):
             data = self.conn.recv(self.buf_size)
             b_num = len(data)
             with self.conn:
-                with open(self.store_dir + str(self.i) + ".txt", "wb") as f:
-                    print("inner with open file")
+                with open(self.store_dir + "coordinates.json", "wb") as f:
                     f.write(data)
-                    print("succeed in writing data!")
+                    print("succeed in writing data!: {}".format(data))
 
             print("{}: {} bytes received.".format(self.i, b_num))
         
