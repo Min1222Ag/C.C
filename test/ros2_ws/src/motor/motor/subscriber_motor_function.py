@@ -49,8 +49,6 @@ class motorSubscriber(Node):
         self.subscription  # prevent unused variable warning
         self.phase = 1
 
-        self.dumpster_coord
-        self.subgoals
         self.curr = 0
 
         self.gps_tracker = gps_tracking.GPSTracking()

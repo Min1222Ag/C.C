@@ -1,0 +1,113 @@
+[0.064s] Invoking command in '/home/pi/C.C/test/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/ros2_ws/build/interfaces -- -j4 -l4
+[0.282s] [  3%] Built target interfaces__cpp
+[0.290s] [ 12%] Built target interfaces__rosidl_generator_c
+[0.385s] [ 22%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[0.394s] [ 41%] Built target interfaces__rosidl_typesupport_cpp
+[0.395s] [ 41%] Built target interfaces__rosidl_typesupport_c
+[0.422s] [ 51%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[0.481s] [ 61%] Built target interfaces__rosidl_typesupport_introspection_c
+[0.546s] [ 70%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[0.632s] [ 70%] Built target interfaces
+[0.720s] [ 74%] Built target interfaces__py
+[0.844s] [ 80%] Built target interfaces__python
+[0.978s] [ 87%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[0.980s] [ 93%] Built target interfaces__rosidl_typesupport_c__pyext
+[0.981s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.022s] Invoked command in '/home/pi/C.C/test/ros2_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy /usr/bin/cmake --build /home/pi/C.C/test/ros2_ws/build/interfaces -- -j4 -l4
+[1.372s] Invoking command in '/home/pi/C.C/test/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/ros2_ws/build/interfaces
+[1.406s] -- Install configuration: ""
+[1.407s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[1.407s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.408s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.408s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.408s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__type_support.h
+[1.409s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__functions.h
+[1.409s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__functions.c
+[1.410s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__struct.h
+[1.410s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.410s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/stop.h
+[1.411s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/library_path.sh
+[1.411s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/library_path.dsv
+[1.411s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[1.412s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.412s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.413s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.413s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.413s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_fastrtps_c.h
+[1.414s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[1.415s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.416s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.416s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.416s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.417s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/dds_fastrtps
+[1.417s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_fastrtps_cpp.hpp
+[1.418s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.419s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.420s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.420s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.420s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__type_support.c
+[1.421s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_introspection_c.h
+[1.421s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.422s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[1.423s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[1.424s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.425s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.425s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/stop.hpp
+[1.426s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.426s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__builder.hpp
+[1.426s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__traits.hpp
+[1.427s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__struct.hpp
+[1.427s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces
+[1.427s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg
+[1.428s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail
+[1.428s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__rosidl_typesupport_introspection_cpp.hpp
+[1.428s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/include/interfaces/msg/detail/stop__type_support.cpp
+[1.429s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[1.430s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[1.431s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.sh
+[1.432s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[1.432s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py
+[1.596s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/msg
+[1.597s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_stop_s.c
+[1.597s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_stop.py
+[1.597s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/msg/__init__.py
+[1.598s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[1.601s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[1.604s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[1.606s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/lib/libinterfaces__python.so
+[1.607s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/msg/Stop.idl
+[1.608s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/msg/Stop.msg
+[1.609s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[1.609s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[1.609s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[1.610s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[1.610s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/path.sh
+[1.611s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/environment/path.dsv
+[1.611s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/local_setup.bash
+[1.611s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/local_setup.sh
+[1.612s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/local_setup.zsh
+[1.612s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/local_setup.dsv
+[1.613s] -- Installing: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/package.dsv
+[1.613s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[1.614s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport.cmake
+[1.614s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.615s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.616s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.616s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[1.617s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.618s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cppExport.cmake
+[1.618s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.619s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.620s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[1.620s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.621s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[1.621s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.622s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.622s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.623s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.623s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.624s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.624s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[1.624s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[1.625s] -- Up-to-date: /home/pi/C.C/test/ros2_ws/install/interfaces/share/interfaces/package.xml
+[1.632s] Invoked command in '/home/pi/C.C/test/ros2_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy /usr/bin/cmake --install /home/pi/C.C/test/ros2_ws/build/interfaces

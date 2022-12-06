@@ -1,0 +1,25 @@
+[2.590s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/interfaces:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/testt/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/test_pkg/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/src/interfaces/:/home/pi/C.C/test/ros2_ws/src/:/home/pi/C.C/test/ros2_ws/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/ros2_ws/src/motor/motor/ /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[3.472s] running egg_info
+[3.474s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[3.475s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[3.476s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[3.476s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[3.477s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[3.604s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.607s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.608s] running build
+[3.608s] running build_py
+[3.610s] copying motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor
+[3.611s] running install
+[3.614s] running install_lib
+[3.619s] copying /home/pi/C.C/test/ros2_ws/build/motor/build/lib/motor/subscriber_motor_function.py -> /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor
+[3.623s] byte-compiling /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py to subscriber_motor_function.cpython-38.pyc
+[3.630s] running install_data
+[3.632s] running install_egg_info
+[3.637s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[3.639s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[3.643s] running install_scripts
+[3.705s] Installing listener script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.705s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/motor/lib/motor
+[3.707s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/motor/install.log'
+[3.808s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '0': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/testt:/home/pi/C.C/test/ros2_ws/install/test_pkg:/home/pi/C.C/test/ros2_ws/install/motor:/home/pi/C.C/test/ros2_ws/install/interfaces:/home/pi/C.C/test/ros2_ws/install/driving:/opt/ros/foxy PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/testt/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/test_pkg/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/driving/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/src/interfaces/:/home/pi/C.C/test/ros2_ws/src/:/home/pi/C.C/test/ros2_ws/src/obstacles_detection/obstacles_detection/:/home/pi/C.C/test/ros2_ws/src/motor/motor/ /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

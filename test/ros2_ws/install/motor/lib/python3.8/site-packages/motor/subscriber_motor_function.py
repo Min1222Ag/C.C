@@ -27,7 +27,8 @@ import obstacles_detect_node
 import os
 import json
 
-SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/path_info.json"
+RECEIVED_FILE = "home/pi/C.C/test/PathSetting/path_info/coordinates.json"
+SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/on_going.json"
 RENDEZVOUS = 10
 RIGHT_THRESHOLD = 10
 LEFT_THRESHOLD = 10
@@ -48,7 +49,6 @@ class motorSubscriber(Node):
         self.subscription  # prevent unused variable warning
         self.phase = 1
 
-        self.subgoals = []
         self.curr = 0
 
         self.gps_tracker = gps_tracking.GPSTracking()
@@ -61,27 +61,39 @@ class motorSubscriber(Node):
         # PHASE 1
         if self.phase == 1:
             # file existing?
-            if not os.path.exists(SUBGOALS_FILE):
+            if not os.path.exists(RECIEVED_FILE):
                 return # if does not, wait
 
             # if does read json
+            with open(RECIEVED_FILE, 'r') as f:
+                coord_data = json.load(f)
+
+            self.dumpster_coord = coord_data["dumpster_coordinate"]
+
+            start_lat = coord_data["start_coordinate"]["latitude"]
+            start_lon = coord_data["start_coordinate"]["longitude"]
+
+            dest_lat = coord_data["end_coordinate"]["latitude"]
+            dest_lon = coord_data["end_coordinate"]["longitude"]
+
+            gap = coord_data["meter"]
+
+            self.gps_tracker.subgoals(start_lat, start_lon, end_lat, end_lon, gap)
+            
+            if not os.path.exists(SUBGOALS_FILE):
+                return # if does not, wait
+
             with open(SUBGOALS_FILE, 'r') as f:
-                path_data = json.load(f)
+                self.subgoals = json.load(f)
 
-            # check validity of the file
-            if len(path_data["subgoals"]) != path_data["number"] or len(path_data["subgoals"]) == 0:
-                print(len(path_data["subgoals"]), path_data["number"])
-                return # error
-
-            self.subgoals = path_data["subgoals"]
             self.phase = 2
         
         # check signal or trashbin
         if msg != None:
             print("got message from detection unit")
-            turn_left, turn_right = self.get_signal(msg)
-
             if msg.stop:
+                turn_left, turn_right = self.get_signal(msg)
+                
                 if turn_left:
                     self.motor_controller.left()
                 elif turn_right:
@@ -93,22 +105,23 @@ class motorSubscriber(Node):
         # PHASE 2
         if self.phase == 2:
             # set current destination location
-            dest_coord = self.subgoals[self.curr]["latitude"], self.subgoals[self.curr]["longitude"]
+            dest_coord = self.subgoals["latitude"][str(self.curr)], self.subgoals["longitude"][str(self.curr)]
             arriving = self.driving(dest_coord)
             
             if arriving:
                 # if it arrived at the current destination, set the next
                 self.curr += 1
-                if self.curr == len(self.subgoals):
+                if self.curr == len(self.subgoals["latitude"].keys()):
                     self.phase = 3
 
         # PHASE 3
         if self.phase == 3:
         # after pass all subgoals go to dumpster
-            arriving = self.driving(DUMPSTER_LOCATION)
+            arriving = self.driving(self.dumpster_coord)
             if arriving:
                 self.phase = 1
                 self.curr = 0
+                os.remove(SUBGOALS_FILE)
         
     def driving(self, dest_coord):
         curr_coord = self.gps_tracker.readGPS() # read current location
