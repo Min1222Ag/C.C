@@ -13,6 +13,7 @@ from math import sin, cos, asin, sqrt, radians, atan2, degrees
 R = 6378.1 # radius of earth
 SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/on_going.json"
 
+SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/on_going.json"
 class GPSTracking:
     '''
     Find location itself using GPS
@@ -74,28 +75,7 @@ class GPSTracking:
         x = cos(lat) * cos(lon)
         y = cos(lat) * sin(lon)
         z = sin(lat)
-        return x, y, zdef spheral2cartesian(lat, lon):
-    x = cos(lat) * cos(lon)
-    y = cos(lat) * sin(lon)
-    z = sin(lat)
-    return x, y, z
-
-def weighted_mean(lat1, lon1, lat2, lon2, n):
-
-    lat1, lat2, lon1, lon2 = radians(lat1), radians(lat2), radians(lon1), radians(lon2)
-    
-    x1, y1, z1 = spheral2cartesian(lat1, lon1)
-    x2, y2, z2 = spheral2cartesian(lat2, lon2)
-
-    x = (1-n)*x1 + n*x2
-    y = (1-n)*y1 + n*y2
-    z = (1-n)*z1 + n*z2
-
-    lon = atan2(y, x)
-    hyp = sqrt(x**2 + y**2)
-    lat = atan2(z, hyp)
-
-    return lat, lon
+        return x, y, z
 
     def weighted_mean(self, lat1, lon1, lat2, lon2, n):
 
