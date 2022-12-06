@@ -5,10 +5,9 @@ import rclpy
 from rclpy.node import Node
 from time import sleep
 
+# interfaces for publisher and subscription
 from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
-
-import yolov7
 from std_msgs.msg import ByteMultiArray as yolo_arr  # for YOLO subscription message type
 
 import RPi.GPIO as GPIO
@@ -16,24 +15,30 @@ import time
 
 class lidarDetect(Node):
     def __init__(self):
-        super().__init__('obstacles_detect_node')
+        super().__init__('obstacles_detect_node'). # node name : obstacles_detect_node
         
         # Subscription info for LiDAR
         self.lidar_subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.lidarScan,
-            100),
+            LaserScan,    # topic type
+            '/scan',       # topic name : /scan
+            self.lidarScan,  # callback function
+            100),           # queue size
         self.lidar_subscription
        
         # Subscription info for YOLO  
-        self.yolo_subscription = self.create_subscription(yolo_arr, 'CV_YOLO', self.get_imgmsg, 100)
+        self.yolo_subscription = self.create_subscription(
+            yolo_arr,    # topic type
+            'CV_YOLO',    # topic name : CV_YOLO
+            self.get_imgmsg,    #callback function
+            100)            #queue size
         self.yolo_subscription
       
         
-        
         # Publisher info
-        self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
+        self.publisher_stop = self.create_publisher(
+            Stop,      # topic 
+            'Stop',    #topic name : Stop
+            10)        # queue size
         timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.decision_callback)
         
@@ -86,7 +91,8 @@ class lidarDetect(Node):
                     self.Avoid_Front += 1
             #print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
         sleep(0.1)
-        
+     
+    # pulisher(timer) callback function
     # publish Stop, Left_Speed, Right_Speed 
     def decision_callback(self):
         msg = Stop()
@@ -341,10 +347,12 @@ class lidarDetect(Node):
 def main(args=None):
     rclpy.init(args=args)
     
+    # for the LiDAR detection
     obstacles_detect_node = lidarDetect()
     rclpy.spin(obstacles_detect_node)
     obstacles_detect_node.destroy_node()
     
+    # for publisher node
     stop_publisher = StopPublisher()
     rclpy.spin(stop_publisher)
     stop_publisher.destroy_node()
