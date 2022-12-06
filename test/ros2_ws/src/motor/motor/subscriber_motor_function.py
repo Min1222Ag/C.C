@@ -11,13 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 import rclpy
 from rclpy.node import Node
 
 # use custom messages '/Stop'
 from interfaces.msg import Stop
 
-#############################import################################
 import motor_control    # for stopping two motors
 import gps_tracking
 
@@ -39,11 +39,11 @@ DUMPSTER_LOCATION = (0, 0) # a GPS coordinate of dumpster
 class motorSubscriber(Node):
 
     def __init__(self):
-        super().__init__('motor_subscriber') # motor name : motor_subscriber
+        super().__init__('motor_subscriber') # node name : motor_subscriber
         self.subscription = self.create_subscription(
-            Stop,       # message type : Stop
+            Stop,       # topic type : Stop
             'Stop',     # topic name : Stop
-            self.running,
+            self.running,    # callback function
             200)      # queue size : 200
         
         self.subscription  # prevent unused variable warning
@@ -159,6 +159,7 @@ class motorSubscriber(Node):
         print("msg: {}".format(msg))
         return msg.lspeed, msg.rspeed
 
+    # check if the trash bin is full or not
     def check_full(self):
         print("trash bin is full")
         # will be updated
@@ -167,10 +168,8 @@ def main(args=None):
     rclpy.init(args=args)
     motor_speed = obstacles_detect_node.lidarDetect() # obstacles_detection.py > Class lidarDetect
     # motor_speed.decision_callback() # never mind
-    print("1")
 
     motor_subscriber = motorSubscriber()
-    print("2")
 
     rclpy.spin(motor_subscriber)
     print("spin")
