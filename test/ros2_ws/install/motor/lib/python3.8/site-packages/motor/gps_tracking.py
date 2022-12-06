@@ -26,6 +26,8 @@ class GPSTracking:
     def getGPSPoints(self, data):
         if "$GPGGA" in data:
             data = data.split(',')[1:]
+            if data[1] == '' or data[3] == '':
+                return None
             latitude = self.convertData(data[1])
             longitude = self.convertData(data[3])
             return latitude, longitude
@@ -42,7 +44,7 @@ class GPSTracking:
             data = self.gps.readline().replace(b'\n', b'').replace(b'\r', b'').decode()
             return self.getGPSPoints(data)
 
-    def distance(lat1, lon1, lat2, lon2):
+    def distance(self, lat1, lon1, lat2, lon2):
 
         lat1, lat2, lon1, lon2 = radians(lat1), radians(lat2), radians(lon1), radians(lon2)
 
@@ -53,7 +55,7 @@ class GPSTracking:
 
         return distance
 
-    def bearing(lat1, lon1, lat2, lon2):
+    def bearing(self, lat1, lon1, lat2, lon2):
 
         lat1, lat2, lon1, lon2 = radians(lat1), radians(lat2), radians(lon1), radians(lon2)
         lon_diff = lon2 - lon1

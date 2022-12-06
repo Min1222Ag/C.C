@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'path_node = path_package.path_node:main',
-            'path_receiver = path_package.publisher_member_function:main'
+            'path_receiver = path_package.path_node:main'
         ],
     },
 )

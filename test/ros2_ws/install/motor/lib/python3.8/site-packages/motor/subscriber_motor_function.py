@@ -27,7 +27,7 @@ import obstacles_detect_node
 import os
 import json
 
-SUBGOALS_FILE = "/home/pi/C.C/test/ros2_ws/src/motor/motor/path_info.json"
+SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/path_info.json"
 RENDEZVOUS = 10
 RIGHT_THRESHOLD = 10
 LEFT_THRESHOLD = 10
@@ -58,18 +58,6 @@ class motorSubscriber(Node):
     def running(self, msg=None):
         print("now in the phase {}".format(self.phase))
 
-        # check signal or trashbin
-        if msg != None:
-            print("got message from detection unit")
-            turn_left, turn_right = self.get_signal(msg)
-            if not (turn_left and turn_right):
-                self.motor_controller.stop()
-            elif turn_left:
-                self.motor_controller.left()
-            elif turn_right:
-                self.motor_controller.right()
-            return
-
         # PHASE 1
         if self.phase == 1:
             # file existing?
@@ -87,6 +75,20 @@ class motorSubscriber(Node):
 
             self.subgoals = path_data["subgoals"]
             self.phase = 2
+        
+        # check signal or trashbin
+        if msg != None:
+            print("got message from detection unit")
+            turn_left, turn_right = self.get_signal(msg)
+
+            if msg.stop:
+                if turn_left:
+                    self.motor_controller.left()
+                elif turn_right:
+                    self.motor_controller.right()
+                else:
+                    self.motor_controller.stop()
+                return
 
         # PHASE 2
         if self.phase == 2:
@@ -110,6 +112,10 @@ class motorSubscriber(Node):
         
     def driving(self, dest_coord):
         curr_coord = self.gps_tracker.readGPS() # read current location
+        if curr_coord == None:
+            return False
+
+        print("driving at {}".format(curr_coord))
         dest_lat, dest_lon = dest_coord[0], dest_coord[1]
         curr_lat, curr_lon = curr_coord[0], curr_coord[1]
 
