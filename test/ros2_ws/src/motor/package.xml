@@ -3,9 +3,9 @@
 <package format="3">
   <name>motor</name>
   <version>1.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
-  <license>TEAM C.C</license>
+  <description>Control Overall Driving throught the motors</description>
+  <maintainer email="c.c@gmail.com">c.c</maintainer>
+  <license>Apache 2.0</license>
 
   <depend>rclpy</depend>
 
