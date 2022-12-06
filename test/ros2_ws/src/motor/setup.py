@@ -13,15 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='teamc.c2022',
-    maintainer_email='teamc.c2022@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='c.c',
+    maintainer_email='c.c@gmail.com',
+    description='Control Overall Driving throught the motors',
+    license='Apache 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = motor.publisher_motor_function:main',
-            'listener = motor.subscriber_motor_function:main',
+            'talker = motor.publisher_motor_function:main',    # publish the information about motor, but not be used now
+            'listener = motor.subscriber_motor_function:main',  # activate subscription from obstacles_detect_node 
         ],
     },
 )
