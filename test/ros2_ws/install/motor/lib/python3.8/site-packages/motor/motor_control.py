@@ -11,25 +11,30 @@ class motorControl:
 
     def ahead(self):
         # drive ahead
+        print("motor ahead")
         self.right_motor.forward()
         self.left_motor.forward()
 
     def back(self):
         # drive back
+        print("motor back")
         self.right_motor.backward()
         self.left_motor.backward()
 
     def right(self):
         # drive right
+        print("motor right")
         self.right_motor.backward()
         self.left_motor.forward()
 
     def left(self):
         # drive left
+        print("motor left")
         self.right_motor.forward()
         self.left_motor.backward()
 
     def stop(self):
         # stop driving
+        print("motor stop")
         self.right_motor.stop()
         self.left_motor.stop()
