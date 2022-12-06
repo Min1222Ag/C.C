@@ -24,6 +24,7 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 
+#generate interfaces about custom message "Stop.msg"
 rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/Stop.msg"
 	)
