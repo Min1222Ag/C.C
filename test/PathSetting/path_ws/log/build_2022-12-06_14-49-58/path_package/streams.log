@@ -1,0 +1,24 @@
+[2.598s] Invoking command in '/home/pi/C.C/test/PathSetting/path_ws/src/path_package': PYTHONPATH=/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_package build --build-base /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build install --prefix /home/pi/C.C/test/PathSetting/path_ws/install/path_package --record /home/pi/C.C/test/PathSetting/path_ws/build/path_package/install.log --single-version-externally-managed
+[3.503s] running egg_info
+[3.505s] writing ../../build/path_package/path_package.egg-info/PKG-INFO
+[3.506s] writing dependency_links to ../../build/path_package/path_package.egg-info/dependency_links.txt
+[3.507s] writing entry points to ../../build/path_package/path_package.egg-info/entry_points.txt
+[3.507s] writing requirements to ../../build/path_package/path_package.egg-info/requires.txt
+[3.508s] writing top-level names to ../../build/path_package/path_package.egg-info/top_level.txt
+[3.635s] reading manifest file '../../build/path_package/path_package.egg-info/SOURCES.txt'
+[3.639s] writing manifest file '../../build/path_package/path_package.egg-info/SOURCES.txt'
+[3.639s] running build
+[3.640s] running build_py
+[3.640s] copying path_package/publisher_member_function.py -> /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build/lib/path_package
+[3.642s] running install
+[3.645s] running install_lib
+[3.649s] copying /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build/lib/path_package/publisher_member_function.py -> /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package
+[3.652s] byte-compiling /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[3.658s] running install_data
+[3.660s] running install_egg_info
+[3.666s] removing '/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package-0.0.0-py3.8.egg-info' (and everything under it)
+[3.668s] Copying ../../build/path_package/path_package.egg-info to /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages/path_package-0.0.0-py3.8.egg-info
+[3.672s] running install_scripts
+[3.735s] Installing path_receiver script to /home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/path_package
+[3.736s] writing list of installed files to '/home/pi/C.C/test/PathSetting/path_ws/build/path_package/install.log'
+[3.830s] Invoked command in '/home/pi/C.C/test/PathSetting/path_ws/src/path_package' returned '0': PYTHONPATH=/home/pi/C.C/test/PathSetting/path_ws/install/path_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_package build --build-base /home/pi/C.C/test/PathSetting/path_ws/build/path_package/build install --prefix /home/pi/C.C/test/PathSetting/path_ws/install/path_package --record /home/pi/C.C/test/PathSetting/path_ws/build/path_package/install.log --single-version-externally-managed

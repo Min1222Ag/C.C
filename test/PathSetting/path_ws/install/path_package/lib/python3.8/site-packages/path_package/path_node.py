@@ -8,7 +8,7 @@ from std_msgs.msg import String
 HOST = socket.gethostbyname(socket.gethostname())
 PORT = 6000
 STORE_DIR = "/home/pi/C.C/test/PathSetting/path_info/"
-PATH_FILE = "path.json"
+PATH_FILE = "coordinates.json"
 
 class locationPublisher(Node):
 
@@ -42,9 +42,8 @@ class locationPublisher(Node):
             b_num = len(data)
             with self.conn:
                 with open(self.store_dir + PATH_FILE, "wb") as f:
-                    print("inner with open file")
                     f.write(data)
-                    print("succeed in writing data!")
+                    print("succeed in writing data!: {}".format(data))
 
             print("{}: {} bytes received.".format(self.i, b_num))
         
