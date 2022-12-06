@@ -15,10 +15,9 @@ import RPi.GPIO as GPIO
 import time
 
 class lidarDetect(Node):
-	
     def __init__(self):
         super().__init__('obstacles_detect_node')
-         		
+        
         # Subscription info for LiDAR
         self.lidar_subscription = self.create_subscription(
             LaserScan,
@@ -26,21 +25,15 @@ class lidarDetect(Node):
             self.lidarScan,
             100),
         self.lidar_subscription
-        
+       
         # Subscription info for YOLO  
         self.yolo_subscription = self.create_subscription(yolo_arr, 'CV_YOLO', self.get_imgmsg, 100)
         self.yolo_subscription
-        print("Subscription")
+      
         
-        # Subscription callback function
-    def get_imgmsg(self,msg):
-        print("get_imgmsg opertated")
-        print(msg)
-        ### 
-        # self.get_logger().info('I heard: "%d"' % msg.data)
         
         # Publisher info
-        self.publisher_stop = self.create_publisher(Stop, 'Stop', 100)
+        self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
         timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.decision_callback)
         
@@ -64,13 +57,23 @@ class lidarDetect(Node):
         self.Avoid_Right = 0
         
         
-    # /scan subscribe to detect 	
+        # Subscription callback function
+    def get_imgmsg(self,msg):
+        print("get_imgmsg opertated")
+        print(msg)
+        ### 
+        # self.get_logger().info('I heard: "%d"' % msg.data)
+        
+        
+        
+    # /scan subscribe to detect 
     def lidarScan(self, msg):
+        ranges = np.array(msg.ranges)
         self.Avoid_Left = 0
         self.Avoid_Front = 0
         self.Avoid_Right = 0
 
-		# Divide three part of the front
+# Divide three part of the front
         for i in range(len(ranges)):
             if 10 < i < self.Lidar_Angle:
                 if ranges[i] < self.Limit_Distance: 
@@ -81,89 +84,229 @@ class lidarDetect(Node):
             elif (340 <= i <= 360) or (0<= i <=20):
                 if ranges[i] < self.Limit_Distance: 
                     self.Avoid_Front += 1
-            print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
+            #print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
         sleep(0.1)
         
-    # publish Stop, Left_Speed, Right_Speed		
+    # publish Stop, Left_Speed, Right_Speed 
     def decision_callback(self):
         msg = Stop()
         msg.stop = self.Stop
-        msg.lspeed = self.Left_Speed
-        msg.rspeed = self.Right_Speed
-        self.publisher_stop.publish(msg)
+        msg.lspeed = self.Left_Forward #self.Left_Speed
+        msg.rspeed = self.Right_Forward #self.Right_Speed
+        
         
         if self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
             self.proximity_sensor()
-            if self.distance < 100:	
-                self.Left_Speed = 0.0
-                self.Right_Speed = 0.0
+            if self.distance < 100: 
+                #self.Left_Speed = 0.0
+                #self.Right_Speed = 0.0
+                self.Stop = True
+                self.Left_Forward = False
+                self.Right_Forward = False
+                self.Avoid_Front += 10
                 msg.stop = self.Stop
-                msg.lspeed = self.Left_Speed
-                msg.rspeed = self.Right_Speed
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                #msg.lspeed = self.Left_Speed
+                #msg.rspeed = self.Right_Speed
                 self.publisher_stop.publish(msg)
-                sleep(0.3)
+                sleep(1)
             else:
                 self.Stop = False
-                self.Left_Speed = 0.1
-                self.Right_Speed = 0.1
-                msg.lspeed = self.Left_Speed
-                msg.rspeed = self.Right_Speed
+                self.Left_Forward = False
+                self.Right_Forward = False
+                #self.Left_Speed = 0.1
+                #self.Right_Speed = 0.1
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
                 self.publisher_stop.publish(msg)
-                sleep(0.3)
+                sleep(1)
         elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right > 10:
             self.proximity_sensor()
-            self.Left_Speed = 0.1
-            self.Right_Speed = 0.6
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            if self.distance < 100: 
+                #self.Left_Speed = 0.0
+                #self.Right_Speed = 0.0
+                self.Stop = True
+                self.Left_Forward = True 
+                self.Right_Forward = False
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                #msg.lspeed = self.Left_Speed
+                #msg.rspeed = self.Right_Speed
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = False
+                self.Right_Forward = False
+                #self.Left_Speed = 0.1
+                #self.Right_Speed = 0.1
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.1
+            #self.Right_Speed = 0.6
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(0.5)
         elif self.Avoid_Left > 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
-            self.Left_Speed = 0.6
-            self.Right_Speed = 0.1
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            self.proximity_sensor()
+            if self.distance < 100:
+                self.Stop = True
+                self.Left_Forward = False
+                self.Right_Forward = True
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = False
+                self.Right_Forward = True
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.6
+            #self.Right_Speed = 0.1
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(0.5)
         elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
-            self.Left_Speed = 0.1
-            self.Right_Speed = 0.1
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            self.proximity_sensor()
+            if self.distance < 100:
+                self.Stop = True
+                self.Left_Forward = False
+                self.Right_Forward = False
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = False
+                self.Right_Forward = False
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.1
+            #self.Right_Speed = 0.1
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(1)
             
         elif self.Avoid_Left > 10 and self.Avoid_Front <= 10 and self.Avoid_Right <= 10:
-            self.Left_Speed = 0.4
-            self.Right_Speed = 0.1
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            self.proximity_sensor()
+            if self.distance < 100:
+                self.Stop = True
+                self.Left_Forward = False
+                self.Right_Forward = True
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = False
+                self.Right_Forward = True
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.4
+            #self.Right_Speed = 0.1
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(0.5)
+            
         elif self.Avoid_Left <= 10 and self.Avoid_Front <= 10 and self.Avoid_Right > 10:
-            self.Left_Speed = 0.1
-            self.Right_Speed = 0.4
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            self.proximity_sensor()
+            if self.distance < 100:
+                self.Stop = True
+                self.Left_Forward = True
+                self.Right_Forward = False
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = True
+                self.Right_Forward = False
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.1
+            #self.Right_Speed = 0.4
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(0.5)
+            
         elif self.Avoid_Left <= 10 and self.Avoid_Front > 10 and self.Avoid_Right <= 10:
-            self.Left_Speed = 0.1
-            self.Right_Speed = 0.4
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
-            self.publisher_stop.publish(msg)
-            sleep(0.5)
+            self.proximity_sensor()
+            if self.distance < 100:
+                self.Stop = True
+                self.Left_Forward = True
+                self.Right_Forward = True
+                self.Avoid_Front += 10
+                msg.stop = self.Stop
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            else:
+                self.Stop = False
+                self.Left_Forward = True
+                self.Right_Forward = True
+                msg.lspeed = self.Left_Forward
+                msg.rspeed = self.Right_Forward
+                self.publisher_stop.publish(msg)
+                sleep(1)
+            #self.Left_Speed = 0.1
+            #self.Right_Speed = 0.4
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            #sleep(0.5)
+            
         else:
             self.Stop = False
-            self.Left_Speed = 0.5
-            self.Right_Speed = 0.5
-            
-            msg.lspeed = self.Left_Speed
-            msg.rspeed = self.Right_Speed
+            self.Left_Forward = True
+            self.Right_Forward = True
+            msg.lspeed = self.Left_Forward
+            msg.rspeed = self.Right_Forward
             self.publisher_stop.publish(msg)
-            sleep(0.5)
+            
+            #self.Left_Speed = 0.5
+            #self.Right_Speed = 0.5
+            #msg.lspeed = self.Left_Speed
+            #msg.rspeed = self.Right_Speed
+            #self.publisher_stop.publish(msg)
+            sleep(1)
+            
         print(msg)
+        #self.Stop = False
+        #self.publisher_stop.publish(msg)
+        #print(msg)
+        
     # set up the proximity sensor
     def proximity_sensor(self):
        try:

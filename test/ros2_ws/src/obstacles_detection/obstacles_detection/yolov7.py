@@ -4,8 +4,9 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import ByteMultiArray as yolo_arr
+#from edgetpu.detection.engine import DetectionEngine
 
-import argparse
+#import argparse
 from PIL import Image
 import time
 
@@ -25,11 +26,7 @@ class Yolov7(Node):
       
     # Create the subscriber for image. This subscriber will receive an Image
     # from the video_frames topic. The queue size is 100 messages.
-    self.image_subscription = self.create_subscription(
-      Image, 
-      '/image_raw', 
-      self.listener_callback, 
-      100)
+    self.image_subscription = self.create_subscription(Image, '/image_raw', self.listener_callback, 100)
     self.image_subscription # prevent unused variable warning
       
     # Used to convert between ROS and OpenCV images
@@ -38,7 +35,7 @@ class Yolov7(Node):
     # Create the publisher about image messages . This publisher will pusblish an list
     # from CV_YOLO topic. The queue size is 100 messages.
     self.imgmsg_publisher = self.create_publisher(yolo_arr,'CV_YOLO',100)
-    timer_period = 0.5  # seconds
+    timer_period = 0.01  # seconds
     self.timer = self.create_timer(timer_period, self.yolo_publish) # call self.motor_publish()
 
   def yolo_publish(self):
@@ -57,48 +54,47 @@ class Yolov7(Node):
     current_frame = self.br.imgmsg_to_cv2(data)
     
     # Display image
-    cv2.imshow("camera", current_frame)
+    #cv2.imshow("camera", current_frame)
     
-    ap = argparse.ArgumentParser()
-    ap.add_argument("-m", "--model", required=True, help="")
-    ap.add_argument("-l", "--labels", required=True, help="labels.txt")
-    ap.add_argument("-c", "--confidence", type=float, default=0.7, help="")
-    args = vars(ap.parse_args())
+    #ap = argparse.ArgumentParser()
+    #ap.add_argument("-m", "--model", required=True, help="")
+    #ap.add_argument("-l", "--labels", required=True, help="labels.txt")
+    #ap.add_argument("-c", "--confidence", type=float, default=0.7, help="")
+    #args = vars(ap.parse_args())
     labels = {}
     
-    for row in open(args["labels"]):
+    for row in open("labels.txt"):
         (classID, label) = row.strip().split(maxsplit=1)
         labels[int(classID)] = label.strip()
         
-    model = DetectionEngine()
+    model = model #DetectionEngine("best.pt")
     
-    while True:
-        frame = cv2.read()
-        frame = imutils.resize(frame, width=600)
-        ori = frame.copy()
+    frame = current_frame #cv2.read()
+    frame = imutils.resize(frame, width=600)
+    ori = frame.copy()
+    
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    frame = Image.fromarray(frame)
+    
+    start = time.time()
+    results = model.DetectWithImage(frame, threshold=args["confidence"], kepp_aspect_ratio=True, relative_coord=False)
+    end = time.time()
+    
+    for r in results:
+        box = r.bounding_box.flatten().astype("int")
+        (startX, startY, endX, endY) = box
+        label = labels[r.label_id]
         
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        frame = Image.fromarray(frame)
-        
-        start = time.time()
-        results = model.DetectWithImage(frame, threshold=args["confidence"], kepp_aspect_ratio=True, relative_coord=False)
-        end = time.time()
-        
-        for r in results:
-            box = r.bounding_box.flatten().astype("int")
-            (startX, startY, endX, endY) = box
-            label = labels[r.label_id]
-            
-            cv2.rectangle(ori, (startX, startY), (endX, endY), (0, 255, 0), 2)
-            y = startY - 15 if startY - 15 > 15 else startY + 15
-            test = "{}: {:.2f}%".format(label, r.score * 100)
-            cv2.putText(ori, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-        
-        cv2.imshow("Frame", ori)
-        cv2.imwrite("/home/pi/video/test.jpeg", ori)
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord("q"):
-            break
+        cv2.rectangle(ori, (startX, startY), (endX, endY), (0, 255, 0), 2)
+        y = startY - 15 if startY - 15 > 15 else startY + 15
+        test = "{}: {:.2f}%".format(label, r.score * 100)
+        cv2.putText(ori, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+    cv2.imshow("Frame", ori)
+    #cv2.imwrite("/home/pi/video/test.jpeg", ori)
+    key = cv2.waitKey(1) & 0xFF
+    #if key == ord("q"):
+    #    break
 
     cv2.waitKey(1)
 
