@@ -60,11 +60,18 @@ class GPSTracking:
         lat_diff = lat2 - lat1
         lon_diff = lon2 - lon1
 
-        # formula
+        # Harvesine formula
         # a = sin²(ΔlatDifference/2) + cos(lat1)*cos(lat2)*sin²(ΔlonDifference/2)
         # c = 2*arctan(√(1-a)/√a)
         # distance = R*c where R is the radius of the Earth
-        distance = 2*R*asin(sqrt(sin(lat_diff/2)**2 + cos(lat1)*cos(lat2)*sin(lon_diff/2)**2))
+
+        # distance = 2*R*asin(sqrt(sin(lat_diff/2)**2 + cos(lat1)*cos(lat2)*sin(lon_diff/2)**2))
+
+        # vincenty
+        X = sin(lat1)*sin(lat2) + cos(lat1)*cos(lat2)*cos(lon_diff)
+        Y = sqrt((cos(lat2)*sin(lon_diff))**2 + (cos(lat1)*sin(lat2)-sin(lat1)*cos(lat2)*cos(lon_diff))**2)
+
+        distance = R*atan2(Y, X)
 
         return distance # return distance by the kilometer
 
