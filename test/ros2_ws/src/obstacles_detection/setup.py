@@ -16,7 +16,7 @@ setup(
     maintainer='pi',
     maintainer_email='pi@gmail.com',
     description='For obstacles detection using LiDAR, camera, and proximity sensor',
-    license='Apache 2.0,
+    license='Apache 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

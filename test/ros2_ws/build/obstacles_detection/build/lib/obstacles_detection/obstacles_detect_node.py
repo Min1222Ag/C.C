@@ -1,39 +1,60 @@
 #!/usr/bin/env python
 # coding:utf-8
+
+# Copyright 2016 Open Source Robotics Foundation, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import numpy as np
 import rclpy
 from rclpy.node import Node
 from time import sleep
 
+# interfaces for publisher and subscription
 from sensor_msgs.msg import LaserScan
 from interfaces.msg import Stop
-
-import yolov7
 from std_msgs.msg import ByteMultiArray as yolo_arr  # for YOLO subscription message type
 
 import RPi.GPIO as GPIO
 import time
 
+# lidarDetect : using LiDAR information publish stop sign and subscribe image information from "yolo.py" 
 class lidarDetect(Node):
     def __init__(self):
-        super().__init__('obstacles_detect_node')
+        super().__init__('obstacles_detect_node') # node name : obstacles_detect_node
         
         # Subscription info for LiDAR
         self.lidar_subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.lidarScan,
-            100),
+            LaserScan,    # topic type
+            '/scan',       # topic name : /scan
+            self.lidarScan,  # callback function
+            100),           # queue size
         self.lidar_subscription
        
         # Subscription info for YOLO  
-        self.yolo_subscription = self.create_subscription(yolo_arr, 'CV_YOLO', self.get_imgmsg, 100)
+        self.yolo_subscription = self.create_subscription(
+            yolo_arr,    # topic type
+            'CV_YOLO',    # topic name : CV_YOLO
+            self.get_imgmsg,    #callback function
+            100)            #queue size
         self.yolo_subscription
       
         
-        
         # Publisher info
-        self.publisher_stop = self.create_publisher(Stop, 'Stop', 10)
+        self.publisher_stop = self.create_publisher(
+            Stop,      # topic 
+            'Stop',    #topic name : Stop
+            10)        # queue size
         timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.decision_callback)
         
@@ -86,8 +107,9 @@ class lidarDetect(Node):
                     self.Avoid_Front += 1
             #print(self.Avoid_Left,self.Avoid_Front,self.Avoid_Right)
         sleep(0.1)
-        
-    # publish Stop, Left_Speed, Right_Speed 
+     
+    # pulisher(timer) callback function
+    # publish Stop, Left_Speed, Right_Speed through result from LiDAR (*Will be updated more*)
     def decision_callback(self):
         msg = Stop()
         msg.stop = self.Stop
@@ -341,10 +363,12 @@ class lidarDetect(Node):
 def main(args=None):
     rclpy.init(args=args)
     
+    # for the LiDAR detection
     obstacles_detect_node = lidarDetect()
     rclpy.spin(obstacles_detect_node)
     obstacles_detect_node.destroy_node()
     
+    # for publisher node
     stop_publisher = StopPublisher()
     rclpy.spin(stop_publisher)
     stop_publisher.destroy_node()

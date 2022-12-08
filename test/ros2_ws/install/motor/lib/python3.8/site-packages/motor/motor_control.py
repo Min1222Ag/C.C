@@ -3,11 +3,20 @@ import dc_motor
 
 class motorControl:
     '''
-    Driving using two DC motors
+    Driving using two DC motors and control broom motor
     '''
     def __init__(self, pins): # pins is a list consisting of 6 GPIO pins
-        self.right_motor = dc_motor.motor([pins[0], pins[1]], pins[2], "right") # right motor
-        self.left_motor = dc_motor.motor([pins[3], pins[4]], pins[5], "left") # left motor
+        self.right_motor = dc_motor.motor(pins[2], [pins[0], pins[1]], "right") # right motor
+        self.left_motor = dc_motor.motor(pins[5], [pins[3], pins[4]], "left") # left motor
+        self.broom = dc_motor.motor(pins[6], label="broom") # broom motor
+
+    def broom_run(self):
+        # broom run
+        self.broom.forward()
+
+    def broom_stop(self):
+        # broom stop
+        self.broom.stop()
 
     def ahead(self):
         # drive ahead
@@ -20,6 +29,19 @@ class motorControl:
         print("motor back")
         self.right_motor.backward()
         self.left_motor.backward()
+
+    def right_ahead(self):
+        self.right()
+        sleep(0.5)
+        self.ahead()
+        sleep(0.5)
+    
+    def left_ahead(self):
+        self.left()
+        sleep(0.5)
+        self.ahead()
+        sleep(0.5)
+
 
     def right(self):
         # drive right

@@ -1,1 +1,1 @@
-gps_tracking:interfaces:motor_control:msg:obstacles_detect_node:obstacles_detection:rclpy
+gps_tracking:interfaces:motor_control:msg:obstacles_detect_node:obstacles_detection:proximity:rclpy

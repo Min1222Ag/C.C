@@ -1,10 +1,10 @@
 Metadata-Version: 1.2
 Name: motor
 Version: 1.0.0
-Summary: TODO: Package description
+Summary: Control Overall Driving throught the motors
 Home-page: UNKNOWN
-Maintainer: teamc.c2022
-Maintainer-email: teamc.c2022@gmail.com
-License: TODO: License declaration
+Maintainer: c.c
+Maintainer-email: c.c@gmail.com
+License: Apache 2.0
 Description: UNKNOWN
 Platform: UNKNOWN

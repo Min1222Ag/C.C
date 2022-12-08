@@ -1,0 +1,20 @@
+[3.518s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/camera': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed
+[4.514s] running egg_info
+[4.516s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[4.517s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[4.518s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[4.519s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[4.519s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[4.657s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.660s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.661s] running build
+[4.662s] running build_py
+[4.662s] running install
+[4.666s] running install_lib
+[4.672s] running install_data
+[4.675s] running install_egg_info
+[4.682s] removing '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-0.0.0-py3.8.egg-info' (and everything under it)
+[4.684s] Copying ../../build/camera/camera.egg-info to /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-0.0.0-py3.8.egg-info
+[4.691s] running install_scripts
+[4.761s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/camera/install.log'
+[4.872s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/camera' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed

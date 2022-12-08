@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "interfaces")
 set(interfaces_VERSION "1.0.0")
-set(interfaces_MAINTAINER "teamc.c2022 <teamc.c2022@gmail.com>")
+set(interfaces_MAINTAINER "c.c2022 <c.c@gmail.com>")
 set(interfaces_BUILD_DEPENDS "rosidl_default_generators")
 set(interfaces_BUILDTOOL_DEPENDS "ament_cmake")
 set(interfaces_BUILD_EXPORT_DEPENDS )

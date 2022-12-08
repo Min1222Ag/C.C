@@ -12,6 +12,7 @@ motor/__init__.py
 motor/dc_motor.py
 motor/gps_tracking.py
 motor/motor_control.py
+motor/proximity.py
 motor/publisher_motor_function.py
 motor/subscriber_motor_function.py
 resource/motor

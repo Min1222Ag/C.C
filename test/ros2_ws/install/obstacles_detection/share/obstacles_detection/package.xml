@@ -4,8 +4,8 @@
   <name>obstacles_detection</name>
   <version>1.0.0</version>
   <description>For obstacles detection using LiDAR, camera, and proximity sensor</description>
-  <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
-  <license>TEAM C.C</license>
+  <maintainer email="pi@gmail.com">pi</maintainer>
+  <license>Apache 2.0</license>
 
   <depend>rclpy</depend>
 

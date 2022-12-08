@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+'''
+not used
+'''
+
 import rclpy
 from rclpy.node import Node
 
@@ -23,7 +27,7 @@ class motorPublisher(Node):
 
     def __init__(self):
         super().__init__('motor_publisher') # node name : motor_publisher
-        self.publisher_ = self.create_publisher(Bool, 'motor_on', 100) # message type : Bool , topic name : motor_on , queue size: 100
+        self.publisher_ = self.create_publisher(Bool, 'motor_on', 100) # topic type : Bool , topic name : motor_on , queue size: 100
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.motor_publish) # call self.motor_publish()
 

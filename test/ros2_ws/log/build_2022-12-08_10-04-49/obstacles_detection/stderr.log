@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection/obstacles_detect_node.py", line 34
+    super().__init__('obstacles_detect_node'). # node name : obstacles_detect_node
+                                               ^
+SyntaxError: invalid syntax
+

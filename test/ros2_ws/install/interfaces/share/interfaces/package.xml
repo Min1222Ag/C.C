@@ -4,7 +4,7 @@
   <name>interfaces</name>
   <version>1.0.0</version>
   <description>Interfaces for Obstacles Detection</description>
-  <maintainer email="teamc.c2022@gmail.com">teamc.c2022</maintainer>
+  <maintainer email="c.c@gmail.com">c.c2022</maintainer>
   <license>TEAM C.C</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

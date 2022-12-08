@@ -31,7 +31,7 @@ import time
 # lidarDetect : using LiDAR information publish stop sign and subscribe image information from "yolo.py" 
 class lidarDetect(Node):
     def __init__(self):
-        super().__init__('obstacles_detect_node'). # node name : obstacles_detect_node
+        super().__init__('obstacles_detect_node') # node name : obstacles_detect_node
         
         # Subscription info for LiDAR
         self.lidar_subscription = self.create_subscription(

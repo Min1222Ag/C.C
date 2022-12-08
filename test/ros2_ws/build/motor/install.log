@@ -1,9 +1,11 @@
+/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/proximity.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/motor_control.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/publisher_motor_function.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/dc_motor.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__init__.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/gps_tracking.py
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/subscriber_motor_function.py
+/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__pycache__/proximity.cpython-38.pyc
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__pycache__/motor_control.cpython-38.pyc
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__pycache__/publisher_motor_function.cpython-38.pyc
 /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor/__pycache__/dc_motor.cpython-38.pyc
