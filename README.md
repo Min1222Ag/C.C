@@ -101,10 +101,10 @@
    4. go to [💡Driving💡](#driving)
 
    5. Set same ROS_dOMAIN_ID on both pi </br>
+
     $ export ROS_DOMAIN_ID=[your own id] </br>
     $ source /opt/ros/your_ros2_distribution/setup.bash
 
---
 
 #### 💡Detection💡
 
@@ -137,7 +137,7 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
     
-----
+---
 
 #### 💡Driving💡
 
