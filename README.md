@@ -111,7 +111,7 @@ Your README.md file must include:
 
 ---------------
 <p align="center">💡Detection💡</p> 
-</br>
+--------------
 #### 1. create interfaces package </br>
 
 #### 2. download requirements1.txt
@@ -123,12 +123,12 @@ Your README.md file must include:
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
 > [if /dev/ttyUSB0 doesn't exist](https://kgkang.tistory.com/175)
-> $sudo apt-get install minicom
-> $sudo minicom -s
-> Serial port setup
-> Press A, change serial device into /dev/ttyUSB0 serial device, and press enter
-> Save setup as dfl
-> exit
+> $sudo apt-get install minicom </br>
+> $sudo minicom -s </br>
+> Serial port setup </br>
+> Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
+> Save setup as dfl </br>
+> exit </br>
 
 
 #### 4. implement proximity sensor onto Raspberry Pi
