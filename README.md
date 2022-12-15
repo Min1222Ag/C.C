@@ -77,14 +77,21 @@ Your README.md file must include:
 (7) Environment settings (Must be very detailed with several steps.)   
 #### 🌊 Environment Setting
     
-Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
+    - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
     
-Python version 3.8.10 
+    - Python version 3.8.10 
     
-Raspberry Pi 4 Model B+ (8GB)
+    - Raspberry Pi 4 Model B+ (8GB)
     
+    - ROS2 foxy
 
-[ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)
+#### 🌊 Installation
+
+    1. [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)  
+
+    2. go to 'Detection'
+    
+    3. go to 'Driving'
     
    ##### <p align="center"> Detection</p>
 
