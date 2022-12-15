@@ -127,8 +127,8 @@ Your README.md file must include:
 > $sudo minicom -s </br>
 > * Serial port setup </br>
 > * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
->>Save setup as dfl </br>
->>exit </br>
+> * Save setup as dfl </br>
+> * exit </br>
 
 
 #### 4. install proximity sensor onto Raspberry Pi
