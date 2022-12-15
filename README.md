@@ -51,13 +51,13 @@ Your README.md file must include:
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="500"/>
 </p>
 
-    1. One raspberry pi 4B is used for the driving unit equipping GPS, magnetometer sensor, DC motors and relay, and proximity sensors.
+    1. One raspberry pi 4B is used for the driving unit equipping magnetometer sensor, DC motors relay, GPS, and proximity sensors.
     
-    2. Another raspberry pi 4B is utilized as a detection unit arming PiCam and LiDAR.
+    2. Another raspberry pi 4B is utilized as a detection unit arming LiDAR and proximity sensor.
     
     3. Two raspberry pi 4Bs communicate with each other through ROS2 Foxy.
     
-    4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
+    4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel.
     
     
 #### 🌊 Flow Chart
