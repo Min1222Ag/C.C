@@ -27,15 +27,15 @@
 
 #### 🌊 Novelty
 
-    The first Autonomous driving Beach Cleaning Robot with designated GPS points!
+    The first Autonomous driving Beach Cleaning Robot with designated GPS tracking!
        => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
       
-    Optimized robot for examine the distance in real time!
-       => By combining RPLiDAR, camera, and proximity sensors to examine the distance from the ABCbot in real time, it detects
-          obstacles in front of the robot and uses Google Coral Edge Board to accelerate computing.
+    Optimized robot for detect the obstacles in real time!
+       => By combining RPLiDAR and proximity sensors to examine the distance from the ABCbot in real time, it can detects
+          obstacles in front of the robot.
 
     An Eco-friendly robot!
-       => ABCbot takes power from solar panels and windmills.
+       => ABCbot takes power from solar panels.
 
 
 #### 🌊 System Overview
