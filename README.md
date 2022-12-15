@@ -87,11 +87,11 @@ Your README.md file must include:
 
 #### 🌊 Installation
 
-    1. [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)  
+   1. [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)  
 
-    2. go to 'Detection'
+2. go to 'Detection'
     
-    3. go to 'Driving'
+3. go to 'Driving'
     
    ##### <p align="center"> Detection</p>
 
