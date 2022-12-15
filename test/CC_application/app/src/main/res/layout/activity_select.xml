@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et_ip"
-            android:hint="Enter IP Address"
+            android:hint="Enter IP Address in format"
             android:imeOptions="actionNext" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +98,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subgoal Distance"
+        android:text="Gap between Subgoals"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -120,18 +120,25 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_len"
             android:maxLength="3"
-            android:hint="Enter Subgoal Distance"
+            android:hint="meter"
             android:imeOptions="actionNext"
             android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
-
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"
+        android:text="Go back"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="100dp"
+        app:iconGravity="textEnd"/>
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:text="Confirm"
         android:padding="12dp"
-        android:layout_marginTop="32dp"
         app:cornerRadius="100dp"
         app:icon="@drawable/ic_next"
         app:iconGravity="textEnd"/>
