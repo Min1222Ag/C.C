@@ -108,12 +108,12 @@ Your README.md file must include:
    6. Set same ROS_dOMAIN_ID on both pi
       - $ export ROS_DOMAIN_ID=[your own id]
       - $ source /opt/ros/your_ros2_distribution/setup.bash
-    
-   #### 💡Detection
-   <p align="center"> 💡Detection</p>
-*create interfaces package </br>
 
-*download requirements1.txt
+---------------
+<p align="center">💡Detection</p>
+#### create interfaces package </br>
+
+#### download requirements1.txt*
 > pip install -r requirements1.txt
 #### implement rplidar ROS2 onto Raspberry Pi  
     $ cd ~
@@ -124,13 +124,13 @@ Your README.md file must include:
 #### implement proximity sensor onto Raspberry Pi
 
 *change directory to your workspace* </br> 
-*Creating a package named 'obstacles_detection' in your workspace*
->$ cd ./obstacles_Detection </br>
-Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node
+#### Creating a package named 'obstacles_detection' in your workspace
+*Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node* </br>
+
     $ colcon build
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
-    
+-----------
 ##### <p align="center"> Driving</p>
    - Creating a package named 'motor'
    - 
