@@ -110,8 +110,9 @@ Your README.md file must include:
       - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
-    💡Detection💡
+    <p align="center">💡Detection💡</p>
 <p align="center">💡Detection💡</p>
+</br>
 #### create interfaces package </br>
 
 #### download requirements1.txt*
@@ -125,7 +126,7 @@ Your README.md file must include:
 
 #### implement proximity sensor onto Raspberry Pi
 
-_**change directory to your workspace**_ </br> 
+*change directory to your workspace* </br> 
 #### Creating a package named 'obstacles_detection' in your workspace
 *Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node* </br>
 
