@@ -103,7 +103,7 @@ Your README.md file must include:
     
    ##### <p align="center"> Detection</p>
    - Creating a package named 'obstacles_detection'
-   - Copy obstacles_detect_node.py #test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py
+   - Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to obstacles_detection/
    ##### <p align="center"> Driving</p>
    - Creating a package named 'motor'
    - 
