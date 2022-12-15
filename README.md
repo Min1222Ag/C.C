@@ -85,10 +85,10 @@ Your README.md file must include:
     
     - [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)
     
-### Detection
+   ##### Detection
 
-### Driving
-    
+   ##### Driving
+     
 #### 🌊 Collaborator
      
        Eunmin Kim
