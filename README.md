@@ -110,6 +110,7 @@ Your README.md file must include:
       - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
+
 <p align="center">💡Detection💡</p> 
 
 
@@ -123,7 +124,7 @@ Your README.md file must include:
     $ source /opt/ros/foxy/setup.bash
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
-> [if /dev/ttyUSB0 doesn't exist](https://kgkang.tistory.com/175)
+> *[if /dev/ttyUSB0 doesn't exist](https://kgkang.tistory.com/175)*
 > $sudo apt-get install minicom </br>
 > $sudo minicom -s </br>
 >>Serial port setup </br>
