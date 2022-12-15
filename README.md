@@ -128,6 +128,9 @@
 
 
 ##### 4. install proximity sensor onto Raspberry Pi
+###### IF _**RuntimeError: No access to /dev/mem.  Try running as root!**_ </br> 
+> $ sudo chown root.gpio /dev/gpiomem </br>
+> $ sudo chmod g+rw /dev/gpiomem </br>
 
 *change directory to your workspace* </br> 
 _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
