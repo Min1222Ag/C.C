@@ -89,14 +89,23 @@ Your README.md file must include:
 
    1. [ROS 2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
-   2. go to 'Detection'
+   2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
+   
+   3. go to 'Detection'
     
-   3. go to 'Driving'
+   4. go to 'Driving'
+   
+   5. df
+
+   6. Set same ROS_dOMAIN_ID on both pi
+      - $ export ROS_DOMAIN_ID=[your own id]
+      - $ source /opt/ros/your_ros2_distribution/setup.bash
     
    ##### <p align="center"> Detection</p>
-   - D
+   - Creating a package named 'obstacles_detection'
+   - 
    ##### <p align="center"> Driving</p>
-   - Driving
+   - Creating a package named 'motor'
    - 
 #### 🌊 Collaborator
      
