@@ -101,7 +101,7 @@ Your README.md file must include:
    
    3. go to [💡Detection💡](#detection)
     
-   4. go to [⚙️ Driving ⚙️](#driving)
+   4. go to [Driving](#driving)
    
    5. df
 
@@ -143,7 +143,7 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     
 -----------
 
-# Driving ⚙️
+# Driving
 
    - Creating a package named 'motor'
    - 
