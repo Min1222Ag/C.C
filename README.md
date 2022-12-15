@@ -102,14 +102,13 @@ Your README.md file must include:
    3. go to [💡Detection💡](#detection)
     
    4. go to [💡Driving💡](#driving)
-   
-   5. df
 
-   6. Set same ROS_dOMAIN_ID on both pi
-      - $ export ROS_DOMAIN_ID=[your own id]
-      - $ source /opt/ros/your_ros2_distribution/setup.bash
+   5. Set same ROS_dOMAIN_ID on both pi
+     $ export ROS_DOMAIN_ID=[your own id]
+     $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
+
 ### 💡Detection💡
 
 #### 1. create interfaces package </br>
@@ -146,7 +145,8 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
 ### 💡Driving💡
 
    - Creating a package named 'motor'
-   - 
+
+
 #### 🌊 Collaborator
      
        Eunmin Kim
