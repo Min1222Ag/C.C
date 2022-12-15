@@ -119,18 +119,18 @@
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
 ###### IF _**Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'**_ </br> 
-> $ sudo apt-get install minicom </br>
-> $ sudo minicom -s </br>
-> * Serial port setup </br>
-> * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
-> * Save setup as dfl </br>
-> * exit </br>
+    $ sudo apt-get install minicom </br>
+    $ sudo minicom -s </br>
+    * Serial port setup </br>
+    * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
+    * Save setup as dfl </br>
+    * exit </br>
 
 
 ##### 4. install proximity sensor onto Raspberry Pi
 ###### IF _**RuntimeError: No access to /dev/mem.  Try running as root!**_ </br> 
-> $ sudo chown root.gpio /dev/gpiomem </br>
-> $ sudo chmod g+rw /dev/gpiomem </br>
+    $ sudo chown root.gpio /dev/gpiomem </br>
+    $ sudo chmod g+rw /dev/gpiomem </br>
 
 *change directory to your workspace* </br> 
 _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
