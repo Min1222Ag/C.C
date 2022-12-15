@@ -125,8 +125,8 @@ Your README.md file must include:
 > IF _**"Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'"**_ </br> 
 > $sudo apt-get install minicom </br>
 > $sudo minicom -s </br>
->>Serial port setup </br>
->>Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
+> * Serial port setup </br>
+> * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
 >>Save setup as dfl </br>
 >>exit </br>
 
