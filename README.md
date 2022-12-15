@@ -110,13 +110,12 @@ Your README.md file must include:
       - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
-<p align="center">💡Detection💡</p>
+<p align="center">💡Detection💡</p> </br>
 #### 1. create interfaces package </br>
 
 #### 2. download requirements1.txt*
 > pip install -r requirements1.txt
 #### 3. implement rplidar ROS2 onto Raspberry Pi  
->
     $ cd ~
     $ sudo apt install ros-foxy-rplidar-ros
     $ source /opt/ros/foxy/setup.bash
