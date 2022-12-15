@@ -110,8 +110,8 @@ Your README.md file must include:
       - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
-<p align="center">💡Detection💡</p> </br>
->
+<p align="center">💡Detection💡</p> 
+</br>
 #### 1. create interfaces package </br>
 
 #### 2. download requirements1.txt
