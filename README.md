@@ -122,7 +122,7 @@ Your README.md file must include:
     $ source /opt/ros/foxy/setup.bash
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
-> IF _**"Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'"**_ </br> 
+> IF _**Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'**_ </br> 
 > $sudo apt-get install minicom </br>
 > $sudo minicom -s </br>
 > * Serial port setup </br>
