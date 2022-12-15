@@ -72,9 +72,6 @@
     4-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
 
-  
-Your README.md file must include:
-(7) Environment settings (Must be very detailed with several steps.)   
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
@@ -95,17 +92,17 @@ Your README.md file must include:
 
 #### 🌊 Installation
 
-   1. [ROS 2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+    1. [ROS 2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
-   2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
+    2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
    
-   3. go to [💡Detection💡](#detection)
+    3. go to [💡Detection💡](#detection)
     
-   4. go to [💡Driving💡](#driving)
+    4. go to [💡Driving💡](#driving)
 
-   5. Set same ROS_dOMAIN_ID on both pi
-     $ export ROS_DOMAIN_ID=[your own id]
-     $ source /opt/ros/your_ros2_distribution/setup.bash
+    5. Set same ROS_dOMAIN_ID on both pi
+    $ export ROS_DOMAIN_ID=[your own id]
+    $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
 
