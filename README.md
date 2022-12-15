@@ -140,7 +140,9 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     $ colcon build
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
+    
 -----------
+
 ### ⚙️ Driving ⚙️
 
    - Creating a package named 'motor'
