@@ -1,13 +1,5 @@
 ### KSW_2022_Fall_Program
 
-Your README.md file must include:
-
-(3) Project title  
-(4) Research problem statement(s)  
-(5) Research novelty (Significance)  
-(6) Overview or diagram visual(s)  
-(7) Environment settings (Must be very detailed with several steps.) 
-
 
 ## 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 
@@ -83,7 +75,10 @@ Your README.md file must include:
     
     6-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
-    
+
+  
+Your README.md file must include:
+(7) Environment settings (Must be very detailed with several steps.)     
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
@@ -93,8 +88,7 @@ Your README.md file must include:
     - Raspberry Pi 4 Model B+ (8GB)
     
     - ROS 2 foxy
-  
-
+    
 #### 🌊 Collaborator
      
        Eunmin Kim
