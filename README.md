@@ -1,13 +1,5 @@
 ### KSW_2022_Fall_Program
 
-Your README.md file must include:
-
-(3) Project title  
-(4) Research problem statement(s)  
-(5) Research novelty (Significance)  
-(6) Overview or diagram visual(s)  
-(7) Environment settings (Must be very detailed with several steps.) 
-
 
 ## 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
 
@@ -51,13 +43,13 @@ Your README.md file must include:
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="500"/>
 </p>
 
-    1. One raspberry pi 4B is used for the driving unit equipping GPS, magnetometer sensor, DC motors and relay, and proximity sensors.
+    1. One raspberry pi 4B is used for the driving unit equipping magnetometer sensor, DC motors relay, GPS, and proximity sensors.
     
-    2. Another raspberry pi 4B is utilized as a detection unit arming PiCam and LiDAR.
+    2. Another raspberry pi 4B is utilized as a detection unit arming LiDAR and proximity sensor.
     
     3. Two raspberry pi 4Bs communicate with each other through ROS2 Foxy.
     
-    4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel and a wind turbine.
+    4. All the raspberry pi 4Bs and sensors have power supplied by a solar panel.
     
     
 #### 🌊 Flow Chart
@@ -65,25 +57,24 @@ Your README.md file must include:
     <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
 </p>
 
-    1. The power of ABCbot is turned on when the power button is pushed.
+    1.  Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
     
-    2. ABCbot starts to operate after the ABCbot button is pushed.
+    2. There are two raspberry pi, one for driving control(RPi 1) and the other for obstacle detection(RPi 2).
     
-    3. Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
+    3-1. RPi 1 drives the robot following GPS coordinates while the proximity sensors detect nothing.
     
-    4. There are two raspberry pi, one for driving control(RPi 1) and the other for obstacle detection(RPi 2).
+    3-2. If the proximity sensors attached to RPi 1 detect the obstacle, RPi 1 stops driving and waits for a signal from RPi 2.
     
-    5-1. RPi 1 drives the robot following GPS coordinates while the proximity sensors detect nothing.
+    3-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
     
-    5-2. If the proximity sensors attached to RPi 1 detect the obstacle, RPi 1 stops driving and waits for a signal from RPi 2.
+    4-1. RPi 2 takes charge of accurate obstacle detection and it starts with a proximity sensor and a LiDAR.
     
-    5-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
-    
-    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with proximity sensors, LiDAR, and PiCam.
-    
-    6-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
+    4-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
-    
+
+  
+Your README.md file must include:
+(7) Environment settings (Must be very detailed with several steps.)   
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
@@ -92,9 +83,37 @@ Your README.md file must include:
     
     - Raspberry Pi 4 Model B+ (8GB)
     
-    - ROS 2 foxy
-  
+    - ROS2 foxy
 
+#### 🌊 Installation
+
+   1. [ROS 2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+
+   2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
+   
+   3. go to 'Detection'
+    
+   4. go to 'Driving'
+   
+   5. df
+
+   6. Set same ROS_dOMAIN_ID on both pi
+      - $ export ROS_DOMAIN_ID=[your own id]
+      - $ source /opt/ros/your_ros2_distribution/setup.bash
+    
+   ##### <p align="center"> Detection</p>
+   - $ cd ~
+   - $ sudo apt install ros-foxy-rplidar-ros
+   - $ source /opt/ros/foxy/setup.bash
+   - $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
+
+   - change directory to your workspace 
+   - Creating a package named 'obstacles_detection' in your workspace
+   - $ cd ./obstacles_Detection
+   - Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your obstacles_detection/ package
+   ##### <p align="center"> Driving</p>
+   - Creating a package named 'motor'
+   - 
 #### 🌊 Collaborator
      
        Eunmin Kim
