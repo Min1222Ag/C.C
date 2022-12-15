@@ -84,6 +84,14 @@ Your README.md file must include:
     - Raspberry Pi 4 Model B+ (8GB)
     
     - ROS2 foxy
+    
+    - Android Gradle Plugin Version: 7.3.1
+    
+    - Gradle Version 7.4
+    
+    - Java 8
+    
+    - Android Studio Dolphin | 2021.3.1 Patch 1
 
 #### 🌊 Installation
 
@@ -101,17 +109,28 @@ Your README.md file must include:
       - $ export ROS_DOMAIN_ID=[your own id]
       - $ source /opt/ros/your_ros2_distribution/setup.bash
     
-   ##### <p align="center"> Detection</p>
+   #### 💡Detection
+   <p align="center"> 💡Detection</p>
+*create interfaces package </br>
+
+*download requirements1.txt
+> pip install -r requirements1.txt
+#### implement rplidar ROS2 onto Raspberry Pi  
     $ cd ~
     $ sudo apt install ros-foxy-rplidar-ros
     $ source /opt/ros/foxy/setup.bash
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
+#### implement proximity sensor onto Raspberry Pi
+
 *change directory to your workspace* </br> 
 *Creating a package named 'obstacles_detection' in your workspace*
 >$ cd ./obstacles_Detection </br>
-*Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node
-
+Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node
+    $ colcon build
+    $ . install/setup.bash
+    $ ros2 run obstacels_detection talker
+    
 ##### <p align="center"> Driving</p>
    - Creating a package named 'motor'
    - 
