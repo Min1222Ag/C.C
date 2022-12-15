@@ -104,8 +104,8 @@ Your README.md file must include:
    4. go to [💡Driving💡](#driving)
 
    5. Set same ROS_dOMAIN_ID on both pi
-     $ export ROS_DOMAIN_ID=[your own id]
-     $ source /opt/ros/your_ros2_distribution/setup.bash
+     - $ export ROS_DOMAIN_ID=[your own id]
+     - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
 
