@@ -110,12 +110,14 @@ Your README.md file must include:
       - $ source /opt/ros/your_ros2_distribution/setup.bash
 
 ---------------
-<p align="center">💡Detection</p>
+    💡Detection💡
+<p align="center">💡Detection💡</p>
 #### create interfaces package </br>
 
 #### download requirements1.txt*
 > pip install -r requirements1.txt
 #### implement rplidar ROS2 onto Raspberry Pi  
+>
     $ cd ~
     $ sudo apt install ros-foxy-rplidar-ros
     $ source /opt/ros/foxy/setup.bash
@@ -123,7 +125,7 @@ Your README.md file must include:
 
 #### implement proximity sensor onto Raspberry Pi
 
-*change directory to your workspace* </br> 
+_**change directory to your workspace**_ </br> 
 #### Creating a package named 'obstacles_detection' in your workspace
 *Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node* </br>
 
