@@ -57,9 +57,9 @@
     <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
 </p>
 
-    1. The power of ABCbot is turned on when the power button is pushed.
+    1. 
     
-    2. ABCbot starts to operate after the ABCbot button is pushed.
+    2. 
     
     3. Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
     
@@ -71,14 +71,14 @@
     
     5-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
     
-    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with proximity sensors, LiDAR, and PiCam.
+    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with a proximity sensor and a LiDAR.
     
     6-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
 
   
 Your README.md file must include:
-(7) Environment settings (Must be very detailed with several steps.)     
+(7) Environment settings (Must be very detailed with several steps.)   
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
@@ -87,7 +87,7 @@ Your README.md file must include:
     
     - Raspberry Pi 4 Model B+ (8GB)
     
-    - ROS 2 foxy
+    - [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)
     
 #### 🌊 Collaborator
      
