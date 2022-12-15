@@ -111,9 +111,10 @@ Your README.md file must include:
 
 ---------------
 <p align="center">💡Detection💡</p> </br>
+>
 #### 1. create interfaces package </br>
 
-#### 2. download requirements1.txt*
+#### 2. download requirements1.txt
 > pip install -r requirements1.txt
 #### 3. implement rplidar ROS2 onto Raspberry Pi  
     $ cd ~
