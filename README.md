@@ -83,7 +83,7 @@ Your README.md file must include:
     
     - Raspberry Pi 4 Model B+ (8GB)
     
-    - [ROS 2 foxy](https://docs.ros.org/en/foxy/index.html)
+    - [ROS 2 foxy]<https://docs.ros.org/en/foxy/index.html>
     
    ##### Detection
 
