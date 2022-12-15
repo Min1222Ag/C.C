@@ -57,23 +57,19 @@
     <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
 </p>
 
-    1. 
+    1.  Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
     
-    2. 
+    2. There are two raspberry pi, one for driving control(RPi 1) and the other for obstacle detection(RPi 2).
     
-    3. Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
+    3-1. RPi 1 drives the robot following GPS coordinates while the proximity sensors detect nothing.
     
-    4. There are two raspberry pi, one for driving control(RPi 1) and the other for obstacle detection(RPi 2).
+    3-2. If the proximity sensors attached to RPi 1 detect the obstacle, RPi 1 stops driving and waits for a signal from RPi 2.
     
-    5-1. RPi 1 drives the robot following GPS coordinates while the proximity sensors detect nothing.
+    3-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
     
-    5-2. If the proximity sensors attached to RPi 1 detect the obstacle, RPi 1 stops driving and waits for a signal from RPi 2.
+    4-1. RPi 2 takes charge of accurate obstacle detection and it starts with a proximity sensor and a LiDAR.
     
-    5-3. After receiving a signal from RPi 2, it resumes moving as avoiding an obstacle or not according to the type of the signal; driving or avoiding.
-    
-    6-1. RPi 2 takes charge of accurate obstacle detection and it starts with a proximity sensor and a LiDAR.
-    
-    6-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
+    4-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
 
   
