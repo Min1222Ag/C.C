@@ -111,7 +111,8 @@ Your README.md file must include:
 
 ---------------
 <p align="center">💡Detection💡</p> 
---------------
+
+
 #### 1. create interfaces package </br>
 
 #### 2. download requirements1.txt
@@ -125,10 +126,10 @@ Your README.md file must include:
 > [if /dev/ttyUSB0 doesn't exist](https://kgkang.tistory.com/175)
 > $sudo apt-get install minicom </br>
 > $sudo minicom -s </br>
-> Serial port setup </br>
-> Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
-> Save setup as dfl </br>
-> exit </br>
+>>Serial port setup </br>
+>>Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
+>>Save setup as dfl </br>
+>>exit </br>
 
 
 #### 4. implement proximity sensor onto Raspberry Pi
