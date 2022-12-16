@@ -100,9 +100,9 @@
     
    4. go to [💡Driving💡](#driving)
 
-   5. Set same ROS_dOMAIN_ID on both pi </br>
+   5. Set same ROS_DOMAIN_ID on both pi </br>
 
-    $ export ROS_DOMAIN_ID=[your own id] </br>
+    $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
 
 
