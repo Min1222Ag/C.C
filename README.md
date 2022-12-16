@@ -160,7 +160,9 @@ https://www.youtube.com/watch?v=AmNRsN1PqKk
 ##### 2. Run bash files
     $ cd [the directory you've cloned the code at]/C.C/test
     $ sudo bash open_port.sh
-    $ bash run_motor.sh
+    $ bash run_motor.sh  
+    
+    The path receiver starts first and motor listener waits for the coordinates information file that will be generated depending on the Android app.
 
 ##### 3. Send the GPS coordinates through app Demo Video
 https://user-images.githubusercontent.com/55439296/208178566-7fd93092-28b6-481c-9385-f69d69d37829.mp4
