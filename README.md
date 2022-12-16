@@ -176,8 +176,7 @@ https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
     
     1. Virtual Device: Pixel 2 API 33
     
-    2. Physical Device
-    - Model number: LM-G820N
+    2. Physical Device: LM-G820N
     - Android version: 12
     - Software version: G820N40c
     
