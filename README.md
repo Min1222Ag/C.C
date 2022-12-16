@@ -148,9 +148,9 @@ ___
    
    
 #### 🌊 Demo Video
-[![Detection result when an obstacle appears]https://www.youtube.com/watch?v=AmNRsN1PqKk]
 
-
+#####Detection result when an obstacle appears
+https://www.youtube.com/watch?v=AmNRsN1PqKk
 
 https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
 
