@@ -117,7 +117,7 @@
     $ bash run_motor.sh
 
 ##### 4. Send the GPS coordinates through app
-[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM_0/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM_0?t=0s)
+[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)
 
 #### 💡Detection💡
 
