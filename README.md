@@ -147,16 +147,16 @@ https://www.youtube.com/watch?v=AmNRsN1PqKk
 
 #### 💡Driving💡
 
-##### 1. download [requirements2.txt](requirements2.txt)
+##### 1. Download [requirements2.txt](requirements2.txt) and install the required modules
     $ pip install -r requirements2.txt
     
-##### 3. Run bash files
+##### 3. Run bash files and set environment variables
     $ cd [the directory you've cloned the code at]/C.C/test
     $ sudo bash open_port.sh
     $ bash run_motor.sh
 
-#### 🌊Send the GPS coordinates through app Demo Video
-##### Click below image to watch the video
+##### 4. Send the GPS coordinates through app Demo Video
+###### Click below image to watch the video
 [![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)
 
 
