@@ -103,6 +103,10 @@
     $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
     
+   5. Set the environment variables
+    $ cd [the directory you've cloned the code at]/C.C/test
+    $ python3 env_setting.py
+    
 #### 💡Detection💡
 
 ##### 1. create interfaces package </br>
@@ -150,7 +154,7 @@ https://www.youtube.com/watch?v=AmNRsN1PqKk
 ##### 1. Download [requirements2.txt](requirements2.txt) and install the required modules
     $ pip install -r requirements2.txt
     
-##### 2. Run bash files and set environment variables
+##### 2. Run bash files
     $ cd [the directory you've cloned the code at]/C.C/test
     $ sudo bash open_port.sh
     $ bash run_motor.sh
