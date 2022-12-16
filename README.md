@@ -10,20 +10,17 @@
 
 #### 🌊 Problem Statement
     
-      In 2016, the United States was responsible for 42 million metric tons of plastic waste, which made it the largest contributor
-    in the world. The U.S is also ranked 3rd in the world when it comes to depositing pollution onto its own shorelines. There is
-    an estimated 95,000 miles of shoreline in the United States as well as an estimated 90,000 beaches across the country. To say  
-    pollution and waste are an issue for the beaches, is an understatement.
-
-
       Trash that beach-goers throw away and has been washed up by natural disasters contribute to beach pollution. Beach pollution is
     harmful to the wildlife that lives on the beach, the residents, tourists, and especially the beach itself. Beach pollution is
     an issue for coastal area economies due to the fact that pollution deters tourism; marine pollution is a problem in many coastal
     areas of the United States as it affects tourism and recreation which contributes approximately $124 billion in gross domestic
-    product. ABCbot has the power and capability to rid beaches of pollution by itself. ABCbot automatically drives using GPS which
+    product.
+    
+      ABCbot has the power and capability to rid beaches of pollution by itself. ABCbot automatically drives using GPS which
     means that it minimizes human interference and clears a wider range. In addition, the idea of employing ABCbot instead of humans
-    or other types of robots makes the beach cleaning process more efficient and cost-effective. After all, those expected effects
-    mean that ABCbot is able to broaden the usage of robots in an eco-friendly area.
+    or other types of robots makes the beach cleaning process more efficient and cost-effective.
+    
+      After all, those expected effects mean that ABCbot is able to broaden the usage of robots in an eco-friendly area.
 
 #### 🌊 Novelty
 
