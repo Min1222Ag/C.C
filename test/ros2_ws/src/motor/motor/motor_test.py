@@ -1,3 +1,5 @@
+# test code independent of the detection publisher
+
 import motor_control # for controlling two motors
 import gps_tracking # for following the path
 import proximity # for detecting obstacles taken at the driving unit level
@@ -5,8 +7,8 @@ import proximity # for detecting obstacles taken at the driving unit level
 import os
 import json
 
-RECEIVED_FILE = "/home/pi/C.C/test/PathSetting/path_info/coordinates.json" # received coordinates information
-SUBGOALS_FILE = "/home/pi/C.C/test/PathSetting/path_info/on_going.json" # on-going path
+RECEIVED_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/coordinates.json") # received coordinates information
+SUBGOALS_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/on_going.json") 
 
 RENDEZVOUS = 10 # approaching to a subgoal
 

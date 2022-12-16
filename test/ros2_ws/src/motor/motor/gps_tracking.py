@@ -7,11 +7,12 @@ import board
 
 import pandas as pd
 
+import os
 from time import sleep as sleep
 from math import sin, cos, asin, sqrt, radians, atan2, degrees
 
 R = 6378.1 # radius of earth
-SUBGOALS_FILE = "/home/pi/C.C/test/PathSetting/path_info/on_going.json" # where to save generated subgoals information
+SUBGOALS_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/on_going.json") # where to save generated subgoals information
 
 class GPSTracking:
     '''
