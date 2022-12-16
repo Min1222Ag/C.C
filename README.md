@@ -147,7 +147,7 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
 #### 🌊 Detection Demo Video
 https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
 
-##### Detection result when an obstacle appears 
+##### ⬇️ Full Video (Detection result when an obstacle appears) 
 https://www.youtube.com/watch?v=AmNRsN1PqKk
 
 #### 💡Driving💡
@@ -161,8 +161,11 @@ https://www.youtube.com/watch?v=AmNRsN1PqKk
     $ bash run_motor.sh
 
 ##### 3. Send the GPS coordinates through app Demo Video
-###### Click below image to watch the video
-[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)
+https://user-images.githubusercontent.com/55439296/208178071-5ba01e85-7bf7-443e-b702-b20ea7a93c2f.mp4
+
+
+###### ⬇️Full Video
+https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
 
 
 
