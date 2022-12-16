@@ -97,10 +97,8 @@
    2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
    
    3. go to [💡Detection💡](#detection)
-    
-   4. go to [💡Driving💡](#driving)
 
-   5. Set same ROS_DOMAIN_ID on both pi </br>
+   4. Set same ROS_DOMAIN_ID on both pi </br>
 
     $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
@@ -139,12 +137,7 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     $ colcon build
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
-    
-___
-
-#### 💡Driving💡
-
-   - Creating a package named 'motor'
+   
    
    
 #### 🌊 Demo Video
