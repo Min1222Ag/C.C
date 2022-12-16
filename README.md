@@ -41,8 +41,12 @@
 #### 🌊 System Overview
 <p align="center">
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="250"/>
+   <img src="ABCbot1.png" alt="Robot Architecture" height="250"/>
+   <img src="ABCbot2.png" alt="Robot Architecture" height="250"/>
 </p>
-
+<p align="center">
+   <img src="ABCbot1.png" alt="Robot Architecture" height="250"/>
+</p>
     1. One raspberry pi 4B is used for the driving unit equipping magnetometer sensor, DC motors relay, GPS, and proximity sensors.
     
     2. Another raspberry pi 4B is utilized as a detection unit arming LiDAR and proximity sensor.
