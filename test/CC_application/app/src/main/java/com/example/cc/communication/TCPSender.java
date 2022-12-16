@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/*
+ Sender using TCP socket communication, the port 6000 should be opened at the RPi in advance
+ */
 public class TCPSender implements Sender{
     Socket s; // socket
     PrintWriter writer; // writer to write data at payload

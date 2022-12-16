@@ -12,8 +12,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable(){
+        Handler handler = new Handler(); // handler for the splash view
+        handler.postDelayed(new Runnable(){ // delay splash view
             @Override
             public void run(){
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
