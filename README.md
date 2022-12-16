@@ -124,9 +124,9 @@
     $ sudo apt-get install minicom
     $ sudo minicom -s
       > Serial port setup
-    * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter
-    * Save setup as dfl
-    * exit
+      > Press A, change serial device into /dev/ttyUSB0 serial device, and press enter
+      > Save setup as dfl
+      > exit
 
 
 ##### 4. install proximity sensor onto Raspberry Pi
