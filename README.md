@@ -181,7 +181,7 @@ https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
     - Android version: 12
     - Software version: G820N40c
     
-##### 1. Install Android Studio (Android Studio)[https://developer.android.com/studio/?gclid=CjwKCAiAy_CcBhBeEiwAcoMRHAuJUwNwEbAzgpnR03_KpVV2VP8KKFxhQOie26MRg7dqfRZRTnVEJhoCYoUQAvD_BwE&gclsrc=aw.ds]
+##### 1. Install [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAiAy_CcBhBeEiwAcoMRHAuJUwNwEbAzgpnR03_KpVV2VP8KKFxhQOie26MRg7dqfRZRTnVEJhoCYoUQAvD_BwE&gclsrc=aw.ds)
 
 ##### 2. 
 
