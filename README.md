@@ -41,8 +41,8 @@
 #### 🌊 System Overview
 <p align="center">
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="250"/>
-   <img src="ABCbot1.png" alt="Robot Architecture" height="250"/>
-   <img src="ABCbot2.png" alt="Robot Architecture" height="250"/>
+   <img src="ABCbot1.jng" alt="Robot" height="250"/>
+   <img src="ABCbot2.png" alt="Robot Sensor" height="250"/>
 </p>
 <p align="center">
    <img src="ABCbot1.png" alt="Robot Architecture" height="250"/>
