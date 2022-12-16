@@ -170,7 +170,20 @@ https://user-images.githubusercontent.com/55439296/208178566-7fd93092-28b6-481c-
 ###### ⬇️Full Video
 https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
 
+#### 💡Android Application💡
 
+#### Emulator
+    
+    1. Virtual Device: Pixel 2 API 33
+    
+    2. Physical Device
+    - Model number: LM-G820N
+    - Android version: 12
+    - Software version: G820N40c
+    
+##### 1. Install Android Studio (Android Studio)[https://developer.android.com/studio/?gclid=CjwKCAiAy_CcBhBeEiwAcoMRHAuJUwNwEbAzgpnR03_KpVV2VP8KKFxhQOie26MRg7dqfRZRTnVEJhoCYoUQAvD_BwE&gclsrc=aw.ds]
+
+##### 2. 
 
 
 
