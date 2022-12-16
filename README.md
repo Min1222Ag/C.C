@@ -35,7 +35,6 @@
           obstacles in front of the robot.
 
     An Eco-friendly robot!
-       => ABCbot takes power from solar panels.
 
 
 #### 🌊 System Overview
@@ -112,7 +111,7 @@
 
 ##### 1. create interfaces package </br>
 
-##### 2. download requirements1.txt
+##### 2. download [requirements1.txt](requirements1.txt)
     $ pip install -r requirements1.txt
 ##### 3. install rplidar ROS2 onto Raspberry Pi  
     $ cd ~
