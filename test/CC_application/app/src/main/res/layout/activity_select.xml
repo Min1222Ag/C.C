@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SelectActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP Address"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_ip"
+        app:endIconMode="clear_text"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_ip"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_ip"
+            android:hint="Enter IP Address in format"
+            android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Location"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_startloc"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_robot"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Location"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_endloc"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_robot"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dumpster Location"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_dumpsterloc"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_trash"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gap between Subgoals"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_len"
+        app:endIconMode="clear_text"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_location"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_len"
+            android:maxLength="3"
+            android:hint="meter"
+            android:imeOptions="actionNext"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"
+        android:text="Go back"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="100dp"
+        app:iconGravity="textEnd"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Confirm"
+        android:padding="12dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="textEnd"/>
+
+</LinearLayout>

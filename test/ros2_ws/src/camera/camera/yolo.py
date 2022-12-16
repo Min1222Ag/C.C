@@ -3,17 +3,28 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from rclpy.qos import qos_profile_sensor_data   # for the proper queue size
-from std_msgs.msg import ByteMultiArray as yolo_arr # topic type for yolo array
+#from rclpy.qos import qos_profile_sensor_data
+from std_msgs.msg import ByteMultiArray as yolo_arr
 
 import torch
+import os
+#from models.experimental import attempt_load
+#from edgetpu.detection.engine import DetectionEngine
 
-#import argparse
 
+#from PIL import Image
+from PIL import Image as Img
+from PIL import ImageTk
 import time
 
 import cv2
-from cv_bridge import CvBridge 
+from cv_bridge import CvBridge
+
+import imutils
+
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+#model = torch.hub.load('WongKinYiu/yolov7', 'yolov7', pretrained=True)
+#yolov7, yolov7x, yolov7-w6, yolov7-e6, yolov7-d6, yolov7-e6e
 
 class Yolov7(Node):
   """
@@ -23,33 +34,36 @@ class Yolov7(Node):
     """
     Class constructor to set up the node
     """
+<<<<<<< HEAD
     # initiate the Node class's constructor
     super().__init__('camera_node') # node name : camera_node
+=======
+    # Initiate the Node class's constructor and give it a name
+    super().__init__('camera_node')
+>>>>>>> 3ec9bcca53496f9eb7135872fb99cf43b41860d0
      
-    
-    # subscription for image
+    # Create the subscriber for image. This subscriber will receive an Image
+    # from the video_frames topic. The queue size is 100 messages.
     self.image_subscription = self.create_subscription(
-            Image,     # topic type : Image
-            '/image_raw',     # topic name : /image_raw
-            self.listener_callback,     # callback function
-            qos_profile_sensor_data)    # queue size
+            Image,
+            '/image_raw',
+            self.listener_callback, 
+            1000)
     self.image_subscription # prevent unused variable warning
      
     # Used to convert between ROS and OpenCV images
     self.br = CvBridge()
    
-    # Create the publisher about image messages as a list
-    self.imgmsg_publisher = self.create_publisher(
-      yolo_arr,      # topic type : yolo_arr
-      'CV_YOLO',     # topic name : CV_YOLO
-      100)          # queue size : 100
+    # Create the publisher about image messages . This publisher will pusblish an list
+    # from CV_YOLO topic. The queue size is 100 messages.
+    self.imgmsg_publisher = self.create_publisher(yolo_arr,'CV_YOLO',100)
     timer_period = 0.01  # seconds
     self.timer = self.create_timer(timer_period, self.yolo_publish) # call self.motor_publish()
 
   def yolo_publish(self):
     msg = yolo_arr()
     self.imgmsg_publisher.publish(msg)
-    self.get_logger().info('Publishing video through YOLO')
+    #self.get_logger().info('Publishing video through YOLO')
  
   def listener_callback(self, data):
     """
@@ -60,58 +74,30 @@ class Yolov7(Node):
     
     # Convert ROS Image message to OpenCV image
     current_frame = self.br.imgmsg_to_cv2(data)
-   
-    # Display image
-    cv2.imshow("camera", current_frame)
-    
-    
-    labels = {}
-   
-    for row in open("/home/pi/C.C/test/ros2_ws/src/camera/camera/labels.txt"):
-        (classID, label) = row.strip().split(maxsplit=1)
-        labels[int(classID)] = label.strip()
-    
-    #model = torch.load('/home/pi/C.C/test/ros2_ws/src/camera/camera/best.pt')   
-    #model = DetectionEngine("best.pt")
-    #model = attempt_load('best.pt', map_location='cuda:0')
-    #device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    #model = torch.load('ultralytics/yolov7', 'best.pt')
-    
-    #model = custom(path_or_model='best.pt')
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', force_reload=True)
-    #model = torch.hub.load(os.getcwd(), 'custom', path = 'best.pt',source='local')
     
     frame = current_frame #cv2.read()
-    frame = imutils.resize(frame, width=600)
+    frame = imutils.resize(current_frame, width=600)
     ori = frame.copy()
-   
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    frame = Image.fromarray(frame)
+    frame = Img.fromarray(frame)
    
     start = time.time()
-    #results = model.DetectWithImage(frame, threshold=args["confidence"], kepp_aspect_ratio=True, relative_coord=False)
     results = model(frame)
     end = time.time()
-   
-    for r in results:
-        box = r.bounding_box.flatten().astype("int")
-        (startX, startY, endX, endY) = box
-        label = labels[r.label_id]
-       
-        cv2.rectangle(ori, (startX, startY), (endX, endY), (0, 255, 0), 2)
-        y = startY - 15 if startY - 15 > 15 else startY + 15
-        test = "{}: {:.2f}%".format(label, r.score * 100)
-        cv2.putText(ori, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+    
+    results.print()
+    print(results.pandas().xyxy[0])
+    r_img = results.render()
+    img_with_boxes = r_img[0]
+    cv2.imshow("Frem", img_with_boxes)
 
-    cv2.imshow("Frame", ori)
-    #cv2.imwrite("/home/pi/video/test.jpeg", ori)
-    key = cv2.waitKey(1) & 0xFF
+    #key = cv2.waitKey(1) & 0xFF
     #if key == ord("q"):
     #    break
 
     cv2.waitKey(1)
-
-   
+    print("=========================================================")
+      
 def main(args=None):
  
   # Initialize the rclpy library
