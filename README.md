@@ -151,7 +151,7 @@ https://www.youtube.com/watch?v=AmNRsN1PqKk
     $ pip install -r requirements2.txt
     
 ##### 3. Run bash files
-    $ cd ~/C.C/test
+    $ cd [the directory you've cloned the code at]/C.C/test
     $ sudo bash open_port.sh
     $ bash run_motor.sh
 
