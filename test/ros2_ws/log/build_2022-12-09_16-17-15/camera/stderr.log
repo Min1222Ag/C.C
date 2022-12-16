@@ -1,0 +1,5 @@
+  File "/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera/yolo.py", line 27
+    super().__init__('camera_node'). # node name : camera_node
+                                     ^
+SyntaxError: invalid syntax
+

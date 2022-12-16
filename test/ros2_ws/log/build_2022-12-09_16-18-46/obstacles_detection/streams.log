@@ -1,0 +1,21 @@
+[3.732s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/obstacles_detection': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/ros2_ws/build/obstacles_detection/build install --prefix /home/pi/C.C/test/ros2_ws/install/obstacles_detection --record /home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log --single-version-externally-managed
+[4.897s] running egg_info
+[4.899s] writing ../../build/obstacles_detection/obstacles_detection.egg-info/PKG-INFO
+[4.901s] writing dependency_links to ../../build/obstacles_detection/obstacles_detection.egg-info/dependency_links.txt
+[4.901s] writing entry points to ../../build/obstacles_detection/obstacles_detection.egg-info/entry_points.txt
+[4.903s] writing requirements to ../../build/obstacles_detection/obstacles_detection.egg-info/requires.txt
+[4.904s] writing top-level names to ../../build/obstacles_detection/obstacles_detection.egg-info/top_level.txt
+[5.041s] reading manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[5.045s] writing manifest file '../../build/obstacles_detection/obstacles_detection.egg-info/SOURCES.txt'
+[5.045s] running build
+[5.046s] running build_py
+[5.047s] running install
+[5.050s] running install_lib
+[5.058s] running install_data
+[5.060s] running install_egg_info
+[5.067s] removing '/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-1.0.0-py3.8.egg-info' (and everything under it)
+[5.069s] Copying ../../build/obstacles_detection/obstacles_detection.egg-info to /home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages/obstacles_detection-1.0.0-py3.8.egg-info
+[5.075s] running install_scripts
+[5.143s] Installing talker script to /home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/obstacles_detection
+[5.144s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log'
+[5.250s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/obstacles_detection' returned '0': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/obstacles_detection build --build-base /home/pi/C.C/test/ros2_ws/build/obstacles_detection/build install --prefix /home/pi/C.C/test/ros2_ws/install/obstacles_detection --record /home/pi/C.C/test/ros2_ws/build/obstacles_detection/install.log --single-version-externally-managed

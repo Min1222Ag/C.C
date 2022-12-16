@@ -10,9 +10,10 @@ PORT = 6000 # port number
 STORE_DIR = "/home/pi/C.C/test/PathSetting/path_info/" # where to store the data
 PATH_FILE = "coordinates.json" # what name to store
 
-# Class for receiving GPS coordinates of start location and end location
 class locationPublisher(Node):
-
+    '''
+    Receiving GPS coordinates of start location, end location, and dumpster's location
+    '''
     def __init__(self, socket, buf_size=4096, store_dir=STORE_DIR):
         # socket: socket class for connection
         # buf_size: how many bytes to get; 4096 bytes by default

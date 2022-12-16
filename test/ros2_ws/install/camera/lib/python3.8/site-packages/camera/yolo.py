@@ -3,19 +3,17 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from rclpy.qos import qos_profile_sensor_data
-from std_msgs.msg import ByteMultiArray as yolo_arr
+from rclpy.qos import qos_profile_sensor_data   # for the proper queue size
+from std_msgs.msg import ByteMultiArray as yolo_arr # topic type for yolo array
 
 import torch
 
-#from edgetpu.detection.engine import DetectionEngine
-
 #import argparse
-#from PIL import Image
+
 import time
 
 import cv2
-from cv_bridge import CvBridge
+from cv_bridge import CvBridge 
 
 class Yolov7(Node):
   """
@@ -25,25 +23,26 @@ class Yolov7(Node):
     """
     Class constructor to set up the node
     """
-    # Initiate the Node class's constructor and give it a name
-    super().__init__('camera_node')
+    # initiate the Node class's constructor
+    super().__init__('camera_node') # node name : camera_node
      
     
-    # Create the subscriber for image. This subscriber will receive an Image
-    # from the video_frames topic. The queue size is 100 messages.
+    # subscription for image
     self.image_subscription = self.create_subscription(
-            Image,
-            '/image_raw',
-            self.listener_callback, 
-            qos_profile_sensor_data)
+            Image,     # topic type : Image
+            '/image_raw',     # topic name : /image_raw
+            self.listener_callback,     # callback function
+            qos_profile_sensor_data)    # queue size
     self.image_subscription # prevent unused variable warning
      
     # Used to convert between ROS and OpenCV images
     self.br = CvBridge()
    
-    # Create the publisher about image messages . This publisher will pusblish an list
-    # from CV_YOLO topic. The queue size is 100 messages.
-    self.imgmsg_publisher = self.create_publisher(yolo_arr,'CV_YOLO',100)
+    # Create the publisher about image messages as a list
+    self.imgmsg_publisher = self.create_publisher(
+      yolo_arr,      # topic type : yolo_arr
+      'CV_YOLO',     # topic name : CV_YOLO
+      100)          # queue size : 100
     timer_period = 0.01  # seconds
     self.timer = self.create_timer(timer_period, self.yolo_publish) # call self.motor_publish()
 
@@ -65,7 +64,6 @@ class Yolov7(Node):
     # Display image
     cv2.imshow("camera", current_frame)
     
-   
     
     labels = {}
    

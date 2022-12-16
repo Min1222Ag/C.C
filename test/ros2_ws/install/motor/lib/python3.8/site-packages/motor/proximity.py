@@ -24,16 +24,19 @@ class Proximity:
     def measure(self):
         
         # trigger the sensor
-        GPIO.input(self.trigger_pin, GPIO.HIGH)
+        GPIO.output(self.trigger_pin, GPIO.HIGH)
         time.sleep(0.00001)
         GPIO.output(self.trigger_pin, GPIO.LOW)
         
-        # wait for echo pulse
-        while GPIO.input(self.echo_pin) == 0:
-            s = time.time() # pulse end
-        while GPIO.input(self.echo_pin) == 1:
-            e = time.time() # pulse end
+        try:
+            # wait for echo pulse
+            while GPIO.input(self.echo_pin) == 0:
+                s = time.time() # pulse end
+            while GPIO.input(self.echo_pin) == 1:
+                e = time.time() # pulse end
             return self.calculate_distance(s, e) # return distance
+        except:
+            return 34500
 
     def calculate_distance(self, start, end):
         # calculating distance using pulse duration

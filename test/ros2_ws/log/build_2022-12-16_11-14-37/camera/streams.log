@@ -1,0 +1,27 @@
+[3.581s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/camera': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed
+[4.580s] running egg_info
+[4.582s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[4.583s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[4.584s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[4.585s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[4.586s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[4.723s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.727s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.728s] running build
+[4.728s] running build_py
+[4.730s] running install
+[4.733s] running install_lib
+[4.739s] running install_data
+[4.741s] running install_egg_info
+[4.749s] removing '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info' (and everything under it)
+[4.750s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/zip-safe'
+[4.751s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/PKG-INFO'
+[4.752s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/dependency_links.txt'
+[4.752s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/requires.txt'
+[4.753s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/SOURCES.txt'
+[4.754s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/top_level.txt'
+[4.755s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/entry_points.txt'
+[4.757s] error removing /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info: [Errno 39] Directory not empty: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info'
+[4.758s] Copying ../../build/camera/camera.egg-info to /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info
+[4.759s] error: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info/zip-safe'
+[4.846s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/camera' returned '1': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed

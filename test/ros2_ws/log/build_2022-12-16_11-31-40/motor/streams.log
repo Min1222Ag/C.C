@@ -1,0 +1,27 @@
+[2.580s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/motor': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed
+[3.455s] running egg_info
+[3.457s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[3.458s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[3.459s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[3.459s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[3.460s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[3.586s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.590s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[3.590s] running build
+[3.591s] running build_py
+[3.593s] running install
+[3.596s] running install_lib
+[3.604s] running install_data
+[3.606s] running install_egg_info
+[3.613s] removing '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info' (and everything under it)
+[3.614s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/zip-safe'
+[3.614s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/PKG-INFO'
+[3.615s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/dependency_links.txt'
+[3.616s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/requires.txt'
+[3.616s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/SOURCES.txt'
+[3.617s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/top_level.txt'
+[3.618s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/entry_points.txt'
+[3.619s] error removing /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info: [Errno 39] Directory not empty: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info'
+[3.620s] Copying ../../build/motor/motor.egg-info to /home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info
+[3.621s] error: [Errno 13] Permission denied: '/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages/motor-1.0.0-py3.8.egg-info/zip-safe'
+[3.698s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/motor' returned '1': AMENT_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/obstacles_detection:/home/pi/C.C/test/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/C.C/test/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/motor/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/obstacles_detection/lib/python3.8/site-packages:/home/pi/C.C/test/ros2_ws/install/interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/pi/C.C/test/ros2_ws/build/motor/build install --prefix /home/pi/C.C/test/ros2_ws/install/motor --record /home/pi/C.C/test/ros2_ws/build/motor/install.log --single-version-externally-managed

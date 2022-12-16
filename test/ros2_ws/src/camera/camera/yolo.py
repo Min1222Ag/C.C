@@ -24,7 +24,7 @@ class Yolov7(Node):
     Class constructor to set up the node
     """
     # initiate the Node class's constructor
-    super().__init__('camera_node'). # node name : camera_node
+    super().__init__('camera_node') # node name : camera_node
      
     
     # subscription for image
