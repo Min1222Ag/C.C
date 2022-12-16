@@ -43,7 +43,7 @@
    <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="250"/>
 </p>
 <p align="center">
-   <img src="ABCbot1.jpg" alt="Robot" height="250"/>&nbsp;&nbsp;&nbsp;
+   <img src="ABCbot1.jpg" alt="Robot" height="250";width="350"/>&nbsp;&nbsp;&nbsp;
    <img src="ABCbot2.png" alt="Robot Sensor" height="250"/>
 </p>
 
