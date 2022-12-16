@@ -12,7 +12,7 @@ from time import sleep as sleep
 from math import sin, cos, asin, sqrt, radians, atan2, degrees
 
 R = 6378.1 # radius of earth
-SUBGOALS_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/on_going.json") # where to save generated subgoals information
+SUBGOALS_FILE = os.path.join(os.getcwd()+"/PathSetting/path_info/on_going.json") # where to save generated subgoals information
 
 class GPSTracking:
     '''

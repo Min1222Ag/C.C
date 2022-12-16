@@ -28,8 +28,8 @@ import obstacles_detect_node
 import os
 import json
 
-RECEIVED_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/coordinates.json") # received coordinates information
-SUBGOALS_FILE = os.path.join(os.getcwd()+"PathSetting/path_info/on_going.json") # on-going path
+RECEIVED_FILE = os.path.join(os.getcwd()+"/PathSetting/path_info/coordinates.json") # received coordinates information
+SUBGOALS_FILE = os.path.join(os.getcwd()+"/PathSetting/path_info/on_going.json") # on-going path
 
 RENDEZVOUS = 10 # approaching to a subgoal
 

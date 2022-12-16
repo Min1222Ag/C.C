@@ -9,7 +9,7 @@ from std_msgs.msg import String
 HOST = socket.gethostbyname(socket.gethostname()) # find address based on host name
 PORT = 6000 # port number
 
-STORE_DIR = os.path.join(os.getcwd()+"PathSetting/path_info/") # where to store the data
+STORE_DIR = os.path.join(os.getcwd()+"/PathSetting/path_info/") # where to store the data
 PATH_FILE = "coordinates.json" # what name to store
 
 class locationPublisher(Node):
