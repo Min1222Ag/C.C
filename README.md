@@ -106,7 +106,7 @@
    5. Set the environment variables  
    
     $ cd [the directory you've cloned the code at]/C.C/test  
-    $ python3 env_setting.py
+    $ source set_env.sh
     
 #### 💡Detection💡
 
