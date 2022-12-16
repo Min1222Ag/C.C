@@ -34,8 +34,13 @@ class Yolov7(Node):
     """
     Class constructor to set up the node
     """
+<<<<<<< HEAD
+    # initiate the Node class's constructor
+    super().__init__('camera_node') # node name : camera_node
+=======
     # Initiate the Node class's constructor and give it a name
     super().__init__('camera_node')
+>>>>>>> 3ec9bcca53496f9eb7135872fb99cf43b41860d0
      
     # Create the subscriber for image. This subscriber will receive an Image
     # from the video_frames topic. The queue size is 100 messages.

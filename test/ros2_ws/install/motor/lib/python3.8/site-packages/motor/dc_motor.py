@@ -29,7 +29,7 @@ class motor:
 
     def forward(self):
     # spin forward
-        if direction_pins != None:
+        if self.direction_pins != None:
             if(GPIO.input(self.direction_pins[0]) and GPIO.input(self.direction_pins[1])): # already doing
                 if(not GPIO.input(self.block_pin)):
                     GPIO.output(self.block_pin, GPIO.HIGH) # connect battery
@@ -52,7 +52,7 @@ class motor:
 
     def backward(self):
     # spin backward
-        if direction_pins != None:
+        if self.direction_pins != None:
             if(GPIO.input(self.direction_pins[0]) and GPIO.input(self.direction_pins[1])):
                 while(GPIO.input(self.block_pin)):
                     GPIO.output(self.block_pin, GPIO.LOW) # disconnect battery

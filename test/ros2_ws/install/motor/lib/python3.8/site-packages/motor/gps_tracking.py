@@ -11,7 +11,7 @@ from time import sleep as sleep
 from math import sin, cos, asin, sqrt, radians, atan2, degrees
 
 R = 6378.1 # radius of earth
-SUBGOALS_FILE = "home/pi/C.C/test/PathSetting/path_info/on_going.json" # where to save generated subgoals information
+SUBGOALS_FILE = "/home/pi/C.C/test/PathSetting/path_info/on_going.json" # where to save generated subgoals information
 
 class GPSTracking:
     '''
@@ -49,7 +49,13 @@ class GPSTracking:
         # read data using GPS sensor through serial communication
         
         if self.gps.readable(): # if serial is available
-            data = self.gps.readline().replace(b'\n', b'').replace(b'\r', b'').decode() # read data from serial
+            read = True
+            while(read):
+                try:
+                    data = self.gps.readline().replace(b'\n', b'').replace(b'\r', b'').decode() # read data from serial
+                    read = False
+                except:
+                    pass
             return self.getGPSPoints(data) # return data
 
     def distance(self, lat1, lon1, lat2, lon2):
@@ -60,11 +66,18 @@ class GPSTracking:
         lat_diff = lat2 - lat1
         lon_diff = lon2 - lon1
 
-        # formula
+        # Harvesine formula
         # a = sin²(ΔlatDifference/2) + cos(lat1)*cos(lat2)*sin²(ΔlonDifference/2)
         # c = 2*arctan(√(1-a)/√a)
         # distance = R*c where R is the radius of the Earth
-        distance = 2*R*asin(sqrt(sin(lat_diff/2)**2 + cos(lat1)*cos(lat2)*sin(lon_diff/2)**2))
+
+        # distance = 2*R*asin(sqrt(sin(lat_diff/2)**2 + cos(lat1)*cos(lat2)*sin(lon_diff/2)**2))
+
+        # vincenty
+        X = sin(lat1)*sin(lat2) + cos(lat1)*cos(lat2)*cos(lon_diff)
+        Y = sqrt((cos(lat2)*sin(lon_diff))**2 + (cos(lat1)*sin(lat2)-sin(lat1)*cos(lat2)*cos(lon_diff))**2)
+
+        distance = R*atan2(Y, X)
 
         return distance # return distance by the kilometer
 
@@ -103,7 +116,7 @@ class GPSTracking:
 
         return lat, lon # return weighted mean
 
-    def subgoals(self, start_lat, start_lon, end_lat, end_lon, gap):
+    def subgoals(self, start_lat, start_lon, dest_lat, dest_lon, gap):
         # generate coordinates of subgoals at an equal given intervals in a rectangular area whose two non-adjacent corners are given two GPS coordinates and save as a file 
         
         # longitude distance, as if the latitude was 0 by the meter
@@ -150,6 +163,8 @@ class GPSTracking:
 
             flip_direction = not flip_direction # once the horizontal part ended, change the direction
 
+        subgoals_json = subgoals_df.to_json(orient = 'columns')
+        print(subgoals_json)
         # save the result as a file
         with open(SUBGOALS_FILE, 'w') as f:
-            json.dump(subgoals_df, f)
+            f.write(subgoals_json)

@@ -1,0 +1,21 @@
+[3.620s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/camera': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed
+[4.664s] running egg_info
+[4.667s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[4.668s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[4.669s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[4.670s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[4.671s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[4.821s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.824s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[4.825s] running build
+[4.826s] running build_py
+[4.827s] running install
+[4.831s] running install_lib
+[4.838s] running install_data
+[4.840s] running install_egg_info
+[4.848s] removing '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info' (and everything under it)
+[4.850s] Copying ../../build/camera/camera.egg-info to /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info
+[4.855s] running install_scripts
+[4.925s] Installing yolo script to /home/pi/C.C/test/ros2_ws/install/camera/lib/camera
+[4.927s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/camera/install.log'
+[5.042s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/camera' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed

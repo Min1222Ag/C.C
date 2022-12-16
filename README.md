@@ -10,37 +10,37 @@
 
 #### 🌊 Problem Statement
     
-      In 2016, the United States was responsible for 42 million metric tons of plastic waste, which made it the largest contributor
-    in the world. The U.S is also ranked 3rd in the world when it comes to depositing pollution onto its own shorelines. There is
-    an estimated 95,000 miles of shoreline in the United States as well as an estimated 90,000 beaches across the country. To say  
-    pollution and waste are an issue for the beaches, is an understatement.
-
-      Litter on the beaches affect not only water, but also the wildlife, local residents, and even the economic state of the area.  
-    Trash can make living conditions for any living organism, unsuitable. This happens when a turtle mistakes a plastic bag as a  
-    jellyfish, causing the turtle to consume the trash because jellyfish are a part of a turtle's diet. When pollution infects
-    a beach, it make it look unpleasant, which in turn would turn off tourists from wanting to visit the beach while also  
-    potentially making local residents want to move from the area. These two instances combined can have a devastating impact on  
-    the economy as tourism is a significant portion of the U.S's economy. 
-
-      There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of  
-    trash on its own is a good start.
+      Trash that beach-goers throw away and has been washed up by natural disasters contribute to beach pollution. Beach pollution is
+    harmful to the wildlife that lives on the beach, the residents, tourists, and especially the beach itself. Beach pollution is
+    an issue for coastal area economies due to the fact that pollution deters tourism; marine pollution is a problem in many coastal
+    areas of the United States as it affects tourism and recreation which contributes approximately $124 billion in gross domestic
+    product.
+    
+      ABCbot has the power and capability to rid beaches of pollution by itself. ABCbot automatically drives using GPS which
+    means that it minimizes human interference and clears a wider range. In addition, the idea of employing ABCbot instead of humans
+    or other types of robots makes the beach cleaning process more efficient and cost-effective.
+    
+      After all, those expected effects mean that ABCbot is able to broaden the usage of robots in an eco-friendly area.
 
 #### 🌊 Novelty
 
-    The first Autonomous driving Beach Cleaning Robot with designated GPS points!
+    The first Autonomous driving Beach Cleaning Robot with designated GPS tracking!
        => ABCbot is possible to clean the beach while avoiding obstacles over a wide range.
       
-    Optimized robot for examine the distance in real time!
-       => By combining RPLiDAR, camera, and proximity sensors to examine the distance from the ABCbot in real time, it detects
-          obstacles in front of the robot and uses Google Coral Edge Board to accelerate computing.
+    Optimized robot for detect the obstacles in real time!
+       => By combining RPLiDAR and proximity sensors to examine the distance from the ABCbot in real time, it can detects
+          obstacles in front of the robot.
 
     An Eco-friendly robot!
-       => ABCbot takes power from solar panels and windmills.
 
 
 #### 🌊 System Overview
 <p align="center">
-   <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="500"/>
+   <img src="ABCbot_presentation.drawio.png" alt="Robot Architecture" height="250"/>
+</p>
+<p align="center">
+   <img src="ABCbot1.jpg" alt="Robot" height="250"/>&nbsp;&nbsp;&nbsp;
+   <img src="ABCbot2.jpg" alt="Robot Sensor" height="250" width="380"/>
 </p>
 
     1. One raspberry pi 4B is used for the driving unit equipping magnetometer sensor, DC motors relay, GPS, and proximity sensors.
@@ -54,7 +54,7 @@
     
 #### 🌊 Flow Chart
 <p align="center">    
-    <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
+    <img src="control flow2.drawio.png" alt="Flow Diagram" height="650"/>
 </p>
 
     1.  Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
@@ -72,9 +72,6 @@
     4-2. If they detect an obstacle, RPi 2 sends an avoiding signal. Otherwise, RPi 2 sends a driving signal.
 
 
-  
-Your README.md file must include:
-(7) Environment settings (Must be very detailed with several steps.)   
 #### 🌊 Environment Setting
     
     - Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
@@ -100,38 +97,42 @@ Your README.md file must include:
    2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
    
    3. go to [💡Detection💡](#detection)
+
+   4. Set same ROS_DOMAIN_ID on both pi </br>
+
+    $ export ROS_DOMAIN_ID=[your_own_id]
+    $ source /opt/ros/your_ros2_distribution/setup.bash
     
-   4. go to [💡Driving💡](#driving)
+   5. Set the environment variables  
    
-   5. df
+    $ cd [the directory you've cloned the code at]/C.C/test  
+    $ python3 env_setting.py
+    
+#### 💡Detection💡
 
-   6. Set same ROS_dOMAIN_ID on both pi
-      - $ export ROS_DOMAIN_ID=[your own id]
-      - $ source /opt/ros/your_ros2_distribution/setup.bash
+##### 1. create interfaces package </br>
 
----------------
-### 💡Detection💡
-
-#### 1. create interfaces package </br>
-
-#### 2. download requirements1.txt
+##### 2. download [requirements1.txt](requirements1.txt)
     $ pip install -r requirements1.txt
-#### 3. install rplidar ROS2 onto Raspberry Pi  
+##### 3. install rplidar ROS2 onto Raspberry Pi  
     $ cd ~
     $ sudo apt install ros-foxy-rplidar-ros
     $ source /opt/ros/foxy/setup.bash
     $ ros2 run rplidar_ros rplidar_composition –ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
 
-##### IF _**Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'**_ </br> 
-> $ sudo apt-get install minicom </br>
-> $ sudo minicom -s </br>
-> * Serial port setup </br>
-> * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter </br>
-> * Save setup as dfl </br>
-> * exit </br>
+###### IF _**Could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'**_ </br> 
+    $ sudo apt-get install minicom
+    $ sudo minicom -s
+      > Serial port setup
+      > Press A, change serial device into /dev/ttyUSB0 serial device, and press enter
+      > Save setup as dfl
+      > exit
 
 
-#### 4. install proximity sensor onto Raspberry Pi
+##### 4. install proximity sensor onto Raspberry Pi
+###### IF _**RuntimeError: No access to /dev/mem.  Try running as root!**_ </br> 
+    $ sudo chown root.gpio /dev/gpiomem
+    $ sudo chmod g+rw /dev/gpiomem
 
 *change directory to your workspace* </br> 
 _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
@@ -140,13 +141,36 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     $ colcon build
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
+   
+  
+   
+#### 🌊 Detection Demo Video
+https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
+
+##### Detection result when an obstacle appears 
+https://www.youtube.com/watch?v=AmNRsN1PqKk
+
+#### 💡Driving💡
+
+##### 1. Download [requirements2.txt](requirements2.txt) and install the required modules
+    $ pip install -r requirements2.txt
     
------------
+##### 2. Run bash files
+    $ cd [the directory you've cloned the code at]/C.C/test
+    $ sudo bash open_port.sh
+    $ bash run_motor.sh
 
-### 💡Driving💡
+##### 3. Send the GPS coordinates through app Demo Video
+###### Click below image to watch the video
+[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)
 
-   - Creating a package named 'motor'
-   - 
+
+
+
+
+
+
+
 #### 🌊 Collaborator
      
        Eunmin Kim

@@ -1,0 +1,24 @@
+[4.291s] Invoking command in '/home/pi/C.C/test/ros2_ws/src/camera': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed
+[5.587s] running egg_info
+[5.590s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[5.591s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[5.592s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[5.593s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[5.594s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[5.773s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[5.778s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[5.779s] running build
+[5.779s] running build_py
+[5.780s] copying camera/yolo.py -> /home/pi/C.C/test/ros2_ws/build/camera/build/lib/camera
+[5.781s] running install
+[5.784s] running install_lib
+[5.789s] copying /home/pi/C.C/test/ros2_ws/build/camera/build/lib/camera/yolo.py -> /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera
+[5.792s] byte-compiling /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera/yolo.py to yolo.cpython-38.pyc
+[5.800s] running install_data
+[5.802s] running install_egg_info
+[5.809s] removing '/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info' (and everything under it)
+[5.811s] Copying ../../build/camera/camera.egg-info to /home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info
+[5.819s] running install_scripts
+[5.904s] Installing yolo script to /home/pi/C.C/test/ros2_ws/install/camera/lib/camera
+[5.905s] writing list of installed files to '/home/pi/C.C/test/ros2_ws/build/camera/install.log'
+[6.033s] Invoked command in '/home/pi/C.C/test/ros2_ws/src/camera' returned '0': PYTHONPATH=/home/pi/C.C/test/ros2_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/pi/C.C/test/ros2_ws/build/camera/build install --prefix /home/pi/C.C/test/ros2_ws/install/camera --record /home/pi/C.C/test/ros2_ws/build/camera/install.log --single-version-externally-managed
