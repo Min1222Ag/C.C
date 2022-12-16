@@ -148,8 +148,12 @@ ___
    
    
 #### 🌊 Demo Video
-https://www.youtube.com/watch?v=AmNRsN1PqKk
-https://user-images.githubusercontent.com/55439296/208127011-f55eb880-635e-4dca-b769-45bdb602f15a.mov
+[![Final video of fixing issues in your code in VS Code]https://www.youtube.com/watch?v=AmNRsN1PqKk]
+
+
+
+https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
+
 
 
 
