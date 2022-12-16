@@ -54,7 +54,7 @@
     
 #### 🌊 Flow Chart
 <p align="center">    
-    <img src="https://user-images.githubusercontent.com/80605197/198062756-23894473-4418-4f59-966e-af9a71370ecc.png" alt="Flow Diagram" height="650"/>
+    <img src="control flow2.drawio.png" alt="Flow Diagram" height="650"/>
 </p>
 
     1.  Until the ABCbot button is pushed again, it keeps running and the terminating order is the reverse order of starting order.
