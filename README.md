@@ -124,7 +124,7 @@
     * Serial port setup
     * Press A, change serial device into /dev/ttyUSB0 serial device, and press enter
     * Save setup as dfl
-    * exit </br>
+    * exit
 
 
 ##### 4. install proximity sensor onto Raspberry Pi
