@@ -103,8 +103,9 @@
     $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
     
-   5. Set the environment variables 
-    $ cd [the directory you've cloned the code at]/C.C/test
+   5. Set the environment variables  
+   
+    $ cd [the directory you've cloned the code at]/C.C/test  
     $ python3 env_setting.py
     
 #### 💡Detection💡
