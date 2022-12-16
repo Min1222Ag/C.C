@@ -105,7 +105,20 @@
 
     $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
+    
+#### 💡Driving💡
 
+##### 1. create interfaces package </br>
+
+##### 2. download [requirements2.txt](requirements2.txt)
+    $ pip install -r requirements2.txt
+    
+##### 3. Run bash files
+    go to C.C/test/. 
+    $ sudo bash open_port.sh
+    $ bash run_motor.sh
+
+##### 4. Send the GPS coordinates through app
 
 #### 💡Detection💡
 
