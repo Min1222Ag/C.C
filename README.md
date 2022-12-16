@@ -148,7 +148,7 @@ ___
    
    
 #### 🌊 Demo Video
-[![Final video of fixing issues in your code in VS Code]https://www.youtube.com/watch?v=AmNRsN1PqKk]
+[![Detection result when an obstacle appears]https://www.youtube.com/watch?v=AmNRsN1PqKk]
 
 
 
