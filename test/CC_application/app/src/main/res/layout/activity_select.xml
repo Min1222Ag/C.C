@@ -9,6 +9,7 @@
     android:padding="16dp"
     tools:context=".SelectActivity">
 
+    <!-- text box to get IP address-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
             android:imeOptions="actionNext" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Start Location text box -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,6 +58,7 @@
         app:startIconDrawable="@drawable/ic_robot"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
 
+    <!-- End Location text box -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +78,7 @@
         app:startIconDrawable="@drawable/ic_robot"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
 
-
+    <!-- Dumpster Location text box -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,6 +98,7 @@
         app:startIconDrawable="@drawable/ic_trash"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
 
+    <!-- text box to get gap between subgoals -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,6 +129,7 @@
             android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--Go Back button info -->
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,6 +139,8 @@
         android:layout_marginTop="32dp"
         app:cornerRadius="100dp"
         app:iconGravity="textEnd"/>
+
+    <!--Confirm button info -->
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -143,5 +150,4 @@
         app:cornerRadius="100dp"
         app:icon="@drawable/ic_next"
         app:iconGravity="textEnd"/>
-
 </LinearLayout>

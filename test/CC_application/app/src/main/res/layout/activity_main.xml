@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- google map view -->
     <fragment
         android:id="@+id/fragment"
         class="com.google.android.gms.maps.SupportMapFragment"
@@ -16,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <!-- current location button info -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/fab"
         android:layout_width="30dp"
@@ -25,6 +27,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/ic_current_location" />
 
+    <!-- Select button info -->
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
