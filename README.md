@@ -103,19 +103,6 @@
     $ export ROS_DOMAIN_ID=[your_own_id]
     $ source /opt/ros/your_ros2_distribution/setup.bash
     
-#### 💡Driving💡
-
-##### 1. download [requirements2.txt](requirements2.txt)
-    $ pip install -r requirements2.txt
-    
-##### 3. Run bash files
-    $ cd ~/C.C/test
-    $ sudo bash open_port.sh
-    $ bash run_motor.sh
-
-##### 4. Send the GPS coordinates through app
-[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)(<- Click to see the video)
-
 #### 💡Detection💡
 
 ##### 1. create interfaces package </br>
@@ -150,14 +137,31 @@ _**Creating a package named 'obstacles_detection' in your workspace**_ </br>
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
    
+  
    
-   
-#### 🌊 Demo Video
+#### 🌊 Detection Demo Video
+https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
 
 ##### Detection result when an obstacle appears 
 https://www.youtube.com/watch?v=AmNRsN1PqKk
 
-https://user-images.githubusercontent.com/55439296/208127672-7a22dc29-608f-46c5-a538-bc59a762464b.mp4
+#### 💡Driving💡
+
+##### 1. download [requirements2.txt](requirements2.txt)
+    $ pip install -r requirements2.txt
+    
+##### 3. Run bash files
+    $ cd ~/C.C/test
+    $ sudo bash open_port.sh
+    $ bash run_motor.sh
+
+#### 🌊Send the GPS coordinates through app Demo Video
+##### Click below image to watch the video
+[![How to use app](http://img.youtube.com/vi/vakZjTlbfEM/0.jpg)](https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s)
+
+
+
+
 
 
 
