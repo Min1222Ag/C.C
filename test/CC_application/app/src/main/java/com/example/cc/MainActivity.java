@@ -1,341 +1,152 @@
 package com.example.cc;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentActivity;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.app.PendingIntent;
-import android.content.ClipData;
+import android.content.Context;
 import android.content.Intent;
-import android.location.Location;
-import android.location.LocationManager;
-import android.net.Uri;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Looper;
-import android.os.PersistableBundle;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApiActivity;
-import com.google.android.gms.common.api.GoogleApiClient;
-//import com.google.android.gms.common.api.internal.ApiKey;
-//import com.google.android.gms.location.CurrentLocationRequest;
-import com.google.android.gms.location.FusedLocationProviderClient;
-//import com.google.android.gms.location.LastLocationRequest;
-import com.google.android.gms.location.LocationAvailability;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.maps.CameraUpdate;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.CancellationToken;
-import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Executor;
+import com.example.cc.communication.Sender;
+import com.example.cc.communication.TCPSender;
+import com.google.android.material.button.MaterialButton;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnMarkerDragListener {
+import java.util.regex.Pattern;
 
-    private Button button; // button for moving to the next activity
-    private Button fab; // button for updating current location
-    boolean isPermissionGranted;
+public class MainActivity extends AppCompatActivity {
 
-    GoogleMap mGoogleMap;
-    HashMap<String, String>locations; // hashmap for locations <"name", "(latitude, longitude)">
+    MaterialButton forwardButton, rightButton, leftButton, backButton, stopButton, pathButton;
+    EditText etIp;
 
-    private FusedLocationProviderClient mLocationClient;
-    private int GPS_REQUEST_CODE = 9001;
-
-    // hashmap for markers <"name", marker>
-    private final Map<String, MarkerOptions> mMarkers = new ConcurrentHashMap<String, MarkerOptions>();
+    SharedPreferences sharedPreferences;
+    Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        locations = new HashMap<String, String>();
+        sharedPreferences = getSharedPreferences("IPAddress", MODE_PRIVATE);
+        editor = sharedPreferences.edit();
 
-        checkMyPermission();
+        String existedIp = sharedPreferences.getString("ip", null);
+        if (existedIp != null) {
+            etIp.setText(existedIp);
+        }
 
-        initMap(); // initialize map
+        forwardButton = findViewById(R.id.forward_button);
+        forwardButton.setOnClickListener(new View.OnClickListener() {
 
-        mLocationClient = new FusedLocationProviderClient(this);
-
-        fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener(){ // move to current location
             @Override
-            public void onClick(View view){
-                getCurrLoc();
+            public void onClick(View v) {
+                makeOrder("forward");
             }
         });
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){ // move to Select Activity
+        leftButton = findViewById(R.id.left_button);
+        leftButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View v){
-                openSelect();
+            public void onClick(View v) {
+                makeOrder("left");
             }
         });
 
+        rightButton = findViewById(R.id.right_button);
+        rightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                makeOrder("right");
+            }
+        });
+
+        backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                makeOrder("back");
+            }
+        });
+
+        stopButton = findViewById(R.id.stop_button);
+        stopButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                makeOrder("stop");
+            }
+        });
+
+        pathButton = findViewById(R.id.path_button);
+        pathButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                etIp = findViewById(R.id.et_ip);
+                String ip = etIp.getText().toString();
+
+                // IP Address format check
+                if(validAddress(etIp, ip)){
+                    editor.putString("ip", ip);
+                    editor.commit();
+                    goGPS();
+                }
+            }
+        });
     }
-
-    public void openSelect(){ // send hashmap locations data to Select Activity
-        Intent intent = new Intent(MainActivity.this, SelectActivity.class);
-
-        locations.put("time", "");
-        locations.put("meter", "");
-        intent.putExtra("locations", locations);
+    public void goGPS(){
+        Intent intent = new Intent(MainActivity.this, GpsActivity.class);
         startActivity(intent);
+        finish();
     }
 
-    private void initMap() {
-        if(isPermissionGranted){
-            if(isGPSenable()){
-                SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
-                supportMapFragment.getMapAsync(this);
-            }
+    public void makeOrder(String order){
+
+        etIp = findViewById(R.id.et_ip);
+        String ip = etIp.getText().toString();
+
+        // IP Address format check
+        if(validAddress(etIp, ip)){
+            BackGroundTask sending = new BackGroundTask(ip, order);
+            sending.execute();
+            Log.i("order: ", order);
         }
     }
 
-    private boolean isGPSenable(){
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        boolean providerEnable = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-
-        if(providerEnable){
+    public boolean validAddress(EditText etIp, String ip){
+        if (!Pattern.matches("([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})", ip)){
+            Toast.makeText(MainActivity.this, "Check the format of the IP Address", Toast.LENGTH_SHORT).show();
+            etIp.setText("");
+            return false;
+        }
+        else {
             return true;
-        } else{
-            AlertDialog alertDialog = new AlertDialog.Builder(this)
-                    .setTitle("GPS Permission")
-                    .setMessage("GPS is required for this app to work. Please enable GPS")
-                    .setPositiveButton("Yes", ((dialogInterface, i) -> {
-                        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                        startActivityForResult(intent, GPS_REQUEST_CODE);
-                    }))
-                    .setCancelable(false)
-                    .show();
-        }
-        return false;
-    }
-
-    @SuppressLint("MissingPermission")
-    private void getCurrLoc() {
-        mLocationClient.getLastLocation().addOnCompleteListener(task ->{
-            if(task.isSuccessful()){
-                Location location = task.getResult();
-                LatLng LatLng = new LatLng(location.getLatitude(), location.getLongitude());
-
-                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(LatLng, 20);
-                mGoogleMap.moveCamera(cameraUpdate);
-                mGoogleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-
-                add("Start", LatLng);
-                if(!locations.containsKey("End") || !locations.containsKey("Dumpster")){
-                    LatLng = new LatLng(location.getLatitude(), location.getLongitude()+0.0001);
-                    add("Dumpster", LatLng);
-                    LatLng = new LatLng(location.getLatitude(), location.getLongitude()+0.0002);
-                    add("End", LatLng);
-                }
-            }
-        });
-    }
-
-    private void checkMyPermission() {
-        Dexter.withContext(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener() {
-            @Override
-            public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-                Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
-                isPermissionGranted = true;
-            }
-
-            @Override
-            public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
-                Intent intent = new Intent();
-                intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                Uri uri = Uri.fromParts("package", getPackageName(), "");
-                intent.setData(uri);
-                startActivity(intent);
-            }
-
-            @Override
-            public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
-                permissionToken.continuePermissionRequest();
-            }
-        }).check();
-    }
-
-    @SuppressLint("MissingPermission")
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-
-        mGoogleMap = googleMap;
-        mGoogleMap.setMyLocationEnabled(true);
-        mGoogleMap.getUiSettings().setMyLocationButtonEnabled(false);
-
-        getCurrLoc();
-
-        mGoogleMap.setOnMarkerClickListener(this);
-        mGoogleMap.setOnMarkerDragListener(this);
-
-    }
-
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
-
-    }
-
-    @Override
-    public void onConnectionSuspended(int i) {
-
-    }
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == GPS_REQUEST_CODE){
-            LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-            boolean providerEnable = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-
-            if(providerEnable){
-                Toast.makeText(this, "GPS is enable", Toast.LENGTH_SHORT).show();
-            } else{
-                Toast.makeText(this, "GPS is not enable", Toast.LENGTH_SHORT).show();
-            }
         }
     }
 
-    private void add(String name, LatLng Latlng) {
-        final MarkerOptions marker = new MarkerOptions().position(Latlng).title(name);
+    class BackGroundTask extends AsyncTask<String, Void, Void> {
+        String host;
+        String data;
 
-        if(name == "Start"){
-            locations.put("start_coordinate", String.valueOf(Latlng));
-        }
-        else if(name == "End"){
-            marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-            locations.put("end_coordinate", String.valueOf(Latlng));
-        } else if(name == "Dumpster"){
-            marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-            locations.put("dumpster_coordinate", String.valueOf(Latlng));
+        BackGroundTask(String host, String data){
+            this.host = host;
+            this.data = data;
         }
 
-        if(mMarkers.size() != 0){
-            remove(marker.getTitle());
-        }
-
-        mMarkers.put(name, marker);
-
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                marker.draggable(true);
-                mGoogleMap.addMarker(marker).showInfoWindow();
-            }
-        });
-    }
-
-    private void remove(String name) {
-        mMarkers.remove(name);
-
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mGoogleMap.clear();
-
-                for (MarkerOptions item : mMarkers.values()) {
-                    mGoogleMap.addMarker(item);
-                }
-            }
-        });
-    }
-
-    @Override
-    public boolean onMarkerClick(Marker marker) {
-        return false;
-    }
-
-    @Override
-    public void onMarkerDragStart(Marker marker) {
-        marker.setTitle(marker.getTitle());
-        marker.showInfoWindow();
-        marker.setAlpha(0.5f);
-    }
-
-    @Override
-    public void onMarkerDrag(Marker marker) {
-        marker.setTitle(marker.getTitle());
-        marker.showInfoWindow();
-        marker.setAlpha(0.5f);
-    }
-
-    @Override
-    public void onMarkerDragEnd(Marker marker) {
-        marker.setTitle(marker.getTitle());
-        marker.showInfoWindow();
-        marker.setAlpha(0.5f);
-
-        Toast.makeText(getApplicationContext(), String.valueOf(marker.getPosition()), Toast.LENGTH_SHORT).show();
-        putMarkerLocation(marker);
-    }
-
-    public void putMarkerLocation(Marker marker){
-        if(marker.getTitle().equals("Start")){
-            if(locations.containsKey("start_coordinate")){
-                locations.remove("start_coordinate");
-            }
-            locations.put("start_coordinate", String.valueOf(marker.getPosition()));
-            add("Start", marker.getPosition());
-        } else if(marker.getTitle().equals("End")){
-            if(locations.containsKey("end_coordinate")){
-                locations.remove("end_coordinate");
-            }
-            locations.put("end_coordinate", String.valueOf(marker.getPosition()));
-            add("End", marker.getPosition());
-        } else if(marker.getTitle().equals("Dumpster")){
-            if(locations.containsKey("dumpster_coordinate")){
-                locations.remove("dumpster_coordinate");
-            }
-            locations.put("dumpster_coordinate", String.valueOf(marker.getPosition()));
-            add("Dumpster", marker.getPosition());
+        @Override
+        protected Void doInBackground(String... voids) {
+            Sender sender = new TCPSender();
+            sender.send(host, data);
+            return null;
         }
     }
 }

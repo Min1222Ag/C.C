@@ -12,34 +12,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IP Address"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:padding="5dp"
-        android:layout_marginTop="10dp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/til_ip"
-        app:endIconMode="clear_text"
-        app:helperText="Mandatory*"
-        app:helperTextTextColor="@color/teal_700"
-        app:startIconDrawable="@drawable/ic_ip"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/et_ip"
-            android:hint="Enter IP Address in format"
-            android:imeOptions="actionNext" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Start Location"
         android:textColor="@color/black"
         android:textSize="18dp"

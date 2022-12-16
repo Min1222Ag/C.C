@@ -1,42 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".SelectActivity">
 
-    <fragment
-        android:id="@+id/fragment"
-        class="com.google.android.gms.maps.SupportMapFragment"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/fab"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="10dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/ic_current_location" />
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="Select"
-        android:padding="12dp"
-        android:layout_marginTop="32dp"
-        app:cornerRadius="100dp"
-        app:icon="@drawable/ic_next"
-        app:iconGravity="textEnd"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp" />
+        android:text="IP Address"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp" />
 
-</RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_ip"
+        app:endIconMode="clear_text"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_ip"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_ip"
+            android:hint="Enter IP Address in format"
+            android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forward_button"
+                android:text="forward"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:padding="12dp"
+                app:cornerRadius="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/right_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_button"
+                android:text="right"
+                android:padding="12dp"
+                app:cornerRadius="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                app:layout_constraintLeft_toRightOf="@id/forward_button"
+                app:layout_constraintRight_toLeftOf="@id/left_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_button"
+                android:text="left"
+                android:padding="12dp"
+                app:cornerRadius="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                app:layout_constraintLeft_toRightOf="@id/back_button"
+                app:layout_constraintRight_toLeftOf="@id/right_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back_button"
+                android:text="back"
+                android:padding="12dp"
+                app:cornerRadius="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                app:layout_constraintLeft_toRightOf="@id/left_button"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop_button"
+            android:text="stop"
+            android:textSize="50sp"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            app:cornerRadius="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/directions"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/path_button"
+            android:text="set path"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="12dp"
+            app:cornerRadius="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stop_button"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

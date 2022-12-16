@@ -3,9 +3,11 @@ package com.example.cc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,17 +25,21 @@ import java.util.regex.Pattern;
 
 public class SelectActivity extends AppCompatActivity {
     //Initialize variable
-    TextInputLayout tilDistance, tilIp;
-
+    TextInputLayout tilDistance;
     HashMap<String, String> locations;
-
-    EditText etLen, etIp;
+    EditText etLen;
     MaterialButton button, button2;
+
+    SharedPreferences sharedPreferences;
+    String ip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
+
+        sharedPreferences= getSharedPreferences("IPAddress", MODE_PRIVATE);
+        ip = sharedPreferences.getString("ip", "");
 
         CoordinateGenerator coordinateGenerator = new ImpCoordinateGenerator();
 
@@ -41,8 +47,6 @@ public class SelectActivity extends AppCompatActivity {
         tilDistance = findViewById(R.id.til_len);
         etLen = findViewById(R.id.et_len);
 
-        tilIp = findViewById(R.id.til_ip);
-        etIp = findViewById(R.id.et_ip);
         etLen = findViewById(R.id.et_len);
 
         Intent intent = getIntent();
@@ -63,29 +67,25 @@ public class SelectActivity extends AppCompatActivity {
         TextView dumpsterLocation = (TextView)findViewById(R.id.til_dumpsterloc);
         dumpsterLocation.setText(dumpsterCoordinate);
 
-        //EditText
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
-                String ip = etIp.getText().toString();
                 String gap = etLen.getText().toString();
                 String data = coordinateGenerator.generate(startCoordinate, dumpsterCoordinate, endCoordinate, gap);
 
                 // IP Address format check
-                if(!Pattern.matches("([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})", ip)){
-                    Toast.makeText(SelectActivity.this, "Check the format of the IP Address", Toast.LENGTH_SHORT).show();
-                    etIp.setText("");
-                } else if(gap.length() < 1) {
-                    Toast.makeText(SelectActivity.this, "Check the format of gap", Toast.LENGTH_SHORT).show();
-                    etLen.setText("");
-                } else if(!Pattern.matches("[0-9]{1,3}", gap)) {
+                if(gap.length() < 1) {
                     Toast.makeText(SelectActivity.this, "Indicate the gap", Toast.LENGTH_SHORT).show();
+                    etLen.setText("");
+                } else if(!Pattern.matches("([0-9]{1,3})", gap)) {
+                    Toast.makeText(SelectActivity.this, "Check the format of gap", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     BackGroundTask sending = new BackGroundTask(ip, data);
                     sending.execute();
+                    Log.i("asdf", ip);
                     goStart();
                 }
             }
@@ -103,7 +103,7 @@ public class SelectActivity extends AppCompatActivity {
         });
     }
     public void goPrev(){
-        Intent intent = new Intent(SelectActivity.this, MainActivity.class);
+        Intent intent = new Intent(SelectActivity.this, GpsActivity.class);
         startActivity(intent);
         finish();
     }
