@@ -15,15 +15,15 @@
     an estimated 95,000 miles of shoreline in the United States as well as an estimated 90,000 beaches across the country. To say  
     pollution and waste are an issue for the beaches, is an understatement.
 
-      Litter on the beaches affect not only water, but also the wildlife, local residents, and even the economic state of the area.  
-    Trash can make living conditions for any living organism, unsuitable. This happens when a turtle mistakes a plastic bag as a  
-    jellyfish, causing the turtle to consume the trash because jellyfish are a part of a turtle's diet. When pollution infects
-    a beach, it make it look unpleasant, which in turn would turn off tourists from wanting to visit the beach while also  
-    potentially making local residents want to move from the area. These two instances combined can have a devastating impact on  
-    the economy as tourism is a significant portion of the U.S's economy. 
 
-      There is no easy solution to this problem, however the development of a self-driving robot that can gather and dispose of  
-    trash on its own is a good start.
+      Trash that beach-goers throw away and has been washed up by natural disasters contribute to beach pollution. Beach pollution is
+    harmful to the wildlife that lives on the beach, the residents, tourists, and especially the beach itself. Beach pollution is
+    an issue for coastal area economies due to the fact that pollution deters tourism; marine pollution is a problem in many coastal
+    areas of the United States as it affects tourism and recreation which contributes approximately $124 billion in gross domestic
+    product. ABCbot has the power and capability to rid beaches of pollution by itself. ABCbot automatically drives using GPS which
+    means that it minimizes human interference and clears a wider range. In addition, the idea of employing ABCbot instead of humans
+    or other types of robots makes the beach cleaning process more efficient and cost-effective. After all, those expected effects
+    mean that ABCbot is able to broaden the usage of robots in an eco-friendly area.
 
 #### 🌊 Novelty
 
