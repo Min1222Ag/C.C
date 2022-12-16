@@ -108,13 +108,11 @@
     
 #### 💡Driving💡
 
-##### 1. create interfaces package </br>
-
-##### 2. download [requirements2.txt](requirements2.txt)
+##### 1. download [requirements2.txt](requirements2.txt)
     $ pip install -r requirements2.txt
     
 ##### 3. Run bash files
-    go to C.C/test/. 
+    $ cd ~/C.C/test
     $ sudo bash open_port.sh
     $ bash run_motor.sh
 
