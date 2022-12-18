@@ -111,6 +111,7 @@
 #### 💡Detection💡
 
 ##### 1. create interfaces package </br>
+    $ ros2 pkg create --build-type ament_cmake interfaces
 
 ##### 2. download [requirements1.txt](requirements1.txt)
     $ pip install -r requirements1.txt
