@@ -92,6 +92,8 @@
 
 #### 🌊 Installation
 
+    $ git clone git@github.com:Min1222Ag/C.C.git
+
    1. [ROS 2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
    2. [Creating a workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
@@ -101,7 +103,7 @@
    4. Set same ROS_DOMAIN_ID on both pi </br>
 
     $ export ROS_DOMAIN_ID=[your_own_id]
-    $ source /opt/ros/your_ros2_distribution/setup.bash
+    $ source /opt/ros/foxy/setup.bash
     
    5. Set the environment variables  
    
