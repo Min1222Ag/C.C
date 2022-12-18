@@ -165,7 +165,7 @@ https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
 
 #### 💡Android Application💡
 
-#### Emulator
+#### 📱Emulator📱
     
     1. Virtual Device: Pixel 2 API 33
     
@@ -175,8 +175,15 @@ https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
     
 ##### 1. Install [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAiAy_CcBhBeEiwAcoMRHAuJUwNwEbAzgpnR03_KpVV2VP8KKFxhQOie26MRg7dqfRZRTnVEJhoCYoUQAvD_BwE&gclsrc=aw.ds)
 
-##### 2. 
+##### 2. Open Android Studio
 
+##### 3. Click 'Get from VCS' on the right top button
+
+##### 4. Clone the repository
+
+##### 5. Select Run: Run 'app' from the menu bar
+
+##### 6. Select the device to run the app on and click 'OK'
 
 
 </br>
