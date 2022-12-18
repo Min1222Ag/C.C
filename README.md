@@ -185,10 +185,7 @@ https://www.youtube.com/watch?v=vakZjTlbfEM?t=0s
 
 ##### 6. Select the device to run the app on and click 'OK'
 
-
 </br>
-</br>
-
 
 #### 🌊 Collaborator
      
