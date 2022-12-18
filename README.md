@@ -112,12 +112,7 @@
     
 #### 💡Detection💡
 
-##### 1. create interfaces package </br>
-    $ ros2 pkg create --build-type ament_cmake interfaces
-
-##### 2. download [requirements1.txt](requirements1.txt)
-    $ pip install -r requirements1.txt
-##### 3. install rplidar ROS2 onto Raspberry Pi  
+##### 1. install rplidar ROS2 onto Raspberry Pi  
     $ cd ~
     $ sudo apt install ros-foxy-rplidar-ros
     $ source /opt/ros/foxy/setup.bash
@@ -132,21 +127,19 @@
       > exit
 
 
-##### 4. install proximity sensor onto Raspberry Pi
+##### 2. install proximity sensor onto Raspberry Pi
 ###### IF _**RuntimeError: No access to /dev/mem.  Try running as root!**_ </br> 
     $ sudo chown root.gpio /dev/gpiomem
     $ sudo chmod g+rw /dev/gpiomem
 
 *change directory to your workspace* </br> 
-_**Creating a package named 'obstacles_detection' in your workspace**_ </br>
-*Copy [obstacles_detect_node.py](test/ros2_ws/src/obstacles_detection/obstacles_detection/obstacles_detect_node.py) to your node* </br>
+_**Build and execute the code**_ </br>
 
     $ colcon build
     $ . install/setup.bash
     $ ros2 run obstacels_detection talker
    
   
-   
 #### 🌊 Detection Demo Video
 https://user-images.githubusercontent.com/55439296/208178546-a4a54872-fd0f-4853-ab82-17b4cc3daf0b.mp4
 
@@ -156,18 +149,15 @@ https://user-images.githubusercontent.com/55439296/208178546-a4a54872-fd0f-4853-
 https://www.youtube.com/watch?v=AmNRsN1PqKk
 
 #### 💡Driving💡
-
-##### 1. Download [requirements2.txt](requirements2.txt) and install the required modules
-    $ pip install -r requirements2.txt
     
-##### 2. Run bash files
+##### 1. Run bash files
     $ cd [the directory you've cloned the code at]/C.C/test
     $ sudo bash open_port.sh
     $ bash run_motor.sh  
     
     The path receiver starts first and motor listener waits for the coordinates information file that will be generated depending on the Android app.
 
-##### 3. Send the GPS coordinates through app Demo Video
+##### 2. Send the GPS coordinates through app Demo Video
 https://user-images.githubusercontent.com/55439296/208178566-7fd93092-28b6-481c-9385-f69d69d37829.mp4
 
 ###### ⬇️Full Video
